@@ -1,14 +1,16 @@
-public class Basket {
-
-    private static int count = 0;
-    private String items = "";
-    private int totalPrice = 0;
-    private int limit;
+public class Basket
+{
+    private static int count = 0;   // Quantity of items in basket
+    private String items = "";      // Total string consist  item name, quantity, price, weight += next items
+    private int totalPrice = 0;     // Rubles
+    private int limit;              // Rubles
+    private double totalWeight;     // Kilograms
 
     public Basket() {
         increaseCount(1);
         items = "Список товаров:";
         this.limit = 1000000;
+        this.totalWeight = 0;
     }
 
     public Basket(int limit) {
@@ -22,16 +24,23 @@ public class Basket {
         this.totalPrice = totalPrice;
     }
 
-    public static int getCount() {
+    public int getCount() {
         return count;
     }
 
-    public static void increaseCount(int count) {
+    public void increaseCount(int count) {
         Basket.count = Basket.count + count;
     }
 
-    public void add(String name, int price) {
-        add(name, price, 1);
+    public double getTotalWeight() { return totalWeight; }
+
+    public void add(String name, int price)
+    {   add(name, price, 1);
+    }
+
+    public void add(String name, int price, int count, double weight)
+    {   add(name, price, count);
+        totalWeight += weight;
     }
 
     public void add(String name, int price, int count) {
@@ -50,7 +59,7 @@ public class Basket {
         }
 
         items = items + "\n" + name + " - " +
-            count + " шт. - " + price;
+                count + " шт. - " + price;
         totalPrice = totalPrice + count * price;
     }
 
