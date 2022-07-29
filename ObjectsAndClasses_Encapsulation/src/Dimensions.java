@@ -11,7 +11,7 @@ public class Dimensions
         this.depth = depth;
     }
 
-    // возвращает объем в метрах квадратных
+    // возвращает объем в метрах кубических
     public double volume () {
         return ((double)(height * width * depth) / 1000000.0);
     }
