@@ -13,12 +13,10 @@ public class Elevator
         return currentFloor;
     }
     public void moveUp () {
-        //currentFloor = currentFloor < maxFloor ? currentFloor += 1 : currentFloor ;
         if (currentFloor < maxFloor)
             if (currentFloor == -1) currentFloor = 1; else currentFloor += 1;
     }
     public void moveDown () {
-        //currentFloor = currentFloor > minFloor ? currentFloor -= 1 : currentFloor ;
         if (currentFloor > minFloor)
             if (currentFloor == 1) currentFloor = -1; else currentFloor -= 1;
     }
