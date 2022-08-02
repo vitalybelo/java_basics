@@ -23,24 +23,43 @@ public class Cargo
     public Cargo setWeight (int weight) {
         return new Cargo(sizes, weight, turnAble, fragile, regNumber, addressPost);
     }
-
     public Cargo setTurnAble (boolean turnAble) {
         return new Cargo(sizes, weight, turnAble, fragile, regNumber, addressPost);
     }
-
     public Cargo setFragile (boolean fragile) {
         return new Cargo(sizes, weight, turnAble, fragile, regNumber, addressPost);
     }
-
     public Cargo setRegNumber (String regNumber) {
         return new Cargo(sizes, weight, turnAble, fragile, regNumber, addressPost);
     }
-
     public Cargo setAddress (String addressPost) {
         return new Cargo(sizes, weight, turnAble, fragile, regNumber, addressPost);
     }
-
     public String toString () {
         return ("ID: "+regNumber+"\nадрес: "+addressPost+"\nвес: "+weight+"\nгабариты: "+sizes.toString());
+    }
+
+    public Dimensions getSizes() {
+        return sizes;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public boolean isTurnAble() {
+        return turnAble;
+    }
+
+    public boolean isFragile() {
+        return fragile;
+    }
+
+    public String getRegNumber() {
+        return regNumber;
+    }
+
+    public String getAddressPost() {
+        return addressPost;
     }
 }
