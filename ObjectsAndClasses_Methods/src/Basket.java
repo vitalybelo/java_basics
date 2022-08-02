@@ -1,9 +1,31 @@
 public class Basket
 {
 
-    private static int globalPrice;  // общая сумма во всех корзинах
-    private static int globalCount;  // общее количество товаров в корзинах
-    private static int globalBasket; // общее количество корзин
+    private static int globalPrice;     // общая сумма во всех корзинах
+    private static int globalCount;     // общее количество товаров в корзинах
+    private static int globalBasket;    // общее количество корзин
+    private int count = 0;              // Quantity of items in basket
+    private String items = "";          // Total string consist item name, quantity, price, weight += next items
+    private int totalPrice = 0;         // Rubles
+    private int limit;                  // Rubles
+    private double totalWeight;         // Kilograms
+
+    public Basket() {
+        items = "Список товаров:";
+        this.limit = 1000000;
+        this.totalWeight = 0;
+        increaseGlobalBasket(1);
+    }
+    public Basket(int limit) {
+        this();
+        this.limit = limit;
+    }
+    public Basket(String items, int totalPrice) {
+        this();
+        this.items = this.items + items;
+        this.totalPrice = totalPrice;
+        increaseGlobalPrice(totalPrice);
+    }
 
     public static void setGlobalBasket(int globalBasket) {
         Basket.globalBasket = globalBasket;
@@ -39,28 +61,6 @@ public class Basket
         return ( globalPrice / globalBasket );
     }
 
-    private int count = 0;          // Quantity of items in basket
-    private String items = "";      // Total string consist item name, quantity, price, weight += next items
-    private int totalPrice = 0;     // Rubles
-    private int limit;              // Rubles
-    private double totalWeight;     // Kilograms
-
-    public Basket() {
-        items = "Список товаров:";
-        this.limit = 1000000;
-        this.totalWeight = 0;
-        increaseGlobalBasket(1);
-    }
-    public Basket(int limit) {
-        this();
-        this.limit = limit;
-    }
-    public Basket(String items, int totalPrice) {
-        this();
-        this.items = this.items + items;
-        this.totalPrice = totalPrice;
-        increaseGlobalPrice(totalPrice);
-    }
     public int getCount() {
         return count;
     }
@@ -74,8 +74,8 @@ public class Basket
         add(name, price, count);
         totalWeight += (weight * count);
     }
-    public void add(String name, int price, int count) {
-
+    public void add(String name, int price, int count)
+    {
         boolean error = contains(name);
         if (totalPrice + count * price >= limit) error = true;
 
