@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class Main
 {
     public static void main(String[] args)
@@ -25,7 +23,6 @@ public class Main
         for ( iChar = 'ж'; iChar <= 'я'; iChar ++ ) {
             System.out.println( iChar + " ::: " + (int) iChar );
         }
-
 
     }
 }
