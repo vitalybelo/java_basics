@@ -15,7 +15,7 @@ public class Main {
         // Нанимаем 80 менеджеров на фиксированную зарплату с бонусами
         for (int i = 0; i < 80; i++)
             employees.add(new Manager());
-        // Нанимаем 80 топ менеджеров зарплату с бонусами ++
+        // Нанимаем 10 топ менеджеров на зарплату с бонусами ++
         for (int i = 0; i < 10; i++)
             employees.add(new TopManager(amount));
 
@@ -34,6 +34,7 @@ public class Main {
 
         System.out.println("Уволено 50% сотрудников по случайному выбору");
         Collections.shuffle(employees);
+
         int halfSize = company.getEmployees().size() / 2;
         for (int i = 0; i < halfSize; i++)
             company.fire(company.getEmployees().get(i));

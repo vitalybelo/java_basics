@@ -61,5 +61,4 @@ public class Company {
         return sortList(count, (o1, o2) -> o2.getMonthSalary() - o1.getMonthSalary());
     }
 
-
 }
