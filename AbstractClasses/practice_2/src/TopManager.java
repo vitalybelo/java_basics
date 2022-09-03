@@ -1,4 +1,4 @@
-public class TopManager extends Worker implements Employee {
+public class TopManager extends Worker {
 
     public static final long BONUS_AMOUNT = 10_000_000;
 
