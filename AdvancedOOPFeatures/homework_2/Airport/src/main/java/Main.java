@@ -32,8 +32,7 @@ public class Main {
                     long time = flightsTime - currentTime;
                     if (time >= 0 && time <= twoHours)
                         timeMatched = true;
-                    Flight.Type type = f.getType();
-                    boolean typeMatched = (type == Flight.Type.DEPARTURE);
+                    boolean typeMatched = (f.getType() == Flight.Type.DEPARTURE);
                     return typeMatched && timeMatched;
                 }).collect(Collectors.toList());
 
