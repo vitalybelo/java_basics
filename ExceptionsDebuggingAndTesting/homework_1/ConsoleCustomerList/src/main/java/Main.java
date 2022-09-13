@@ -39,7 +39,7 @@ public class Main {
                         if (tokens.length == 1) {
                             errorLoger.info("Попытка удаления записи без параметра");
                             throw new IllegalArgumentException
-                                    ("\nНе указано имя клиента. Правильно:\nremove Василий Петров.\n");
+                                    ("Не указано имя клиента. Правильно: remove Василий Петров.");
                         }
                         executor.removeCustomer(tokens[1]);
                         break;

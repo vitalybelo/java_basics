@@ -20,17 +20,17 @@ public class CustomerStorage {
         String[] components = data.split("\\s+");
         if (components.length != 4) {
             Main.errorLoger.info("Неверный формат строки добавления: add " + data);
-            throw new ArrayIndexOutOfBoundsException("Неправильный формат строки. Правильно:\n" +
+            throw new ArrayIndexOutOfBoundsException("Неправильный формат строки. Правильно:" +
                     "add Василий Петров vasily.petrov@gmail.com +79215637722");
         }
         String name = components[INDEX_NAME] + " " + components[INDEX_SURNAME];
         if (!components[INDEX_PHONE].matches(regexPhone)) {
             Main.errorLoger.info("Неверный формат номера телефона: " + components[INDEX_PHONE]);
-            throw new IllegalArgumentException ("Неверный формат номера телефона\n");
+            throw new IllegalArgumentException ("Неверный формат номера телефона");
         };
         if (!components[INDEX_EMAIL].matches(regexEmail)) {
             Main.errorLoger.info("Неверный формат электронной почты: " + components[INDEX_EMAIL]);
-            throw new IllegalArgumentException ("Неверный формат электронной почты\n");
+            throw new IllegalArgumentException ("Неверный формат электронной почты");
         }
         storage.put(name, new Customer(name, components[INDEX_PHONE], components[INDEX_EMAIL]));
 
