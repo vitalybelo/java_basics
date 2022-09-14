@@ -7,6 +7,7 @@ public class Main {
     public static Logger logger;
     public static Logger errorLoger;
     public static Logger queryLoger;
+
     private static final String ADD_COMMAND = "add Василий Петров " +
             "vasily.petrov@gmail.com +79215637722";
     private static final String COMMAND_EXAMPLES = "\t" + ADD_COMMAND + "\n" +
