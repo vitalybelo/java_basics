@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Set;
 
 public class RouteCalculator {
-    private final StationIndex stationIndex;
 
+    private final StationIndex stationIndex;
     private static final double INTER_STATION_DURATION = 2.5;
     private static final double INTER_CONNECTION_DURATION = 3.5;
 
@@ -22,7 +22,7 @@ public class RouteCalculator {
         }
 
         route = getRouteWithOneConnection(from, to);
-        if (route != null) {
+        if (route != null && !route.isEmpty()) {
             return route;
         }
 
@@ -31,15 +31,15 @@ public class RouteCalculator {
     }
 
     public static double calculateDuration(List<Station> route) {
-        double duration = 0;
-        Station previousStation = null;
-        for (int i = 0; i < route.size(); i++) {
-            Station station = route.get(i);
-            if (i > 0) {
+        double duration = 0.0;
+        if (route.size() > 1) {
+            Station previousStation = route.get(0);
+            for (int i = 1; i < route.size(); i++) {
+                Station station = route.get(i);
                 duration += previousStation.getLine().equals(station.getLine()) ?
                         INTER_STATION_DURATION : INTER_CONNECTION_DURATION;
+                previousStation = station;
             }
-            previousStation = station;
         }
         return duration;
     }
