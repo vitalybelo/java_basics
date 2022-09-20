@@ -1,0 +1,3364 @@
+[
+  {
+    "stationName": "Бульвар Рокоссовского",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "01.08.1990",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Бульвар Рокоссовского» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Черкизовская",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "01.08.1990",
+    "stationDepth": "−9",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Локомотив» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Преображенская площадь",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "31.12.1965",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Сокольники",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "15.05.1935",
+    "stationDepth": "−9",
+    "connections": []
+  },
+  {
+    "stationName": "Красносельская",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "15.05.1935",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Комсомольская",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "30.01.1952",
+    "stationDepth": "−37",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Комсомольская» Кольцевой линии",
+        "lineNumber": "5"
+      },
+      {
+        "stationName": "переход на станцию «Каланчёвская» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Красные ворота",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Чистые пруды",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "15.05.1935",
+    "stationDepth": "−35",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Сретенский бульвар» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      },
+      {
+        "stationName": "переход на станцию «Тургеневская» Калужско-Рижской линии",
+        "lineNumber": "6"
+      }
+    ]
+  },
+  {
+    "stationName": "Лубянка",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "15.05.1935",
+    "stationDepth": "−32,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Кузнецкий мост» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Охотный ряд",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Площадь Революции» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      },
+      {
+        "stationName": "переход на станцию «Театральная» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "Библиотека имени Ленина",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "15.05.1935",
+    "stationDepth": "−12",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Боровицкая» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      },
+      {
+        "stationName": "переход на станцию «Александровский сад» Филевской линии",
+        "lineNumber": "4"
+      },
+      {
+        "stationName": "переход на станцию «Арбатская» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      }
+    ]
+  },
+  {
+    "stationName": "Кропоткинская",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "15.05.1935",
+    "stationDepth": "−13",
+    "connections": []
+  },
+  {
+    "stationName": "Парк Культуры",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Парк Культуры» Кольцевой линии",
+        "lineNumber": "5"
+      }
+    ]
+  },
+  {
+    "stationName": "Фрунзенская",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "01.05.1957",
+    "stationDepth": "−42",
+    "connections": []
+  },
+  {
+    "stationName": "Спортивная",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "01.05.1957",
+    "stationDepth": "−42",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Лужники» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Воробьевы горы",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Университет",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "12.01.1959",
+    "stationDepth": "−26,5",
+    "connections": []
+  },
+  {
+    "stationName": "Проспект Вернадского",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "30.12.1963",
+    "stationDepth": "−16",
+    "connections": []
+  },
+  {
+    "stationName": "Юго-Западная",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "30.12.1963",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Тропарёво",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "08.12.2014",
+    "stationDepth": "−12",
+    "connections": []
+  },
+  {
+    "stationName": "Румянцево",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "18.01.2016",
+    "stationDepth": "−12",
+    "connections": []
+  },
+  {
+    "stationName": "Саларьево",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "15.02.2016",
+    "stationDepth": "−12",
+    "connections": []
+  },
+  {
+    "stationName": "Филатов Луг",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "20.06.2019",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Прокшино",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "20.06.2019",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Ольховая",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "20.06.2019",
+    "stationDepth": "?",
+    "connections": []
+  },
+  {
+    "stationName": "Коммунарка",
+    "lineName": "Сокольническая линия",
+    "stationOpenDate": "",
+    "stationDepth": "?",
+    "connections": []
+  },
+  {
+    "stationName": "Ховрино",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "31.12.2017",
+    "stationDepth": "−14",
+    "connections": []
+  },
+  {
+    "stationName": "Беломорская",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "20.12.2018",
+    "stationDepth": "−18",
+    "connections": []
+  },
+  {
+    "stationName": "Речной вокзал",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "31.12.1964",
+    "stationDepth": "−6",
+    "connections": []
+  },
+  {
+    "stationName": "Водный стадион",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "31.12.1964",
+    "stationDepth": "−6",
+    "connections": []
+  },
+  {
+    "stationName": "Войковская",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "31.12.1964",
+    "stationDepth": "−7",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Балтийская» МЦК",
+        "lineNumber": "14"
+      },
+      {
+        "stationName": "переход на станцию «Стрешнево» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Сокол",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "11.09.1938",
+    "stationDepth": "−9,6",
+    "connections": []
+  },
+  {
+    "stationName": "Аэропорт",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "11.09.1938",
+    "stationDepth": "−10",
+    "connections": []
+  },
+  {
+    "stationName": "Динамо",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "11.09.1938",
+    "stationDepth": "−39,6",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Петровский парк» БКЛ",
+        "lineNumber": "11"
+      }
+    ]
+  },
+  {
+    "stationName": "Белорусская",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "30.01.1952",
+    "stationDepth": "−42,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Белорусская» Кольцевой линии",
+        "lineNumber": "5"
+      },
+      {
+        "stationName": "переход на станцию «Белорусская» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Маяковская",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "11.09.1938",
+    "stationDepth": "−33,1",
+    "connections": []
+  },
+  {
+    "stationName": "Тверская",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "20.07.1979",
+    "stationDepth": "−42",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Чеховская» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      },
+      {
+        "stationName": "переход на станцию «Пушкинская» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Театральная",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "11.09.1938",
+    "stationDepth": "−33,9",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Площадь Революции» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      },
+      {
+        "stationName": "переход на станцию «Охотный ряд» Сокольнической линии",
+        "lineNumber": "1"
+      }
+    ]
+  },
+  {
+    "stationName": "Новокузнецкая",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "20.11.1943",
+    "stationDepth": "−37,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Третьяковская» Калининско-Солнцевской линии",
+        "lineNumber": "8"
+      },
+      {
+        "stationName": "переход на станцию «Третьяковская» Калужско-Рижской линии",
+        "lineNumber": "6"
+      }
+    ]
+  },
+  {
+    "stationName": "Павелецкая",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "01.01.1950",
+    "stationDepth": "−40",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Павелецкая» Кольцевой линии",
+        "lineNumber": "5"
+      }
+    ]
+  },
+  {
+    "stationName": "Автозаводская",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Автозаводская» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Технопарк",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "28.12.2015",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Коломенская",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "11.08.1969",
+    "stationDepth": "−9",
+    "connections": []
+  },
+  {
+    "stationName": "Каширская",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "11.08.1969",
+    "stationDepth": "−7",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Каширская» Каховской линии",
+        "lineNumber": "11A"
+      }
+    ]
+  },
+  {
+    "stationName": "Кантемировская",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "30.12.1984",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Царицыно",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "30.12.1984",
+    "stationDepth": "−8",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Царицыно» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Орехово",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "30.12.1984",
+    "stationDepth": "−9",
+    "connections": []
+  },
+  {
+    "stationName": "Домодедовская",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "07.09.1985",
+    "stationDepth": "−9,5",
+    "connections": []
+  },
+  {
+    "stationName": "Красногвардейская",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "07.09.1985",
+    "stationDepth": "−9",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Зябликово» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      }
+    ]
+  },
+  {
+    "stationName": "Алма-Атинская",
+    "lineName": "Замоскворецкая линия",
+    "stationOpenDate": "24.12.2012",
+    "stationDepth": "−10",
+    "connections": []
+  },
+  {
+    "stationName": "Пятницкое шоссе",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "28.12.2012",
+    "stationDepth": "−11",
+    "connections": []
+  },
+  {
+    "stationName": "Митино",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "26.12.2009",
+    "stationDepth": "−14",
+    "connections": []
+  },
+  {
+    "stationName": "Волоколамская",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "26.12.2009",
+    "stationDepth": "−14",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Волоколамская» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Мякинино",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "26.12.2009",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Строгино",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "07.01.2008",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Крылатское",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "31.12.1989",
+    "stationDepth": "−9,5",
+    "connections": []
+  },
+  {
+    "stationName": "Молодежная",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Кунцевская",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "07.01.2008",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Кунцевская» Филевской линии",
+        "lineNumber": "4"
+      },
+      {
+        "stationName": "переход на станцию «Кунцево» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Славянский бульвар",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "07.09.2008",
+    "stationDepth": "−8,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Славянский бульвар» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Парк Победы",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "06.05.2003",
+    "stationDepth": "−73,6",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Парк Победы» Калининско-Солнцевской линии",
+        "lineNumber": "8"
+      }
+    ]
+  },
+  {
+    "stationName": "Киевская",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "05.04.1953",
+    "stationDepth": "−48",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Киевская» Кольцевой линии",
+        "lineNumber": "5"
+      },
+      {
+        "stationName": "переход на станцию «Киевская» Филевской линии",
+        "lineNumber": "4"
+      }
+    ]
+  },
+  {
+    "stationName": "Смоленская",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "15.05.1935",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Арбатская",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "05.04.1953",
+    "stationDepth": "−41",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Боровицкая» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      },
+      {
+        "stationName": "переход на станцию «Александровский сад» Филевской линии",
+        "lineNumber": "4"
+      },
+      {
+        "stationName": "переход на станцию «Библиотека имени Ленина» Сокольнической линии",
+        "lineNumber": "1"
+      }
+    ]
+  },
+  {
+    "stationName": "Площадь Революции",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "13.03.1938",
+    "stationDepth": "−33,6",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Театральная» Замоскворецкой линии",
+        "lineNumber": "2"
+      },
+      {
+        "stationName": "переход на станцию «Охотный ряд» Сокольнической линии",
+        "lineNumber": "1"
+      }
+    ]
+  },
+  {
+    "stationName": "Курская",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "13.03.1938",
+    "stationDepth": "−40",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Чкаловская» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      },
+      {
+        "stationName": "переход на станцию «Курская» Кольцевой линии",
+        "lineNumber": "5"
+      },
+      {
+        "stationName": "переход на станцию «Курская» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Бауманская",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "18.01.1944",
+    "stationDepth": "−32,5",
+    "connections": []
+  },
+  {
+    "stationName": "Электрозаводская",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "31.12.2020",
+    "stationDepth": "−20",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Электрозаводская» Некрасовской линии",
+        "lineNumber": "15"
+      }
+    ]
+  },
+  {
+    "stationName": "Семеновская",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Партизанская",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "18.01.1944",
+    "stationDepth": "−9",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Измайлово» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Измайловская",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "21.10.1961",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Первомайская",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "21.10.1961",
+    "stationDepth": "−7",
+    "connections": []
+  },
+  {
+    "stationName": "Щелковская",
+    "lineName": "Арбатско-Покровская линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Александровский сад",
+    "lineName": "Филевская линия",
+    "stationOpenDate": "15.05.1935",
+    "stationDepth": "−7",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Боровицкая» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      },
+      {
+        "stationName": "переход на станцию «Арбатская» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      },
+      {
+        "stationName": "переход на станцию «Библиотека имени Ленина» Сокольнической линии",
+        "lineNumber": "1"
+      }
+    ]
+  },
+  {
+    "stationName": "Арбатская",
+    "lineName": "Филевская линия",
+    "stationOpenDate": "05.04.1953",
+    "stationDepth": "−41",
+    "connections": []
+  },
+  {
+    "stationName": "Смоленская",
+    "lineName": "Филевская линия",
+    "stationOpenDate": "15.05.1935",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Киевская",
+    "lineName": "Филевская линия",
+    "stationOpenDate": "05.04.1953",
+    "stationDepth": "−48",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Киевская» Кольцевой линии",
+        "lineNumber": "5"
+      },
+      {
+        "stationName": "переход на станцию «Киевская» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      }
+    ]
+  },
+  {
+    "stationName": "Студенческая",
+    "lineName": "Филевская линия",
+    "stationOpenDate": "07.11.1958",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Кутузовская",
+    "lineName": "Филевская линия",
+    "stationOpenDate": "07.11.1958",
+    "stationDepth": "-5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Кутузовская» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Фили",
+    "lineName": "Филевская линия",
+    "stationOpenDate": "07.11.1959",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Фили» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Багратионовская",
+    "lineName": "Филевская линия",
+    "stationOpenDate": "13.10.1961",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Филевский парк",
+    "lineName": "Филевская линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Пионерская",
+    "lineName": "Филевская линия",
+    "stationOpenDate": "13.10.1961",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Кунцевская",
+    "lineName": "Филевская линия",
+    "stationOpenDate": "07.01.2008",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Кунцевская» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      },
+      {
+        "stationName": "переход на станцию «Кунцево» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Выставочная",
+    "lineName": "Филевская линия",
+    "stationOpenDate": "10.09.2005",
+    "stationDepth": "−25",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Деловой центр» БКЛ",
+        "lineNumber": "11"
+      },
+      {
+        "stationName": "переход на станцию «Деловой центр» Калининско-Солнцевской линии",
+        "lineNumber": "8"
+      },
+      {
+        "stationName": "переход на станцию «Тестовская» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Международная",
+    "lineName": "Филевская линия",
+    "stationOpenDate": "30.08.2006",
+    "stationDepth": "−25",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Деловой центр» МЦК",
+        "lineNumber": "14"
+      },
+      {
+        "stationName": "переход на станцию «Тестовская» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Киевская",
+    "lineName": "Кольцевая линия",
+    "stationOpenDate": "05.04.1953",
+    "stationDepth": "−48",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Киевская» Филевской линии",
+        "lineNumber": "4"
+      },
+      {
+        "stationName": "переход на станцию «Киевская» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      }
+    ]
+  },
+  {
+    "stationName": "Парк Культуры",
+    "lineName": "Кольцевая линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Парк Культуры» Сокольнической линии",
+        "lineNumber": "1"
+      }
+    ]
+  },
+  {
+    "stationName": "Октябрьская",
+    "lineName": "Кольцевая линия",
+    "stationOpenDate": "13.10.1962",
+    "stationDepth": "−50",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Октябрьская» Калужско-Рижской линии",
+        "lineNumber": "6"
+      }
+    ]
+  },
+  {
+    "stationName": "Добрынинская",
+    "lineName": "Кольцевая линия",
+    "stationOpenDate": "01.01.1950",
+    "stationDepth": "−35,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Серпуховская» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      }
+    ]
+  },
+  {
+    "stationName": "Павелецкая",
+    "lineName": "Кольцевая линия",
+    "stationOpenDate": "01.01.1950",
+    "stationDepth": "−40",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Павелецкая» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "Таганская",
+    "lineName": "Кольцевая линия",
+    "stationOpenDate": "01.01.1950",
+    "stationDepth": "−36",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Марксистская» Калининско-Солнцевской линии",
+        "lineNumber": "8"
+      },
+      {
+        "stationName": "переход на станцию «Таганская» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Курская",
+    "lineName": "Кольцевая линия",
+    "stationOpenDate": "13.03.1938",
+    "stationDepth": "−40",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Чкаловская» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      },
+      {
+        "stationName": "переход на станцию «Курская» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      },
+      {
+        "stationName": "переход на станцию «Курская» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Комсомольская",
+    "lineName": "Кольцевая линия",
+    "stationOpenDate": "30.01.1952",
+    "stationDepth": "−37",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Комсомольская» Сокольнической линии",
+        "lineNumber": "1"
+      },
+      {
+        "stationName": "переход на станцию «Каланчёвская» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Проспект Мира",
+    "lineName": "Кольцевая линия",
+    "stationOpenDate": "01.05.1958",
+    "stationDepth": "−50",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Проспект Мира» Калужско-Рижской линии",
+        "lineNumber": "6"
+      }
+    ]
+  },
+  {
+    "stationName": "Новослободская",
+    "lineName": "Кольцевая линия",
+    "stationOpenDate": "30.01.1952",
+    "stationDepth": "−40",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Менделеевская» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      }
+    ]
+  },
+  {
+    "stationName": "Белорусская",
+    "lineName": "Кольцевая линия",
+    "stationOpenDate": "30.01.1952",
+    "stationDepth": "−42,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Белорусская» Замоскворецкой линии",
+        "lineNumber": "2"
+      },
+      {
+        "stationName": "переход на станцию «Белорусская» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Краснопресненская",
+    "lineName": "Кольцевая линия",
+    "stationOpenDate": "14.03.1954",
+    "stationDepth": "−35,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Баррикадная» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Новоясеневская",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "",
+    "stationDepth": "−7",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Битцевский парк» Бутовской линии",
+        "lineNumber": "12"
+      }
+    ]
+  },
+  {
+    "stationName": "Ясенево",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "17.01.1990",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Теплый стан",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Коньково",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "06.11.1987",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Беляево",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "12.08.1974",
+    "stationDepth": "−12",
+    "connections": []
+  },
+  {
+    "stationName": "Калужская",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "12.08.1974",
+    "stationDepth": "−10",
+    "connections": []
+  },
+  {
+    "stationName": "Новые Черёмушки",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "13.10.1962",
+    "stationDepth": "−7",
+    "connections": []
+  },
+  {
+    "stationName": "Профсоюзная",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "13.10.1962",
+    "stationDepth": "−7",
+    "connections": []
+  },
+  {
+    "stationName": "Академическая",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "13.10.1962",
+    "stationDepth": "−8,5",
+    "connections": []
+  },
+  {
+    "stationName": "Ленинский проспект",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "13.10.1962",
+    "stationDepth": "−16",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Площадь Гагарина» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Шаболовская",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "06.11.1980",
+    "stationDepth": "−46,5",
+    "connections": []
+  },
+  {
+    "stationName": "Октябрьская",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "13.10.1962",
+    "stationDepth": "−50",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Октябрьская» Кольцевой линии",
+        "lineNumber": "5"
+      }
+    ]
+  },
+  {
+    "stationName": "Третьяковская",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "25.01.1986",
+    "stationDepth": "−46",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Третьяковская» Калининско-Солнцевской линии",
+        "lineNumber": "8"
+      },
+      {
+        "stationName": "переход на станцию «Новокузнецкая» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "Китай-город",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "03.01.1971",
+    "stationDepth": "−29",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Китай-город» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Тургеневская",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "05.01.1972",
+    "stationDepth": "−49",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Сретенский бульвар» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      },
+      {
+        "stationName": "переход на станцию «Чистые пруды» Сокольнической линии",
+        "lineNumber": "1"
+      }
+    ]
+  },
+  {
+    "stationName": "Сухаревская",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "05.01.1972",
+    "stationDepth": "−43",
+    "connections": []
+  },
+  {
+    "stationName": "Проспект Мира",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "01.05.1958",
+    "stationDepth": "−50",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Проспект Мира» Кольцевой линии",
+        "lineNumber": "5"
+      }
+    ]
+  },
+  {
+    "stationName": "Рижская",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "01.05.1958",
+    "stationDepth": "−46",
+    "connections": []
+  },
+  {
+    "stationName": "Алексеевская",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "",
+    "stationDepth": "−51",
+    "connections": []
+  },
+  {
+    "stationName": "ВДНХ",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "01.05.1958",
+    "stationDepth": "−53,5",
+    "connections": []
+  },
+  {
+    "stationName": "Ботанический сад",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Ботанический Сад» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Свиблово",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "30.09.1978",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Бабушкинская",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "30.09.1978",
+    "stationDepth": "−10",
+    "connections": []
+  },
+  {
+    "stationName": "Медведково",
+    "lineName": "Калужско-Рижская линия",
+    "stationOpenDate": "30.09.1978",
+    "stationDepth": "−10",
+    "connections": []
+  },
+  {
+    "stationName": "Котельники",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "21.09.2015",
+    "stationDepth": "−15",
+    "connections": []
+  },
+  {
+    "stationName": "Жулебино",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "09.11.2013",
+    "stationDepth": "−15",
+    "connections": []
+  },
+  {
+    "stationName": "Лермонтовский проспект",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "09.11.2013",
+    "stationDepth": "−12",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Косино» Некрасовской линии",
+        "lineNumber": "15"
+      }
+    ]
+  },
+  {
+    "stationName": "Выхино",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "31.12.1966",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Рязанский проспект",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "31.12.1966",
+    "stationDepth": "−6",
+    "connections": []
+  },
+  {
+    "stationName": "Кузьминки",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "31.12.1966",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Текстильщики",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "31.12.1966",
+    "stationDepth": "−13",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Текстильщики» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Волгоградский проспект",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "31.12.1966",
+    "stationDepth": "−8",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Угрешская» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Пролетарская",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "31.12.1966",
+    "stationDepth": "−9",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Крестьянская застава» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      }
+    ]
+  },
+  {
+    "stationName": "Таганская",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "01.01.1950",
+    "stationDepth": "−36",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Марксистская» Калининско-Солнцевской линии",
+        "lineNumber": "8"
+      },
+      {
+        "stationName": "переход на станцию «Таганская» Кольцевой линии",
+        "lineNumber": "5"
+      }
+    ]
+  },
+  {
+    "stationName": "Китай-город",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "03.01.1971",
+    "stationDepth": "−29",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Китай-город» Калужско-Рижской линии",
+        "lineNumber": "6"
+      }
+    ]
+  },
+  {
+    "stationName": "Кузнецкий мост",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Лубянка» Сокольнической линии",
+        "lineNumber": "1"
+      }
+    ]
+  },
+  {
+    "stationName": "Пушкинская",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "17.12.1975",
+    "stationDepth": "−51",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Чеховская» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      },
+      {
+        "stationName": "переход на станцию «Тверская» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "Баррикадная",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "30.12.1972",
+    "stationDepth": "−30",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Краснопресненская» Кольцевой линии",
+        "lineNumber": "5"
+      }
+    ]
+  },
+  {
+    "stationName": "Улица 1905 года",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "30.12.1972",
+    "stationDepth": "−11",
+    "connections": []
+  },
+  {
+    "stationName": "Беговая",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "30.12.1972",
+    "stationDepth": "−9",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Беговая» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Полежаевская",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "30.12.1972",
+    "stationDepth": "−10",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Хорошёво» МЦК",
+        "lineNumber": "14"
+      },
+      {
+        "stationName": "переход на станцию «Хорошёвская» БКЛ",
+        "lineNumber": "11"
+      }
+    ]
+  },
+  {
+    "stationName": "Октябрьское Поле",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "30.12.1972",
+    "stationDepth": "−9",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Зорге» МЦК",
+        "lineNumber": "14"
+      },
+      {
+        "stationName": "переход на станцию «Панфиловская» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Щукинская",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "",
+    "stationDepth": "−13",
+    "connections": []
+  },
+  {
+    "stationName": "Спартак",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "27.08.2014",
+    "stationDepth": "−10",
+    "connections": []
+  },
+  {
+    "stationName": "Тушинская",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "",
+    "stationDepth": "−10,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Тушино» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Сходненская",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "30.12.1975",
+    "stationDepth": "−6",
+    "connections": []
+  },
+  {
+    "stationName": "Планерная",
+    "lineName": "Таганско-Краснопресненская линия",
+    "stationOpenDate": "30.12.1975",
+    "stationDepth": "−6",
+    "connections": []
+  },
+  {
+    "stationName": "Новокосино",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "30.08.2012",
+    "stationDepth": "−9",
+    "connections": []
+  },
+  {
+    "stationName": "Новогиреево",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "30.12.1979",
+    "stationDepth": "−9",
+    "connections": []
+  },
+  {
+    "stationName": "Перово",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "30.12.1979",
+    "stationDepth": "−9",
+    "connections": []
+  },
+  {
+    "stationName": "Шоссе Энтузиастов",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "30.12.1979",
+    "stationDepth": "−53",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Шоссе Энтузиастов» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Авиамоторная",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "27.03.2020",
+    "stationDepth": "?",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Авиамоторная» Некрасовской линии",
+        "lineNumber": "15"
+      }
+    ]
+  },
+  {
+    "stationName": "Площадь Ильича",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "30.12.1979",
+    "stationDepth": "−46",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Римская» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      },
+      {
+        "stationName": "переход на станцию «Москва Товарная» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Марксистская",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "30.12.1979",
+    "stationDepth": "−60",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Таганская» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      },
+      {
+        "stationName": "переход на станцию «Таганская» Кольцевой линии",
+        "lineNumber": "5"
+      }
+    ]
+  },
+  {
+    "stationName": "Третьяковская",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "25.01.1986",
+    "stationDepth": "−46",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Третьяковская» Калужско-Рижской линии",
+        "lineNumber": "6"
+      },
+      {
+        "stationName": "переход на станцию «Новокузнецкая» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "Деловой центр",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "31.01.2014",
+    "stationDepth": "−30",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Деловой центр» БКЛ",
+        "lineNumber": "11"
+      },
+      {
+        "stationName": "переход на станцию «Выставочная» Филевской линии",
+        "lineNumber": "4"
+      }
+    ]
+  },
+  {
+    "stationName": "Парк Победы",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "06.05.2003",
+    "stationDepth": "−73,6",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Парк Победы» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      }
+    ]
+  },
+  {
+    "stationName": "Минская",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "16.03.2017",
+    "stationDepth": "−15",
+    "connections": []
+  },
+  {
+    "stationName": "Ломоносовский проспект",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "16.03.2017",
+    "stationDepth": "−15",
+    "connections": []
+  },
+  {
+    "stationName": "Раменки",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "16.03.2017",
+    "stationDepth": "−15",
+    "connections": []
+  },
+  {
+    "stationName": "Мичуринский проспект",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "30.08.2018",
+    "stationDepth": "−19",
+    "connections": []
+  },
+  {
+    "stationName": "Озёрная",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "",
+    "stationDepth": "−25",
+    "connections": []
+  },
+  {
+    "stationName": "Говорово",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "30.08.2018",
+    "stationDepth": "−14",
+    "connections": []
+  },
+  {
+    "stationName": "Солнцево",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "30.08.2018",
+    "stationDepth": "−13",
+    "connections": []
+  },
+  {
+    "stationName": "Боровское шоссе",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "30.08.2018",
+    "stationDepth": "−20",
+    "connections": []
+  },
+  {
+    "stationName": "Новопеределкино",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "30.08.2018",
+    "stationDepth": "−16",
+    "connections": []
+  },
+  {
+    "stationName": "Рассказовка",
+    "lineName": "Калининско-Солнцевская линия",
+    "stationOpenDate": "30.08.2018",
+    "stationDepth": "−12",
+    "connections": []
+  },
+  {
+    "stationName": "Бульвар Дмитрия Донского",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "26.12.2002",
+    "stationDepth": "−10",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Улица Старокачаловская» Бутовской линии",
+        "lineNumber": "12"
+      }
+    ]
+  },
+  {
+    "stationName": "Аннино",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "12.12.2001",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Улица академика Янгеля",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Пражская",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "06.11.1985",
+    "stationDepth": "−9,5",
+    "connections": []
+  },
+  {
+    "stationName": "Южная",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "08.11.1983",
+    "stationDepth": "−10",
+    "connections": []
+  },
+  {
+    "stationName": "Чертановская",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "08.11.1983",
+    "stationDepth": "−10,5",
+    "connections": []
+  },
+  {
+    "stationName": "Севастопольская",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "08.11.1983",
+    "stationDepth": "−13",
+    "connections": []
+  },
+  {
+    "stationName": "Нахимовский Проспект",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Нагорная",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "08.11.1983",
+    "stationDepth": "−9",
+    "connections": []
+  },
+  {
+    "stationName": "Нагатинская",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "08.11.1983",
+    "stationDepth": "−13,5",
+    "connections": []
+  },
+  {
+    "stationName": "Тульская",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "08.11.1983",
+    "stationDepth": "−9,5",
+    "connections": []
+  },
+  {
+    "stationName": "Серпуховская",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "",
+    "stationDepth": "−43",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Добрынинская» Кольцевой линии",
+        "lineNumber": "5"
+      }
+    ]
+  },
+  {
+    "stationName": "Полянка",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "23.01.1986",
+    "stationDepth": "−36,5",
+    "connections": []
+  },
+  {
+    "stationName": "Боровицкая",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "23.01.1986",
+    "stationDepth": "−46,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Александровский сад» Филевской линии",
+        "lineNumber": "4"
+      },
+      {
+        "stationName": "переход на станцию «Арбатская» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      },
+      {
+        "stationName": "переход на станцию «Библиотека имени Ленина» Сокольнической линии",
+        "lineNumber": "1"
+      }
+    ]
+  },
+  {
+    "stationName": "Чеховская",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "31.12.1987",
+    "stationDepth": "−62",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Пушкинская» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      },
+      {
+        "stationName": "переход на станцию «Тверская» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "Цветной бульвар",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "31.12.1988",
+    "stationDepth": "−50",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Трубная» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      }
+    ]
+  },
+  {
+    "stationName": "Менделеевская",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "31.12.1988",
+    "stationDepth": "−48,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Новослободская» Кольцевой линии",
+        "lineNumber": "5"
+      }
+    ]
+  },
+  {
+    "stationName": "Савеловская",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Савёловская» БКЛ",
+        "lineNumber": "11"
+      },
+      {
+        "stationName": "переход на станцию «Савёловская» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Дмитровская",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "01.03.1991",
+    "stationDepth": "−59",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Дмитровская» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Тимирязевская",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "01.03.1991",
+    "stationDepth": "−63,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Тимирязевская» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Петровско-Разумовская",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "16.09.2016",
+    "stationDepth": "−61",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Петровско-Разумовская» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      }
+    ]
+  },
+  {
+    "stationName": "Владыкино",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Владыкино» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Отрадное",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "01.03.1991",
+    "stationDepth": "−9",
+    "connections": []
+  },
+  {
+    "stationName": "Бибирево",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "31.12.1992",
+    "stationDepth": "−9,5",
+    "connections": []
+  },
+  {
+    "stationName": "Алтуфьево",
+    "lineName": "Серпуховско-Тимирязевская линия",
+    "stationOpenDate": "15.07.1994",
+    "stationDepth": "−9",
+    "connections": []
+  },
+  {
+    "stationName": "Зябликово",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "02.12.2011",
+    "stationDepth": "−15",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Красногвардейская» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "Шипиловская",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "02.12.2011",
+    "stationDepth": "−10",
+    "connections": []
+  },
+  {
+    "stationName": "Борисово",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "02.12.2011",
+    "stationDepth": "−10",
+    "connections": []
+  },
+  {
+    "stationName": "Марьино",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Братиславская",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "25.12.1996",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Люблино",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "25.12.1996",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Волжская",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "28.12.1995",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Печатники",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "28.12.1995",
+    "stationDepth": "−5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Кубанская» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Кожуховская",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "28.12.1995",
+    "stationDepth": "−12",
+    "connections": []
+  },
+  {
+    "stationName": "Дубровка",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "11.10.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Дубровка» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Крестьянская застава",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "28.12.1995",
+    "stationDepth": "−47",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Пролетарская» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Римская",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "28.12.1995",
+    "stationDepth": "−54",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Площадь Ильича» Калининско-Солнцевской линии",
+        "lineNumber": "8"
+      },
+      {
+        "stationName": "переход на станцию «Москва Товарная» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Чкаловская",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "28.12.1995",
+    "stationDepth": "−51",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Курская» Кольцевой линии",
+        "lineNumber": "5"
+      },
+      {
+        "stationName": "переход на станцию «Курская» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      },
+      {
+        "stationName": "переход на станцию «Курская» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Сретенский бульвар",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "29.12.2007",
+    "stationDepth": "−60",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Тургеневская» Калужско-Рижской линии",
+        "lineNumber": "6"
+      },
+      {
+        "stationName": "переход на станцию «Чистые пруды» Сокольнической линии",
+        "lineNumber": "1"
+      }
+    ]
+  },
+  {
+    "stationName": "Трубная",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "30.08.2007",
+    "stationDepth": "−60",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Цветной бульвар» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      }
+    ]
+  },
+  {
+    "stationName": "Достоевская",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "19.06.2010",
+    "stationDepth": "−60",
+    "connections": []
+  },
+  {
+    "stationName": "Марьина роща",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Бутырская",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "16.09.2016",
+    "stationDepth": "−60",
+    "connections": []
+  },
+  {
+    "stationName": "Фонвизинская",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "16.09.2016",
+    "stationDepth": "−65",
+    "connections": []
+  },
+  {
+    "stationName": "Петровско-Разумовская",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "16.09.2016",
+    "stationDepth": "−61",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Петровско-Разумовская» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      }
+    ]
+  },
+  {
+    "stationName": "Окружная",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "22.03.2018",
+    "stationDepth": "−65",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Окружная» МЦК",
+        "lineNumber": "14"
+      },
+      {
+        "stationName": "переход на станцию «Окружная» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Верхние Лихоборы",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "22.03.2018",
+    "stationDepth": "−65",
+    "connections": []
+  },
+  {
+    "stationName": "Селигерская",
+    "lineName": "Люблинско-Дмитровская линия",
+    "stationOpenDate": "22.03.2018",
+    "stationDepth": "−20",
+    "connections": []
+  },
+  {
+    "stationName": "Савёловская",
+    "lineName": "Большая Кольцевая Линия",
+    "stationOpenDate": "31.12.1988",
+    "stationDepth": "−65",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Савеловская» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      },
+      {
+        "stationName": "переход на станцию «Савёловская» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Петровский парк",
+    "lineName": "Большая Кольцевая Линия",
+    "stationOpenDate": "26.02.2018",
+    "stationDepth": "−25",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Динамо» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "ЦСКА",
+    "lineName": "Большая Кольцевая Линия",
+    "stationOpenDate": "26.02.2018",
+    "stationDepth": "−28",
+    "connections": []
+  },
+  {
+    "stationName": "Хорошёвская",
+    "lineName": "Большая Кольцевая Линия",
+    "stationOpenDate": "26.02.2018",
+    "stationDepth": "−21",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Хорошёво» МЦК",
+        "lineNumber": "14"
+      },
+      {
+        "stationName": "переход на станцию «Полежаевская» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Шелепиха",
+    "lineName": "Большая Кольцевая Линия",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Шелепиха» МЦК",
+        "lineNumber": "14"
+      },
+      {
+        "stationName": "переход на станцию «Тестовская» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Деловой центр",
+    "lineName": "Большая Кольцевая Линия",
+    "stationOpenDate": "31.01.2014",
+    "stationDepth": "−30",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Деловой центр» Калининско-Солнцевской линии",
+        "lineNumber": "8"
+      },
+      {
+        "stationName": "переход на станцию «Выставочная» Филевской линии",
+        "lineNumber": "4"
+      },
+      {
+        "stationName": "переход на станцию «Тестовская» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Каховская",
+    "lineName": "Каховская линия",
+    "stationOpenDate": "11.08.1969",
+    "stationDepth": "−8",
+    "connections": []
+  },
+  {
+    "stationName": "Варшавская",
+    "lineName": "Каховская линия",
+    "stationOpenDate": "11.08.1969",
+    "stationDepth": "−9",
+    "connections": []
+  },
+  {
+    "stationName": "Каширская",
+    "lineName": "Каховская линия",
+    "stationOpenDate": "11.08.1969",
+    "stationDepth": "−7",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Каширская» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "Битцевский парк",
+    "lineName": "Бутовская линия",
+    "stationOpenDate": "27.02.2014",
+    "stationDepth": "−10",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Новоясеневская» Калужско-Рижской линии",
+        "lineNumber": "6"
+      }
+    ]
+  },
+  {
+    "stationName": "Лесопарковая",
+    "lineName": "Бутовская линия",
+    "stationOpenDate": "27.02.2014",
+    "stationDepth": "−10",
+    "connections": []
+  },
+  {
+    "stationName": "Улица Старокачаловская",
+    "lineName": "Бутовская линия",
+    "stationOpenDate": "27.12.2003",
+    "stationDepth": "−10",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Бульвар Дмитрия Донского» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      }
+    ]
+  },
+  {
+    "stationName": "Улица Скобелевская",
+    "lineName": "Бутовская линия",
+    "stationOpenDate": "27.12.2003",
+    "stationDepth": "9,6",
+    "connections": []
+  },
+  {
+    "stationName": "Бульвар адмирала Ушакова",
+    "lineName": "Бутовская линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Улица Горчакова",
+    "lineName": "Бутовская линия",
+    "stationOpenDate": "27.12.2003",
+    "stationDepth": "9,6",
+    "connections": []
+  },
+  {
+    "stationName": "Бунинская Аллея",
+    "lineName": "Бутовская линия",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Окружная",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "22.03.2018",
+    "stationDepth": "−65",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Окружная» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      },
+      {
+        "stationName": "переход на станцию «Окружная» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Владыкино",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Владыкино» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      }
+    ]
+  },
+  {
+    "stationName": "Ботанический Сад",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Ботанический сад» Калужско-Рижской линии",
+        "lineNumber": "6"
+      }
+    ]
+  },
+  {
+    "stationName": "Ростокино",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Белокаменная",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Бульвар Рокоссовского",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "01.08.1990",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Бульвар Рокоссовского» Сокольнической линии",
+        "lineNumber": "1"
+      }
+    ]
+  },
+  {
+    "stationName": "Локомотив",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Черкизовская» Сокольнической линии",
+        "lineNumber": "1"
+      }
+    ]
+  },
+  {
+    "stationName": "Измайлово",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Партизанская» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      }
+    ]
+  },
+  {
+    "stationName": "Соколиная Гора",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "11.09.1938",
+    "stationDepth": "-5",
+    "connections": []
+  },
+  {
+    "stationName": "Шоссе Энтузиастов",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "30.12.1979",
+    "stationDepth": "−53",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Шоссе Энтузиастов» Калининско-Солнцевской линии",
+        "lineNumber": "8"
+      }
+    ]
+  },
+  {
+    "stationName": "Андроновка",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Нижегородская",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "−21,8",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Нижегородская» Некрасовской линии",
+        "lineNumber": "15"
+      }
+    ]
+  },
+  {
+    "stationName": "Новохохловская",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Новохохловская» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Угрешская",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Волгоградский проспект» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Дубровка",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "11.10.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Кожуховская» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      },
+      {
+        "stationName": "переход на станцию «Дубровка» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      }
+    ]
+  },
+  {
+    "stationName": "Автозаводская",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Автозаводская» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "ЗИЛ",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Верхние Котлы",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Крымская",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "",
+    "stationDepth": "-3",
+    "connections": []
+  },
+  {
+    "stationName": "Площадь Гагарина",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "-5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Ленинский проспект» Калужско-Рижской линии",
+        "lineNumber": "6"
+      }
+    ]
+  },
+  {
+    "stationName": "Лужники",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Спортивная» Сокольнической линии",
+        "lineNumber": "1"
+      }
+    ]
+  },
+  {
+    "stationName": "Кутузовская",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "07.11.1958",
+    "stationDepth": "-5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Кутузовская» Филевской линии",
+        "lineNumber": "4"
+      }
+    ]
+  },
+  {
+    "stationName": "Деловой центр",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "31.01.2014",
+    "stationDepth": "−30",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Международная» Филевской линии",
+        "lineNumber": "4"
+      },
+      {
+        "stationName": "переход на станцию «Тестовская» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Шелепиха",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Шелепиха» БКЛ",
+        "lineNumber": "11"
+      },
+      {
+        "stationName": "переход на станцию «Тестовская» Белорусско-Савёловского (первого) диаметра",
+        "lineNumber": "D1"
+      }
+    ]
+  },
+  {
+    "stationName": "Хорошёво",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Хорошёвская» БКЛ",
+        "lineNumber": "11"
+      },
+      {
+        "stationName": "переход на станцию «Полежаевская» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Зорге",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "04.11.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Октябрьское Поле» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Панфиловская",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "08.11.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Октябрьское Поле» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Стрешнево",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Стрешнево» Курско-Рижского (второго) диаметра",
+        "lineNumber": "D2"
+      }
+    ]
+  },
+  {
+    "stationName": "Балтийская",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Войковская» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "Коптево",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "01.11.2016",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Лихоборы",
+    "lineName": "Центральное Кольцо",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": []
+  },
+  {
+    "stationName": "Электрозаводская",
+    "lineName": "Некрасовская линия",
+    "stationOpenDate": "31.12.2020",
+    "stationDepth": "−20",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Электрозаводская» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      }
+    ]
+  },
+  {
+    "stationName": "Лефортово",
+    "lineName": "Некрасовская линия",
+    "stationOpenDate": "27.03.2020",
+    "stationDepth": "?",
+    "connections": []
+  },
+  {
+    "stationName": "Авиамоторная",
+    "lineName": "Некрасовская линия",
+    "stationOpenDate": "27.03.2020",
+    "stationDepth": "?",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Авиамоторная» Калининско-Солнцевской линии",
+        "lineNumber": "8"
+      }
+    ]
+  },
+  {
+    "stationName": "Нижегородская",
+    "lineName": "Некрасовская линия",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "−21,8",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Нижегородская» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Стахановская",
+    "lineName": "Некрасовская линия",
+    "stationOpenDate": "27.03.2020",
+    "stationDepth": "?",
+    "connections": []
+  },
+  {
+    "stationName": "Окская",
+    "lineName": "Некрасовская линия",
+    "stationOpenDate": "27.03.2020",
+    "stationDepth": "?",
+    "connections": []
+  },
+  {
+    "stationName": "Юго-Восточная",
+    "lineName": "Некрасовская линия",
+    "stationOpenDate": "27.03.2020",
+    "stationDepth": "−20",
+    "connections": []
+  },
+  {
+    "stationName": "Косино",
+    "lineName": "Некрасовская линия",
+    "stationOpenDate": "",
+    "stationDepth": "−27",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Лермонтовский проспект» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Улица Дмитриевского",
+    "lineName": "Некрасовская линия",
+    "stationOpenDate": "03.06.2019",
+    "stationDepth": "−18",
+    "connections": []
+  },
+  {
+    "stationName": "Лухмановская",
+    "lineName": "Некрасовская линия",
+    "stationOpenDate": "03.06.2019",
+    "stationDepth": "−15",
+    "connections": []
+  },
+  {
+    "stationName": "Некрасовка",
+    "lineName": "Некрасовская линия",
+    "stationOpenDate": "03.06.2019",
+    "stationDepth": "−16",
+    "connections": []
+  },
+  {
+    "stationName": "Одинцово",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Баковка",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Сколково",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Немчиновка",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Сетунь",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Рабочий Посёлок",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Кунцево",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Кунцевская» Филевской линии",
+        "lineNumber": "4"
+      },
+      {
+        "stationName": "переход на станцию «Кунцевская» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      }
+    ]
+  },
+  {
+    "stationName": "Славянский бульвар",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "07.09.2008",
+    "stationDepth": "−8,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Славянский бульвар» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      }
+    ]
+  },
+  {
+    "stationName": "Фили",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "07.11.1959",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Фили» Филевской линии",
+        "lineNumber": "4"
+      }
+    ]
+  },
+  {
+    "stationName": "Тестовская",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Шелепиха» МЦК",
+        "lineNumber": "14"
+      },
+      {
+        "stationName": "переход на станцию «Деловой центр» МЦК",
+        "lineNumber": "14"
+      },
+      {
+        "stationName": "переход на станцию «Шелепиха» БКЛ",
+        "lineNumber": "11"
+      },
+      {
+        "stationName": "переход на станцию «Деловой центр» БКЛ",
+        "lineNumber": "11"
+      },
+      {
+        "stationName": "переход на станцию «Выставочная» Филевской линии",
+        "lineNumber": "4"
+      },
+      {
+        "stationName": "переход на станцию «Международная» Филевской линии",
+        "lineNumber": "4"
+      }
+    ]
+  },
+  {
+    "stationName": "Беговая",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "30.12.1972",
+    "stationDepth": "−9",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Беговая» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Белорусская",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "30.01.1952",
+    "stationDepth": "−42,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Белорусская» Кольцевой линии",
+        "lineNumber": "5"
+      },
+      {
+        "stationName": "переход на станцию «Белорусская» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "Савёловская",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "31.12.1988",
+    "stationDepth": "−65",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Савёловская» БКЛ",
+        "lineNumber": "11"
+      },
+      {
+        "stationName": "переход на станцию «Савеловская» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      }
+    ]
+  },
+  {
+    "stationName": "Тимирязевская",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "01.03.1991",
+    "stationDepth": "−63,5",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Тимирязевская» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      }
+    ]
+  },
+  {
+    "stationName": "Окружная",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "22.03.2018",
+    "stationDepth": "−65",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Окружная» МЦК",
+        "lineNumber": "14"
+      },
+      {
+        "stationName": "переход на станцию «Окружная» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      }
+    ]
+  },
+  {
+    "stationName": "Дегунино",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Бескудниково",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Лианозово",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Марк",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Новодачная",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Долгопрудная",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Водники",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Хлебниково",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Шереметьевская",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Лобня",
+    "lineName": "МЦД-1",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Нахабино",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Аникеевка",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Опалиха",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Красногорская",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Павшино",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Пенягино",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Волоколамская",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "26.12.2009",
+    "stationDepth": "−14",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Волоколамская» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      }
+    ]
+  },
+  {
+    "stationName": "Трикотажная",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Тушино",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Тушинская» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Щукинская",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "−13",
+    "connections": []
+  },
+  {
+    "stationName": "Стрешнево",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "0",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Стрешнево» МЦК",
+        "lineNumber": "14"
+      },
+      {
+        "stationName": "переход на станцию «Войковская» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "Красный Балтиец",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Гражданская",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Дмитровская",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "01.03.1991",
+    "stationDepth": "−59",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Дмитровская» Серпуховско-Тимирязевской линии",
+        "lineNumber": "9"
+      }
+    ]
+  },
+  {
+    "stationName": "Рижская",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "01.05.1958",
+    "stationDepth": "−46",
+    "connections": []
+  },
+  {
+    "stationName": "Каланчёвская",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Комсомольская» Кольцевой линии",
+        "lineNumber": "5"
+      },
+      {
+        "stationName": "переход на станцию «Комсомольская» Сокольнической линии",
+        "lineNumber": "1"
+      }
+    ]
+  },
+  {
+    "stationName": "Курская",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "13.03.1938",
+    "stationDepth": "−40",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Чкаловская» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      },
+      {
+        "stationName": "переход на станцию «Курская» Кольцевой линии",
+        "lineNumber": "5"
+      },
+      {
+        "stationName": "переход на станцию «Курская» Арбатско-Покровской линии",
+        "lineNumber": "3"
+      }
+    ]
+  },
+  {
+    "stationName": "Москва Товарная",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Римская» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      },
+      {
+        "stationName": "переход на станцию «Площадь Ильича» Калининско-Солнцевской линии",
+        "lineNumber": "8"
+      }
+    ]
+  },
+  {
+    "stationName": "Калитники",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Новохохловская",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "10.09.2016",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Новохохловская» МЦК",
+        "lineNumber": "14"
+      }
+    ]
+  },
+  {
+    "stationName": "Текстильщики",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "31.12.1966",
+    "stationDepth": "−13",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Текстильщики» Таганско-Краснопресненской линии",
+        "lineNumber": "7"
+      }
+    ]
+  },
+  {
+    "stationName": "Кубанская",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Печатники» Люблинско-Дмитровской линии",
+        "lineNumber": "10"
+      }
+    ]
+  },
+  {
+    "stationName": "Депо",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Перерва",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Курьяново",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Москворечье",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Царицыно",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "30.12.1984",
+    "stationDepth": "−8",
+    "connections": [
+      {
+        "stationName": "переход на станцию «Царицыно» Замоскворецкой линии",
+        "lineNumber": "2"
+      }
+    ]
+  },
+  {
+    "stationName": "Покровская",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Красный Строитель",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Битца",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Бутово",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Щербинка",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Остафьево",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Силикатная",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  },
+  {
+    "stationName": "Подольск",
+    "lineName": "МЦД-2",
+    "stationOpenDate": "",
+    "stationDepth": "",
+    "connections": []
+  }
+]
