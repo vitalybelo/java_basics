@@ -60,7 +60,7 @@ public class Main {
                 System.out.print("Название курса: " + resultSet.getString("course_name"));
                 float salesCount = resultSet.getFloat("count_sales");
                 float monthCount = resultSet.getFloat("count_months");
-                float average = monthCount == 0 ? 0/0f : salesCount / monthCount;
+                float average = monthCount == 0 ? 0.0f : salesCount / monthCount;
                 System.out.println(" :: среднее кол-во продаж в месяц = " + average);
             }
 
