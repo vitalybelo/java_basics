@@ -53,7 +53,7 @@ public class Main {
             // Считываем названия курсов
             String request =
                     "select course_name, count(*) count_sales, max(month(subscription_date)) count_months " +
-                            "from skillbox.purchaselist group by course_name";
+                    "from skillbox.purchaselist group by course_name";
 
             resultSet = statement.executeQuery(request);
             while (resultSet.next()) {
@@ -97,8 +97,8 @@ public class Main {
                 System.out.println("\t\tДаты покупок и имена студентов : ");
                 request =
                         "select student_name, subscription_date, month(subscription_date) month" +
-                                " from skillbox.purchaselist where course_name = '" + s +
-                                "' order by subscription_date";
+                        " from skillbox.purchaselist where course_name = '" + s +
+                        "' order by subscription_date";
                 resultSet = statement.executeQuery(request);
                 int sales = 0;
                 int month = 0;
