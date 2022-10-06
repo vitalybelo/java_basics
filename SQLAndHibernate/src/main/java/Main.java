@@ -121,7 +121,6 @@ public class Main {
         } finally {
             assert resultSet != null;
             resultSet.close();
-            assert statement != null;
             statement.close();
             connection.close();
         }
