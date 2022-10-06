@@ -1,7 +1,4 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +26,7 @@ import java.util.List;
  */
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
 
         System.out.println("\nРЕШЕНИЕ №1. Один SQL запрос для получения ответа:\n");
         solutionOne();
@@ -39,16 +36,18 @@ public class Main {
 
     }
 
-    public static void solutionOne() {
+    public static void solutionOne() throws SQLException {
 
         String url = "jdbc:mysql://localhost:3306/skillbox";
         String user = "root";
         String pass = "Vitalex88";
 
+        ResultSet resultSet = null;
+        Statement statement = null;
+        Connection connection = null;
         try {
-            ResultSet resultSet;
-            Connection connection = DriverManager.getConnection(url, user, pass);
-            Statement statement = connection.createStatement();
+            connection = DriverManager.getConnection(url, user, pass);
+            statement = connection.createStatement();
 
             // Считываем названия курсов
             String request =
@@ -63,25 +62,28 @@ public class Main {
                 float average = monthCount == 0 ? 0.0f : salesCount / monthCount;
                 System.out.println(" :: среднее кол-во продаж в месяц = " + average);
             }
-
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            assert resultSet != null;
             resultSet.close();
             statement.close();
             connection.close();
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 
-    public static void solutionTwo () {
+    public static void solutionTwo () throws SQLException {
 
         String url = "jdbc:mysql://localhost:3306/skillbox";
         String user = "root";
         String pass = "Vitalex88";
 
+        ResultSet resultSet = null;
+        Statement statement = null;
+        Connection connection = null;
         try {
-            ResultSet resultSet;
-            Connection connection = DriverManager.getConnection(url, user, pass);
-            Statement statement = connection.createStatement();
+            connection = DriverManager.getConnection(url, user, pass);
+            statement = connection.createStatement();
             List<String> courseName = new ArrayList<>();
 
             // Считываем названия курсов в строковую коллекцию
@@ -114,13 +116,14 @@ public class Main {
                 float average = (month == 0 ? 0.0f : (float) sales / (float) month);
                 System.out.println("\t\tСреднее количество покупок в месяц: " + average + "\n\t\t...");
             }
-
-            resultSet.close();
-            statement.close();
-            connection.close();
-
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            assert resultSet != null;
+            resultSet.close();
+            assert statement != null;
+            statement.close();
+            connection.close();
         }
     }
 
