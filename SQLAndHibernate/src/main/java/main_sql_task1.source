@@ -1,0 +1,42 @@
+import java.sql.*;
+
+public class Main {
+
+    public static void main(String[] args) throws SQLException {
+
+        String url = "jdbc:mysql://localhost:3306/skillbox";
+        String user = "root";
+        String pass = "Vitalex88";
+
+        ResultSet resultSet = null;
+        Statement statement = null;
+        Connection connection = null;
+        try {
+            connection = DriverManager.getConnection(url, user, pass);
+            statement = connection.createStatement();
+
+            // Считываем названия курсов
+            String request =
+                    "select course_name, count(*) count_sales, max(month(subscription_date)) count_months " +
+                    "from skillbox.purchaselist group by course_name";
+
+            resultSet = statement.executeQuery(request);
+            while (resultSet.next()) {
+                System.out.print("Название курса: " + resultSet.getString("course_name"));
+                float salesCount = resultSet.getFloat("count_sales");
+                float monthCount = resultSet.getFloat("count_months");
+                float average = monthCount == 0 ? 0.0f : salesCount / monthCount;
+                System.out.println(" :: среднее кол-во продаж в месяц = " + average);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            assert resultSet != null;
+            resultSet.close();
+            statement.close();
+            connection.close();
+        }
+    }
+
+}
