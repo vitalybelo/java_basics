@@ -8,17 +8,18 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import java.util.List;
 
+import static org.hibernate.id.PersistentIdentifierGenerator.PK;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        Session session;
+        Session session = null;
         try (SessionFactory sessionFactory = getSessionFactory())
         {
             session = sessionFactory.openSession();
-            Transaction transaction = session.beginTransaction();
 
-            Course course = session.get(Course.class, 2);
+            Course course = session.get(Course.class, 3);
             System.out.println();
             System.out.println("название курса: " + course.getName());
             System.out.println("тип курса: " + course.getType());
@@ -32,11 +33,15 @@ public class Main {
             for (Student s : studentList)
                 System.out.println(s.toString());
 
-            transaction.commit();
-            session.close();
+            Subscription subscription = session.get(Subscription.class,new Key(1,2));
+            System.out.println("\n" + subscription.getSubscriptionDate());
+
 
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            assert session != null;
+            session.close();
         }
 
     }

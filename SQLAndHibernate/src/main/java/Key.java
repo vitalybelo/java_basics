@@ -1,5 +1,7 @@
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
+import jakarta.persistence.ManyToOne;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -12,6 +14,11 @@ public class Key implements Serializable {
 
     @Column(name = "course_id")
     private int courseId;
+
+    public Key(int studentId, int courseId) {
+        this.studentId = studentId;
+        this.courseId = courseId;
+    }
 
     @Override
     public boolean equals(Object o) {
