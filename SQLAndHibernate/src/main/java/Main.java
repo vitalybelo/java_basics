@@ -5,10 +5,7 @@ import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-
 import java.util.List;
-
-import static org.hibernate.id.PersistentIdentifierGenerator.PK;
 
 public class Main {
 
@@ -33,8 +30,14 @@ public class Main {
             for (Student s : studentList)
                 System.out.println(s.toString());
 
+            // Читаем запись из таблицы subscriptions
             Subscription subscription = session.get(Subscription.class,new Key(1,2));
-            System.out.println("\n" + subscription.getSubscriptionDate());
+            System.out.println();
+            System.out.println(subscription.getSubscriptionDate());
+            System.out.println(subscription.getStudent());
+            System.out.println(subscription.getCourse().getName());
+            System.out.println();
+
 
 
         } catch (Exception e) {
@@ -43,7 +46,6 @@ public class Main {
             assert session != null;
             session.close();
         }
-
     }
 
     public static SessionFactory getSessionFactory () {
