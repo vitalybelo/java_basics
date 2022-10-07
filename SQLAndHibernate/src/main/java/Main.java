@@ -16,6 +16,7 @@ public class Main {
         {
             session = sessionFactory.openSession();
 
+            // Читаем одну запись из таблицы courses
             Course course = session.get(Course.class, 3);
             System.out.println();
             System.out.println("название курса: " + course.getName());
@@ -24,21 +25,19 @@ public class Main {
             System.out.println("преподаватель: " + course.getTeacher().getName());
             System.out.println();
 
+            // Формируем коллекцию через join course --> subscription --> students
             List<Student> studentList = course.getStudents();
-
             System.out.println("Список студентов курса:");
             for (Student s : studentList)
                 System.out.println(s.toString());
 
-            // Читаем запись из таблицы subscriptions
+            // Читаем одну запись из таблицы subscriptions
             Subscription subscription = session.get(Subscription.class,new Key(1,2));
             System.out.println();
             System.out.println(subscription.getSubscriptionDate());
             System.out.println(subscription.getStudent());
             System.out.println(subscription.getCourse().getName());
             System.out.println();
-
-
 
         } catch (Exception e) {
             e.printStackTrace();
