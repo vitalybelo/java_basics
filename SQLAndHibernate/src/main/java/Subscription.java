@@ -1,14 +1,16 @@
 import jakarta.persistence.*;
-import org.hibernate.annotations.Cascade;
-
+import lombok.Getter;
+import lombok.Setter;
 import java.util.Date;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "subscriptions")
 public class Subscription {
 
     @EmbeddedId
-    private Key id;
+    private SubscriptionKey id;
 
     @ManyToOne
     @MapsId("studentId")
@@ -21,15 +23,4 @@ public class Subscription {
     @Column(name = "subscription_date")
     private Date subscriptionDate;
 
-    public Date getSubscriptionDate() {
-        return subscriptionDate;
-    }
-
-    public Student getStudent() {
-        return student;
-    }
-
-    public Course getCourse() {
-        return course;
-    }
 }

@@ -1,6 +1,5 @@
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
@@ -32,7 +31,7 @@ public class Main {
                 System.out.println(s.toString());
 
             // Читаем одну запись из таблицы subscriptions
-            Subscription subscription = session.get(Subscription.class,new Key(1,2));
+            Subscription subscription = session.get(Subscription.class,new SubscriptionKey(1,2));
             System.out.println();
             System.out.println(subscription.getSubscriptionDate());
             System.out.println(subscription.getStudent());

@@ -1,7 +1,12 @@
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import java.util.Date;
+import java.util.List;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "students")
 public class Student {
 
@@ -14,28 +19,19 @@ public class Student {
     @Column(name = "registration_date")
     private Date registrationDate;
 
-    public int getAge() {
-        return age;
-    }
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "Subscriptions",
+            joinColumns = {@JoinColumn(name = "student_id")},
+            inverseJoinColumns = {@JoinColumn(name = "course_id")})
+    private List<Course> courses;
 
-    public Date getRegistrationDate() {
-        return registrationDate;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public void setRegistrationDate(Date registrationDate) {
-        this.registrationDate = registrationDate;
-    }
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "student_id")
+    List<Subscription> subscriptions;
 
     @Override
     public String toString() {
         return name;
     }
+
 }
