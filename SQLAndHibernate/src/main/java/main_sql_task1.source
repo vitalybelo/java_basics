@@ -11,6 +11,7 @@ public class Main {
         ResultSet resultSet = null;
         Statement statement = null;
         Connection connection = null;
+
         try {
             connection = DriverManager.getConnection(url, user, pass);
             statement = connection.createStatement();

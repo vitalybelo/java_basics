@@ -37,4 +37,5 @@ public class Main {
 
         return metadata.getSessionFactoryBuilder().build();
     }
+
 }

@@ -28,7 +28,6 @@ public class Main {
             session.delete(course);
             transaction.commit();
 
-
         } catch (Exception e) {
             e.printStackTrace();
         }

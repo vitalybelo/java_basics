@@ -1,3 +1,7 @@
+import jakarta.persistence.TypedQuery;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Root;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -14,29 +18,12 @@ public class Main {
         try (SessionFactory sessionFactory = getSessionFactory())
         {
             session = sessionFactory.openSession();
+            List<PurchaseList> pList = getAllPurchaseList(session);
 
-            // Читаем одну запись из таблицы courses
-            Course course = session.get(Course.class, 3);
-            System.out.println();
-            System.out.println("название курса: " + course.getName());
-            System.out.println("тип курса: " + course.getType());
-            System.out.println("описание: " + course.getDescription());
-            System.out.println("преподаватель: " + course.getTeacher().getName());
-            System.out.println();
-
-            // Формируем коллекцию через join course --> subscription --> students
-            List<Student> studentList = course.getStudents();
-            System.out.println("Список студентов курса:");
-            for (Student s : studentList)
-                System.out.println(s.toString());
-
-            // Читаем одну запись из таблицы subscriptions
-            Subscription subscription = session.get(Subscription.class,new SubscriptionKey(1,2));
-            System.out.println();
-            System.out.println(subscription.getSubscriptionDate());
-            System.out.println(subscription.getStudent());
-            System.out.println(subscription.getCourse().getName());
-            System.out.println();
+            for (PurchaseList pl : pList)
+                System.out.println(pl.getCourseName() + " ::\t" + pl.getStudentName());
+            System.out.println("\nСчитано записей: " + pList.size());
+            System.out.println(PurchaseList.class);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -46,12 +33,21 @@ public class Main {
         }
     }
 
+    public static List<PurchaseList> getAllPurchaseList(Session session) {
+
+        CriteriaBuilder cb = session.getCriteriaBuilder();
+        CriteriaQuery<PurchaseList> cq = cb.createQuery(PurchaseList.class);
+        Root<PurchaseList> root = cq.from(PurchaseList.class);
+        CriteriaQuery<PurchaseList> all = cq.select(root);
+        TypedQuery<PurchaseList> allQuery = session.createQuery(all);
+        return allQuery.getResultList();
+    }
+
     public static SessionFactory getSessionFactory () {
 
         StandardServiceRegistry registry =
                 new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
         Metadata metadata = new MetadataSources(registry).getMetadataBuilder().build();
-
         return metadata.getSessionFactoryBuilder().build();
     }
 }
