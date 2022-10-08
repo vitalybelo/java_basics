@@ -3,9 +3,9 @@ import lombok.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "purchaselist")
 @Getter
 @Setter
+@Table(name = "purchaselist")
 public class PurchaseList {
 
     @EmbeddedId

@@ -4,6 +4,7 @@ import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
@@ -18,12 +19,36 @@ public class Main {
         try (SessionFactory sessionFactory = getSessionFactory())
         {
             session = sessionFactory.openSession();
-            List<PurchaseList> pList = getAllPurchaseList(session);
+            List<Course> cList = getCourseList(session);
+            List<Student> sList = getStudentList(session);
+            List<PurchaseList> pList = getPurchaseList(session);
 
-            for (PurchaseList pl : pList)
-                System.out.println(pl.getCourseName() + " ::\t" + pl.getStudentName());
-            System.out.println("\nСчитано записей: " + pList.size());
-            System.out.println(PurchaseList.class);
+            Transaction transaction = session.beginTransaction();
+            for (PurchaseList pl : pList) {
+
+                /**
+                 * всего 3 запроса к базе. при этом создается 3 коллекции в памяти
+                 * id курсов и студентов выбираются из коллекций по названию
+                 */
+                int courseId = getCourseId(cList, pl.getCourseName());
+                int studentId = getStudentId(sList, pl.getStudentName());
+                System.out.println(pl.getCourseName() + " = " + courseId +
+                                    " :: " + pl.getStudentName() + " = " + studentId);
+                /**
+                 * сначала сделал связку в классе PurchaseList с классами
+                 * Student и Course чтобы "легко" получать id курсов и студентов
+                 * НО ... этот способ при всей своей лаконичности в коде генерирует
+                 * очень много запросов к базе (я насчитал 46 запросов) и переделал
+                 int courseId = pl.getCourse().getId();
+                 int studentId = pl.getStudent().getId();
+                 */
+                LinkedPurchaseList linked = new LinkedPurchaseList();
+                linked.setCourseId(courseId);
+                linked.setStudentId(studentId);
+                linked.setId(new LinkedPurchaseListKey(courseId, studentId));
+                session.save(linked);
+            }
+            transaction.commit();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -33,7 +58,41 @@ public class Main {
         }
     }
 
-    public static List<PurchaseList> getAllPurchaseList(Session session) {
+    public static int getCourseId (List<Course> courses, String name) {
+        for (Course course : courses)
+            if (course.getName().equals(name))
+                return course.getId();
+        return 0;
+    }
+
+    public static int getStudentId (List<Student> students, String name) {
+        for (Student student : students)
+            if (student.getName().equals(name))
+                return student.getId();
+        return 0;
+    }
+
+    public static List<Student> getStudentList(Session session) {
+
+        CriteriaBuilder cb = session.getCriteriaBuilder();
+        CriteriaQuery<Student> cq = cb.createQuery(Student.class);
+        Root<Student> root = cq.from(Student.class);
+        CriteriaQuery<Student> all = cq.select(root);
+        TypedQuery<Student> allQuery = session.createQuery(all);
+        return allQuery.getResultList();
+    }
+
+    public static List<Course> getCourseList(Session session) {
+
+        CriteriaBuilder cb = session.getCriteriaBuilder();
+        CriteriaQuery<Course> cq = cb.createQuery(Course.class);
+        Root<Course> root = cq.from(Course.class);
+        CriteriaQuery<Course> all = cq.select(root);
+        TypedQuery<Course> allQuery = session.createQuery(all);
+        return allQuery.getResultList();
+    }
+
+    public static List<PurchaseList> getPurchaseList(Session session) {
 
         CriteriaBuilder cb = session.getCriteriaBuilder();
         CriteriaQuery<PurchaseList> cq = cb.createQuery(PurchaseList.class);
