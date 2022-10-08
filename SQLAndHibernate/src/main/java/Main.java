@@ -27,7 +27,7 @@ public class Main {
             for (PurchaseList pl : pList) {
 
                 /**
-                 * всего 3 запроса к базе. при этом создается 3 коллекции в памяти
+                 * Всего 3 запроса к базе. при этом создается 3 коллекции в памяти
                  * id курсов и студентов выбираются из коллекций по названию
                  */
                 int courseId = getCourseId(cList, pl.getCourseName());
@@ -35,7 +35,7 @@ public class Main {
                 System.out.println(pl.getCourseName() + " = " + courseId +
                                     " :: " + pl.getStudentName() + " = " + studentId);
                 /**
-                 * сначала сделал связку в классе PurchaseList с классами
+                 * Сначала сделал связку в классе PurchaseList с классами
                  * Student и Course чтобы "легко" получать id курсов и студентов
                  * НО ... этот способ при всей своей лаконичности в коде генерирует
                  * очень много запросов к базе (я насчитал 46 запросов) и переделал
