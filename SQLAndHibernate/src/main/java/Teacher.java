@@ -1,6 +1,11 @@
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+import java.util.List;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "teachers")
 public class Teacher {
 
@@ -11,31 +16,7 @@ public class Teacher {
     private int salary;
     private int age;
 
-    public String getName() {
-        return name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public int getSalary() {
-        return salary;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "teacher_id")
+    private List<Course> courses;
 }

@@ -27,4 +27,5 @@ public class PurchaseList {
 
     @Column(name = "subscription_date")
     private LocalDateTime subscriptionDate;
+
 }
