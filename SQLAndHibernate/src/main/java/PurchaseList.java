@@ -1,6 +1,6 @@
 import jakarta.persistence.*;
 import lombok.*;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
 @Getter
@@ -26,6 +26,6 @@ public class PurchaseList {
     private int price;
 
     @Column(name = "subscription_date")
-    private LocalDateTime subscriptionDate;
+    private Date subscriptionDate;
 
 }
