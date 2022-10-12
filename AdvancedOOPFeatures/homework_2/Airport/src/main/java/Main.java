@@ -19,7 +19,6 @@ public class Main {
     }
 
     public static List<Flight> findPlanesLeavingInTheNextTwoHours(Airport airport) {
-        //TODO Метод должен вернуть список рейсов вылетающих в ближайшие два часа.
         List<Flight> flights = new ArrayList<>();
         for (Terminal value : airport.getTerminals())
                 flights.addAll(value.getFlights());
@@ -36,7 +35,6 @@ public class Main {
 
 
 //    public static List<Flight> findPlanesLeavingInTheNextTwoHours(Airport airport) {
-//        //TODO Метод должен вернуть список рейсов вылетающих в ближайшие два часа.
 //
 //        return airport.getTerminals().stream().flatMap(t -> t.getFlights().stream())
 //                .filter(f -> f.getType().equals(Flight.Type.DEPARTURE))
@@ -49,7 +47,6 @@ public class Main {
 //    }
 
 //    public static List<Flight> findPlanesLeavingInTheNextTwoHours(Airport airport) {
-//        //TODO Метод должен вернуть список рейсов вылетающих в ближайшие два часа.
 //        List<Terminal> terminals = airport.getTerminals();
 //        List<Flight> flights = new ArrayList<>();
 //

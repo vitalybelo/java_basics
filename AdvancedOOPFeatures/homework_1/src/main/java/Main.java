@@ -10,6 +10,5 @@ public class Main {
     }
 
     public static void sortBySalaryAndAlphabet(List<Employee> staff) {
-        //TODO Метод должен отсортировать сотрудников по заработной плате и алфавиту.
     }
 }
