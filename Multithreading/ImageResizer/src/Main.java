@@ -1,51 +1,42 @@
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.File;
 
 public class Main {
 
+
     public static void main(String[] args) {
-        String srcFolder = "/users/sortedmap/Desktop/src";
-        String dstFolder = "/users/sortedmap/Desktop/dst";
+
+        int newWidth = 900;
+        String srcFolder = "ImageResizer/src/data/src/";
+        String dstFolder = "ImageResizer/src/data/dst/";
 
         File srcDir = new File(srcFolder);
-
-        long start = System.currentTimeMillis();
-
         File[] files = srcDir.listFiles();
 
-        try {
-            for (File file : files) {
-                BufferedImage image = ImageIO.read(file);
-                if (image == null) {
-                    continue;
-                }
+        if (files != null) {
 
-                int newWidth = 300;
-                int newHeight = (int) Math.round(
-                    image.getHeight() / (image.getWidth() / (double) newWidth)
-                );
-                BufferedImage newImage = new BufferedImage(
-                    newWidth, newHeight, BufferedImage.TYPE_INT_RGB
-                );
+            int size1 = files.length / 2;
+            int size2 = files.length - size1;
 
-                int widthStep = image.getWidth() / newWidth;
-                int heightStep = image.getHeight() / newHeight;
+            // implements Runnable class
+            File[] files1 = new File[size1];
+            System.arraycopy(files,0,files1,0, files1.length);
+            ImageResizerRun imageThread1 = new ImageResizerRun(files1, newWidth, dstFolder);
+            new Thread(imageThread1).start();
 
-                for (int x = 0; x < newWidth; x++) {
-                    for (int y = 0; y < newHeight; y++) {
-                        int rgb = image.getRGB(x * widthStep, y * heightStep);
-                        newImage.setRGB(x, y, rgb);
-                    }
-                }
+            // 3-rd thread print file names
+            new Thread(()->{
+                for (File f : files)
+                    System.out.println(f.getName());
+            }).start();
 
-                File newFile = new File(dstFolder + "/" + file.getName());
-                ImageIO.write(newImage, "jpg", newFile);
-            }
-        } catch (Exception ex) {
-            ex.printStackTrace();
+            // extend Thread class
+            File[] files2 = new File[size2];
+            System.arraycopy(files, size1, files2, 0, files2.length);
+            ImageResizer imageThread2 = new ImageResizer(files2, newWidth, dstFolder);
+            imageThread2.start();
+
         }
 
-        System.out.println("Duration: " + (System.currentTimeMillis() - start));
+
     }
 }
