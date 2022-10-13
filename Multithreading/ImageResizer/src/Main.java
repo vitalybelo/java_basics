@@ -37,8 +37,9 @@ public class Main {
                 imageResizer.start();
 
             }
+        } else {
+            System.out.println("Каталог с фалами изображений не найден");
         }
-
     }
 
 }
