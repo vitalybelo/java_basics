@@ -2,41 +2,43 @@ import java.io.File;
 
 public class Main {
 
-
     public static void main(String[] args) {
 
         int newWidth = 900;
         String srcFolder = "ImageResizer/src/data/src/";
         String dstFolder = "ImageResizer/src/data/dst/";
 
+        int cores = Runtime.getRuntime().availableProcessors();
+        System.out.println("Количество ядер процессора = " + cores);
+
         File srcDir = new File(srcFolder);
         File[] files = srcDir.listFiles();
 
         if (files != null) {
 
-            int size1 = files.length / 2;
-            int size2 = files.length - size1;
+            int filesInThread = 4;
+            int length = files.length;
+            // корректируем количество процессов,
+            // чтобы на каждый приходилось = filesInThread файлов
+            if (cores > length / filesInThread) cores = length / filesInThread;
 
-            // implements Runnable class
-            File[] files1 = new File[size1];
-            System.arraycopy(files,0,files1,0, files1.length);
-            ImageResizerRun imageThread1 = new ImageResizerRun(files1, newWidth, dstFolder);
-            new Thread(imageThread1).start();
+            int sizeArrays = Math.round((float) length / (float) cores);
+            System.out.println("Минимум файлов в процессе = " + filesInThread);
+            System.out.println("Всего файлов в каталоге = " + length);
+            System.out.println("Количество процессов = " + cores + "\n");
 
-            // 3-rd thread print file names
-            new Thread(()->{
-                for (File f : files)
-                    System.out.println(f.getName());
-            }).start();
+            for (int i = 0, index = 0; i < cores; i++, index += sizeArrays) {
 
-            // extend Thread class
-            File[] files2 = new File[size2];
-            System.arraycopy(files, size1, files2, 0, files2.length);
-            ImageResizer imageThread2 = new ImageResizer(files2, newWidth, dstFolder);
-            imageThread2.start();
+                if (i == (cores - 1)) sizeArrays = length - index;
 
+                File[] threadFiles = new File[sizeArrays];
+                System.arraycopy(files, index, threadFiles, 0, sizeArrays);
+                ImageResizer imageResizer = new ImageResizer(threadFiles, newWidth, dstFolder);
+                imageResizer.start();
+
+            }
         }
 
-
     }
+
 }
