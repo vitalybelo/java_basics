@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int newWidth = 900;
+        int newWidth = 300;
         String srcFolder = "ImageResizer/src/data/src/";
         String dstFolder = "ImageResizer/src/data/dst/";
 
