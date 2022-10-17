@@ -14,13 +14,14 @@ public class Main {
         File srcDir = new File(srcFolder);
         File[] files = srcDir.listFiles();
 
-        if (files != null) {
+        if (files != null && files.length > 0) {
 
             int filesInThread = 4;
             int length = files.length;
+            int effective = length / filesInThread;
             // корректируем количество процессов,
             // чтобы на каждый приходилось = filesInThread файлов
-            if (cores > length / filesInThread) cores = length / filesInThread;
+            if (cores > effective) cores = effective;
 
             int sizeArrays = Math.round((float) length / (float) cores);
             System.out.println("Минимум файлов в процессе = " + filesInThread);
@@ -38,7 +39,7 @@ public class Main {
 
             }
         } else {
-            System.out.println("Каталог с фалами изображений не найден");
+            System.out.println("Изображения не найдены");
         }
     }
 
