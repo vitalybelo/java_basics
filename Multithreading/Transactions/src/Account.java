@@ -1,7 +1,7 @@
 public class Account {
 
-    private long money;
-    private String accNumber;
+    private long money;         // количество денег на счету клиента
+    private String accNumber;   // номер расчетного счета клиента
 
     public Account(long money, String accNumber) {
         this.money = money;

@@ -2,8 +2,9 @@ import java.util.*;
 
 public class Bank {
 
-    private Map<String, Account> accounts;
+    private Map<String, Account> accounts;          // < имя счета , "сумма, номер счета" >
     private final Random random = new Random();
+    private final int trustAmount = 50_000;
 
     public Bank() {
         accounts = new TreeMap<>();
@@ -31,7 +32,6 @@ public class Bank {
 
     public synchronized boolean isFraud(String fromAccountNum, String toAccountNum, long amount)
         throws InterruptedException {
-
         Thread.sleep(1000);
         return random.nextBoolean();
     }
@@ -43,6 +43,15 @@ public class Bank {
      * усмотрение)
      */
     public void transfer(String fromAccountNum, String toAccountNum, long amount) {
+
+        if (amount > trustAmount) {
+            try {
+                if (isFraud(fromAccountNum, toAccountNum, amount)) return;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
 
     }
 
