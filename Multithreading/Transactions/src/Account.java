@@ -3,12 +3,13 @@ public class Account {
     private long money;
     private String accNumber;
 
-    public long getMoney() {
-        return money;
+    public Account(long money, String accNumber) {
+        this.money = money;
+        this.accNumber = accNumber;
     }
 
-    public void setMoney(long money) {
-        this.money = money;
+    public long getMoney() {
+        return money;
     }
 
     public String getAccNumber() {
@@ -18,4 +19,9 @@ public class Account {
     public void setAccNumber(String accNumber) {
         this.accNumber = accNumber;
     }
+
+    public void setMoney(long money) {
+        this.money = money;
+    }
+
 }
