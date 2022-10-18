@@ -1,11 +1,13 @@
 public class Account {
 
-    private long money;         // количество денег на счету клиента
-    private String accNumber;   // номер расчетного счета клиента
+    private long money;                 // количество денег на счету клиента
+    private final String accNumber;     // номер расчетного счета клиента
+    private boolean statusBlock;        // true если счет блокирован
 
     public Account(long money, String accNumber) {
         this.money = money;
         this.accNumber = accNumber;
+        this.statusBlock = false;
     }
 
     public long getMoney() {
@@ -16,12 +18,19 @@ public class Account {
         return accNumber;
     }
 
-    public void setAccNumber(String accNumber) {
-        this.accNumber = accNumber;
+    public void addMoney (long money) {
+        this.money += money;
     }
 
-    public void setMoney(long money) {
-        this.money = money;
+    public void subMoney (long money) {
+        this.money -= money;
     }
 
+    public boolean isStatusBlock() {
+        return statusBlock;
+    }
+
+    public void setStatusBlock(boolean statusBlock) {
+        this.statusBlock = statusBlock;
+    }
 }

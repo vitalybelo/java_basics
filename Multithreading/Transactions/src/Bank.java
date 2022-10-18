@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Bank {
 
-    private Map<String, Account> accounts;          // < имя счета , "сумма, номер счета" >
+    private Map<String, Account> accounts;          // < account ID , Account >
     private final Random random = new Random();
     private final int trustAmount = 50_000;
 
@@ -10,24 +10,16 @@ public class Bank {
         accounts = new TreeMap<>();
     }
 
-    public void put(String name, Account account) {
-        this.accounts.put(name, account);
-    }
-
-    public String getAccountNumber (String key) {
-        return accounts.get(key).getAccNumber();
+    public void put(String accountId, Account account) {
+        this.accounts.put(accountId, account);
     }
 
     public String toString(String key) {
-        return "Номер счета: " + getAccountNumber(key) + " :: сумма = " + getBalance(key);
+        return "номер счета: " + getAccountNumber(key) + " :: сумма = " + getBalance(key);
     }
 
     public int size() {
         return accounts.size();
-    }
-
-    public Set<String> getKeys() {
-        return accounts.keySet();
     }
 
     public synchronized boolean isFraud(String fromAccountNum, String toAccountNum, long amount)
@@ -42,27 +34,49 @@ public class Bank {
      * метод isFraud. Если возвращается true, то делается блокировка счетов (как – на ваше
      * усмотрение)
      */
-    public void transfer(String fromAccountNum, String toAccountNum, long amount) {
+    public void transfer(String fromAccountId, String toAccountId, long amount) {
 
-        if (amount > trustAmount) {
-            try {
-                if (isFraud(fromAccountNum, toAccountNum, amount)) return;
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        Account accountOff = accounts.get(fromAccountId);
+        Account accountOn = accounts.get(toAccountId);
+
+        System.out.print("счет списания: " + accountOff.getAccNumber());
+        System.out.print("  :: счет зачисления: " + accountOn.getAccNumber());
+        System.out.print("  :: сумма перевода = " + amount + "\n");
+        if (accountOff.getMoney() >= amount) {
+            accountOn.addMoney(amount);
+            accountOff.subMoney(amount);
+        } else {
+            System.err.println("Недостаточно средств на счету: " + accountOff.getAccNumber());
+            System.err.println("Операция отменена.");
+            return;
         }
 
-
+//        if (amount > trustAmount) {
+//            try {
+//                if (isFraud(fromAccountId, toAccountId, amount)) return;
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//        }
     }
 
-    public long getBalance(String accountNum) {
-        return accounts.get(accountNum).getMoney();
+    public long getBalance(String accountId) {
+        return accounts.get(accountId).getMoney();
+    }
+
+    public String getAccountNumber (String accountId) {
+        return accounts.get(accountId).getAccNumber();
+    }
+
+    public Set<String> getKeySet() {
+        return accounts.keySet();
     }
 
     public long getSumAllAccounts() {
         long total = 0;
-        for (String key : getKeys())
-            total += getBalance(key);
+        for (String accountId : getKeySet()) {
+            total += accounts.get(accountId).getMoney();
+        }
         return total;
     }
 }
