@@ -36,7 +36,7 @@ public class Main {
         // создаем счета в банке
         for (int i = 0; i < numberAccounts; i++) {
             String accountName = "ID_" + (i + 1);
-            String accountNumber = "440500005599" + Math.round(999 + (Math.random() * (double) 9000));
+            String accountNumber = "440500005599" + Math.round(999 + (Math.random() * 9_000));
             long amount = (long)(100_000 + Math.random() * 100_000);
             bank.put(accountName, new Account(amount,accountNumber));
         }
