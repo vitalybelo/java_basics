@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Bank {
 
-    private Map<String, Account> accounts;          // < account ID , Account >
+    private final Map<String, Account> accounts;          // < account ID , Account >
     private final Random random = new Random();
     private final int trustAmount = 50_000;
 
@@ -22,42 +22,58 @@ public class Bank {
         return accounts.size();
     }
 
-    public synchronized boolean isFraud(String fromAccountNum, String toAccountNum, long amount)
+        public synchronized boolean isFraud(String fromAccountNum, String toAccountNum, long amount)
         throws InterruptedException {
         Thread.sleep(1000);
         return random.nextBoolean();
     }
 
-    /**
-     * TODO: реализовать метод. Метод переводит деньги между счетами. Если сумма транзакции > 50000,
-     * то после совершения транзакции, она отправляется на проверку Службе Безопасности – вызывается
-     * метод isFraud. Если возвращается true, то делается блокировка счетов (как – на ваше
-     * усмотрение)
-     */
     public void transfer(String fromAccountId, String toAccountId, long amount) {
 
-        Account accountOff = accounts.get(fromAccountId);
         Account accountOn = accounts.get(toAccountId);
+        Account accountOff = accounts.get(fromAccountId);
 
-        System.out.print("счет списания: " + accountOff.getAccNumber());
-        System.out.print("  :: счет зачисления: " + accountOn.getAccNumber());
-        System.out.print("  :: сумма перевода = " + amount + "\n");
+        if (accountOn.isStatusBlock() || accountOff.isStatusBlock()) {
+//            String a = accountOn.isStatusBlock() ? accountOn.getAccNumber() : accountOff.getAccNumber();
+//            System.out.println("Перевод не может быть выполнен, счет " + a + " заблокирован");
+            return;
+        }
+
+//        System.out.print("in progress ..." + accountOff.getAccNumber());
+//        System.out.print(" --> " + accountOn.getAccNumber() + " :: " + amount + "\n");
         if (accountOff.getMoney() >= amount) {
-            accountOn.addMoney(amount);
-            accountOff.subMoney(amount);
+            synchronized (accounts) {
+                accountOff.subMoney(amount);
+                accountOn.addMoney(amount);
+            }
         } else {
             System.err.println("Недостаточно средств на счету: " + accountOff.getAccNumber());
             System.err.println("Операция отменена.");
             return;
         }
+        // Передаем сделку на одобрение службы безопасности
+        // Вернем деньги назад перед блокировкой
+        if (amount > trustAmount) {
+            try {
+                if (isFraud(fromAccountId, toAccountId, amount)) {
+                    System.err.println("Перевод отменен службой безопасности");
+                    synchronized (accounts) {
+                        accountOn.subMoney(amount);
+                        accountOff.addMoney(amount);
+                        accountOn.setStatusBlock(true);
+                        accountOff.setStatusBlock(true);
+                    }
+                    return;
+                }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println("\t... Перевод выполнен успешно ...");
+    }
 
-//        if (amount > trustAmount) {
-//            try {
-//                if (isFraud(fromAccountId, toAccountId, amount)) return;
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//        }
+    public Account getAccount (String accountId) {
+        return accounts.get(accountId);
     }
 
     public long getBalance(String accountId) {
