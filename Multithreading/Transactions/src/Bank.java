@@ -47,16 +47,15 @@ public class Bank {
                 accountOn.addMoney(amount);
             }
         } else {
-            System.err.println("Недостаточно средств на счету: " + accountOff.getAccNumber());
-            System.err.println("Операция отменена.");
+//            System.err.println("Недостаточно средств на счету: " + accountOff.getAccNumber());
+//            System.err.println("Операция отменена.");
             return;
         }
         // Передаем сделку на одобрение службы безопасности
-        // Вернем деньги назад перед блокировкой
         if (amount > trustAmount) {
             try {
                 if (isFraud(fromAccountId, toAccountId, amount)) {
-                    System.err.println("Перевод отменен службой безопасности");
+//                    System.err.println("Перевод отменен службой безопасности");
                     synchronized (accounts) {
                         accountOn.subMoney(amount);
                         accountOff.addMoney(amount);
@@ -69,7 +68,8 @@ public class Bank {
                 e.printStackTrace();
             }
         }
-        System.out.println("\t... Перевод выполнен успешно ...");
+        System.out.println(getSumAllAccounts());
+//        System.out.println("\t... Перевод выполнен успешно ...");
     }
 
     public Account getAccount (String accountId) {

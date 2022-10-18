@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -25,7 +24,6 @@ public class Main {
         long finalAmount = accounts.getSumAllAccounts();
         System.out.println("\nОбщая сумма на счетах до операций = " + startAmount);
         System.out.println("Общая сумма на счетах после операций = " + finalAmount + "\n");
-
     }
 
     public static void initBankAccounts (Bank bank, int numberAccounts) {
