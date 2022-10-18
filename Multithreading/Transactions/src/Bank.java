@@ -22,13 +22,13 @@ public class Bank {
         return accounts.size();
     }
 
-        public synchronized boolean isFraud(String fromAccountNum, String toAccountNum, long amount)
+    public synchronized boolean isFraud(String fromAccountNum, String toAccountNum, long amount)
         throws InterruptedException {
         Thread.sleep(1000);
         return random.nextBoolean();
     }
 
-    public int transfer(String fromAccountId, String toAccountId, long amount) {
+    public synchronized int transfer(String fromAccountId, String toAccountId, long amount) {
 
         Account accountOn = accounts.get(toAccountId);
         Account accountOff = accounts.get(fromAccountId);
@@ -38,21 +38,17 @@ public class Bank {
         }
 
         if (accountOff.getMoney() >= amount) {
-            synchronized (accounts) {
-                accountOff.subMoney(amount);
-                accountOn.addMoney(amount);
-            }
+            accountOff.subMoney(amount);
+            accountOn.addMoney(amount);
         } else return -2; // refuse amount to transfer
 
         if (amount > trustAmount) {
             try {
                 if (isFraud(fromAccountId, toAccountId, amount)) {
-                    synchronized (accounts) {
-                        accountOn.subMoney(amount);
-                        accountOff.addMoney(amount);
-                        accountOn.setStatusBlock(true);
-                        accountOff.setStatusBlock(true);
-                    }
+                    accountOn.subMoney(amount);
+                    accountOff.addMoney(amount);
+                    accountOn.setStatusBlock(true);
+                    accountOff.setStatusBlock(true);
                     return -3; // refuse security
                 }
             } catch (InterruptedException e) {
