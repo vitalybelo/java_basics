@@ -28,48 +28,38 @@ public class Bank {
         return random.nextBoolean();
     }
 
-    public void transfer(String fromAccountId, String toAccountId, long amount) {
+    public int transfer(String fromAccountId, String toAccountId, long amount) {
 
         Account accountOn = accounts.get(toAccountId);
         Account accountOff = accounts.get(fromAccountId);
 
         if (accountOn.isStatusBlock() || accountOff.isStatusBlock()) {
-//            String a = accountOn.isStatusBlock() ? accountOn.getAccNumber() : accountOff.getAccNumber();
-//            System.out.println("Перевод не может быть выполнен, счет " + a + " заблокирован");
-            return;
+            return -1; // one of accounts is blocked
         }
 
-//        System.out.print("in progress ..." + accountOff.getAccNumber());
-//        System.out.print(" --> " + accountOn.getAccNumber() + " :: " + amount + "\n");
         if (accountOff.getMoney() >= amount) {
             synchronized (accounts) {
                 accountOff.subMoney(amount);
                 accountOn.addMoney(amount);
             }
-        } else {
-//            System.err.println("Недостаточно средств на счету: " + accountOff.getAccNumber());
-//            System.err.println("Операция отменена.");
-            return;
-        }
-        // Передаем сделку на одобрение службы безопасности
+        } else return -2; // refuse amount to transfer
+
         if (amount > trustAmount) {
             try {
                 if (isFraud(fromAccountId, toAccountId, amount)) {
-//                    System.err.println("Перевод отменен службой безопасности");
                     synchronized (accounts) {
                         accountOn.subMoney(amount);
                         accountOff.addMoney(amount);
                         accountOn.setStatusBlock(true);
                         accountOff.setStatusBlock(true);
                     }
-                    return;
+                    return -3; // refuse security
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        System.out.println(getSumAllAccounts());
-//        System.out.println("\t... Перевод выполнен успешно ...");
+        return 0; // success
     }
 
     public Account getAccount (String accountId) {

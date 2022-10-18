@@ -10,19 +10,25 @@ public class Main {
         initBankAccounts(accounts, numberAccounts);
 
         long startAmount = accounts.getSumAllAccounts();
+        System.out.println("\nОбщая сумма на счетах до операций = " + startAmount);
         List<String> accountId = accounts.getKeySet().stream().toList();
 
         for (int t = 0; t < 8; t++) {
             new Thread(()-> {
                 for (int i = 1; i < accounts.size(); i++) {
                     long amount = (long) (40_500 + Math.random() * 10_000);
-                    accounts.transfer(accountId.get(i - 1), accountId.get(i), amount);
+                    int result = accounts.transfer(accountId.get(i - 1), accountId.get(i), amount);
+                    switch (result) {
+                        case -1 -> System.err.println("Карта заблокирована");
+                        case -2 -> System.err.println("Недостаточно средств для перевода");
+                        case -3 -> System.err.println("Операция отменена службой безопасности");
+                        default -> System.out.println(accounts.getSumAllAccounts());
+                    }
                 }
             }).start();
         }
 
         long finalAmount = accounts.getSumAllAccounts();
-        System.out.println("\nОбщая сумма на счетах до операций = " + startAmount);
         System.out.println("Общая сумма на счетах после операций = " + finalAmount + "\n");
     }
 
