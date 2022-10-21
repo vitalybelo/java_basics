@@ -1,4 +1,4 @@
-Links parsing results at: 2022-10-21T09:19:20.365Z
+Links parsing results at: 2022-10-21T10:03:35.090Z
 Parsing request performed for: 1000 links
 
 https://skillbox.ru/
@@ -124,6 +124,7 @@ https://skillbox.ru/
 		https://skillbox.ru/courses/digital-agentstva/
 			https://skillbox.ru/courses/digital-agentstva/?page=2/
 		https://skillbox.ru/courses/dizain-sistemy/
+			https://skillbox.ru/courses/dizain-sistemy/?page=NaN/
 		https://skillbox.ru/courses/dizayn-dokument/
 		https://skillbox.ru/courses/dizayn-interera/
 			https://skillbox.ru/courses/dizayn-interera/?page=2/
@@ -169,22 +170,42 @@ https://skillbox.ru/
 		https://skillbox.ru/courses/ios/
 		https://skillbox.ru/courses/iskustvennyy-intellekt/
 		https://skillbox.ru/courses/issledovanie-auditorii/
+			https://skillbox.ru/courses/issledovanie-auditorii/?page=2/
+			https://skillbox.ru/courses/issledovanie-auditorii/?page=3/
+			https://skillbox.ru/courses/issledovanie-auditorii/?page=4/
+			https://skillbox.ru/courses/issledovanie-auditorii/?page=5/
+			https://skillbox.ru/courses/issledovanie-auditorii/?page=6/
 		https://skillbox.ru/courses/istoriy-kino/
 		https://skillbox.ru/courses/istoriya/
+			https://skillbox.ru/courses/istoriya/?page=NaN/
 		https://skillbox.ru/courses/java/
 		https://skillbox.ru/courses/javascript/
 		https://skillbox.ru/courses/khobbi/
 		https://skillbox.ru/courses/kibersport/
 		https://skillbox.ru/courses/kino/
+			https://skillbox.ru/courses/kino/?page=2/
 		https://skillbox.ru/courses/klipy/
 		https://skillbox.ru/courses/komandnaya-stroka-(bash)/
 		https://skillbox.ru/courses/kommynikazia/
+			https://skillbox.ru/courses/kommynikazia/?page=2/
 		https://skillbox.ru/courses/kommyuniti/
+			https://skillbox.ru/courses/kommyuniti/?page=2/
 		https://skillbox.ru/courses/kompozitsiya-i-tsvet/
+			https://skillbox.ru/courses/kompozitsiya-i-tsvet/?page=2/
+			https://skillbox.ru/courses/kompozitsiya-i-tsvet/?page=3/
+			https://skillbox.ru/courses/kompozitsiya-i-tsvet/?page=4/
 		https://skillbox.ru/courses/konditer/
+			https://skillbox.ru/courses/konditer/?page=NaN/
 		https://skillbox.ru/courses/konkurentnyy-analiz/
+			https://skillbox.ru/courses/konkurentnyy-analiz/?page=2/
+			https://skillbox.ru/courses/konkurentnyy-analiz/?page=3/
+			https://skillbox.ru/courses/konkurentnyy-analiz/?page=4/
+			https://skillbox.ru/courses/konkurentnyy-analiz/?page=5/
 		https://skillbox.ru/courses/kontekstnaya-reklama/
+			https://skillbox.ru/courses/kontekstnaya-reklama/?page=2/
 		https://skillbox.ru/courses/kontent-marketing/
+			https://skillbox.ru/courses/kontent-marketing/?page=2/
+			https://skillbox.ru/courses/kontent-marketing/?page=3/
 		https://skillbox.ru/courses/kontent/
 		https://skillbox.ru/courses/kontsept-art/
 		https://skillbox.ru/courses/korporativnaya-kultura/
@@ -193,31 +214,49 @@ https://skillbox.ru/
 		https://skillbox.ru/courses/krosplatformennaya-razrabotka/
 		https://skillbox.ru/courses/kubernetes/
 		https://skillbox.ru/courses/kulinarija/
+			https://skillbox.ru/courses/kulinarija/?page=NaN/
 		https://skillbox.ru/courses/landshaftnyy-dizayn/
 		https://skillbox.ru/courses/lidogeneratsiya/
+			https://skillbox.ru/courses/lidogeneratsiya/?page=2/
 		https://skillbox.ru/courses/lightroom/
 		https://skillbox.ru/courses/linux/
 		https://skillbox.ru/courses/literatura/
+			https://skillbox.ru/courses/literatura/?page=NaN/
 		https://skillbox.ru/courses/machine-learning/
 		https://skillbox.ru/courses/makeup/
 		https://skillbox.ru/courses/makrosy/
+			https://skillbox.ru/courses/makrosy/?page=NaN/
 		https://skillbox.ru/courses/marketing-igr/
 		https://skillbox.ru/courses/marketpleisy/
 		https://skillbox.ru/courses/matematika/
+			https://skillbox.ru/courses/matematika/?page=2/
 		https://skillbox.ru/courses/menedzhment/
+			https://skillbox.ru/courses/menedzhment/?page=2/
+			https://skillbox.ru/courses/menedzhment/?page=3/
+			https://skillbox.ru/courses/menedzhment/?page=4/
+			https://skillbox.ru/courses/menedzhment/?page=5/
+			https://skillbox.ru/courses/menedzhment/?page=7/
 		https://skillbox.ru/courses/mobilnye-prilozheniya/
 		https://skillbox.ru/courses/monetizacia/
+			https://skillbox.ru/courses/monetizacia/?page=NaN/
 		https://skillbox.ru/courses/montazh/
 		https://skillbox.ru/courses/motion-design/
 		https://skillbox.ru/courses/motivatsiya/
+			https://skillbox.ru/courses/motivatsiya/?page=2/
 		https://skillbox.ru/courses/nachat-svoyo-delo/
+			https://skillbox.ru/courses/nachat-svoyo-delo/?page=2/
 		https://skillbox.ru/courses/obrabotka-photografiy/
 		https://skillbox.ru/courses/obshatsya-s-lyudmi/
+			https://skillbox.ru/courses/obshatsya-s-lyudmi/?page=2/
 		https://skillbox.ru/courses/oformlenie-prezentatsiy/
+			https://skillbox.ru/courses/oformlenie-prezentatsiy/?page=2/
+			https://skillbox.ru/courses/oformlenie-prezentatsiy/?page=3/
 		https://skillbox.ru/courses/organizovyvat-lyudei/
+			https://skillbox.ru/courses/organizovyvat-lyudei/?page=2/
 		https://skillbox.ru/courses/orm/
 		https://skillbox.ru/courses/osnovy-kompozisii/
 		https://skillbox.ru/courses/otnosheniya/
+			https://skillbox.ru/courses/otnosheniya/?page=NaN/
 		https://skillbox.ru/courses/pabota-s-blogerami/
 		https://skillbox.ru/courses/performance-marketing/
 			https://skillbox.ru/courses/performance-marketing/?page=2/
@@ -227,42 +266,77 @@ https://skillbox.ru/
 		https://skillbox.ru/courses/php/
 		https://skillbox.ru/courses/pisat-krutye-teksty/
 		https://skillbox.ru/courses/planirovanie/
+			https://skillbox.ru/courses/planirovanie/?page=2/
+			https://skillbox.ru/courses/planirovanie/?page=3/
 		https://skillbox.ru/courses/poluchit-povyshenie/
+			https://skillbox.ru/courses/poluchit-povyshenie/?page=2/
+			https://skillbox.ru/courses/poluchit-povyshenie/?page=3/
+			https://skillbox.ru/courses/poluchit-povyshenie/?page=4/
 		https://skillbox.ru/courses/ponyatno-obyasnyat/
 		https://skillbox.ru/courses/portfolio-dizaynera/
+			https://skillbox.ru/courses/portfolio-dizaynera/?page=2/
+			https://skillbox.ru/courses/portfolio-dizaynera/?page=3/
+			https://skillbox.ru/courses/portfolio-dizaynera/?page=4/
 		https://skillbox.ru/courses/postman/
 		https://skillbox.ru/courses/power-bi/
 		https://skillbox.ru/courses/pr/
 			https://skillbox.ru/courses/pr/?page=2/
 		https://skillbox.ru/courses/predprinimatelstvo/
+			https://skillbox.ru/courses/predprinimatelstvo/?page=2/
+			https://skillbox.ru/courses/predprinimatelstvo/?page=3/
 		https://skillbox.ru/courses/prodazhi/
+			https://skillbox.ru/courses/prodazhi/?page=2/
+			https://skillbox.ru/courses/prodazhi/?page=3/
+			https://skillbox.ru/courses/prodazhi/?page=4/
 		https://skillbox.ru/courses/produsirovanie-video/
 		https://skillbox.ru/courses/prodyusirovanie-kursov/
 		https://skillbox.ru/courses/prodyusirovanie/
 		https://skillbox.ru/courses/proizvodstvennye-tekhnologii/
+			https://skillbox.ru/courses/proizvodstvennye-tekhnologii/?page=NaN/
 		https://skillbox.ru/courses/protools/
 		https://skillbox.ru/courses/prototipirovanie/
 		https://skillbox.ru/courses/python/
 			https://skillbox.ru/courses/python/?page=2/
 		https://skillbox.ru/courses/rabota-s-dokumentami/
+			https://skillbox.ru/courses/rabota-s-dokumentami/?page=2/
 		https://skillbox.ru/courses/rabota-s-kameroi/
 		https://skillbox.ru/courses/rabota-s-tablitsami/
+			https://skillbox.ru/courses/rabota-s-tablitsami/?page=2/
+			https://skillbox.ru/courses/rabota-s-tablitsami/?page=3/
+			https://skillbox.ru/courses/rabota-s-tablitsami/?page=4/
+			https://skillbox.ru/courses/rabota-s-tablitsami/?page=5/
 		https://skillbox.ru/courses/rabotat-udalyonno/
+			https://skillbox.ru/courses/rabotat-udalyonno/?page=2/
+			https://skillbox.ru/courses/rabotat-udalyonno/?page=3/
+			https://skillbox.ru/courses/rabotat-udalyonno/?page=4/
+			https://skillbox.ru/courses/rabotat-udalyonno/?page=5/
 		https://skillbox.ru/courses/razobratsya-v-naukakh-istorii-i-filosofii/
+			https://skillbox.ru/courses/razobratsya-v-naukakh-istorii-i-filosofii/?page=2/
 		https://skillbox.ru/courses/razobratsya-v-sebe-i-svoikh-emociyakh/
+			https://skillbox.ru/courses/razobratsya-v-sebe-i-svoikh-emociyakh/?page=NaN/
 		https://skillbox.ru/courses/razrabotka-igr/
 		https://skillbox.ru/courses/razrabotka-kontseptsii/
+			https://skillbox.ru/courses/razrabotka-kontseptsii/?page=2/
+			https://skillbox.ru/courses/razrabotka-kontseptsii/?page=3/
+			https://skillbox.ru/courses/razrabotka-kontseptsii/?page=4/
 		https://skillbox.ru/courses/razvitie-produkta/
+			https://skillbox.ru/courses/razvitie-produkta/?page=2/
 		https://skillbox.ru/courses/rechevye-praktiki/
+			https://skillbox.ru/courses/rechevye-praktiki/?page=NaN/
 		https://skillbox.ru/courses/render-dvizhki/
 		https://skillbox.ru/courses/revit/
 			https://skillbox.ru/courses/revit/?page=NaN/
 		https://skillbox.ru/courses/risovanie-i-illyustratsiya/
+			https://skillbox.ru/courses/risovanie-i-illyustratsiya/?page=2/
+			https://skillbox.ru/courses/risovanie-i-illyustratsiya/?page=3/
 		https://skillbox.ru/courses/roditelstvo/
+			https://skillbox.ru/courses/roditelstvo/?page=NaN/
 		https://skillbox.ru/courses/russkii-yazyk/
+			https://skillbox.ru/courses/russkii-yazyk/?page=NaN/
 		https://skillbox.ru/courses/s-plus/
 		https://skillbox.ru/courses/s/
 		https://skillbox.ru/courses/samorazvitie/
+			https://skillbox.ru/courses/samorazvitie/?page=NaN/
 		https://skillbox.ru/courses/saund-design/
 		https://skillbox.ru/courses/schitat-i-reshat-logicheskie-zadachi/
 		https://skillbox.ru/courses/selenium-webdriver/
@@ -272,24 +346,33 @@ https://skillbox.ru/
 		https://skillbox.ru/courses/sew/
 		https://skillbox.ru/courses/shrifty/
 		https://skillbox.ru/courses/sistemnaya-inzheneriya/
+			https://skillbox.ru/courses/sistemnaya-inzheneriya/?page=NaN/
 		https://skillbox.ru/courses/sketch/
 			https://skillbox.ru/courses/sketch/?page=NaN/
 		https://skillbox.ru/courses/sketching/
+			https://skillbox.ru/courses/sketching/?page=2/
 		https://skillbox.ru/courses/smm/
 			https://skillbox.ru/courses/smm/?page=2/
 			https://skillbox.ru/courses/smm/?page=3/
 		https://skillbox.ru/courses/sobirat-tablicy-i-dokumenty/
 		https://skillbox.ru/courses/socialnye-seti/
+			https://skillbox.ru/courses/socialnye-seti/?page=NaN/
 		https://skillbox.ru/courses/soft-skills/
 			https://skillbox.ru/courses/soft-skills/?page=2/
 		https://skillbox.ru/courses/sozdanie-myziky/
+			https://skillbox.ru/courses/sozdanie-myziky/?page=2/
 		https://skillbox.ru/courses/sozdanie-saytov/
+			https://skillbox.ru/courses/sozdanie-saytov/?page=2/
 		https://skillbox.ru/courses/sozdanie-settinga/
 		https://skillbox.ru/courses/speceffekty/
 		https://skillbox.ru/courses/sport/
+			https://skillbox.ru/courses/sport/?page=2/
 		https://skillbox.ru/courses/sql/
 			https://skillbox.ru/courses/sql/?page=2/
 		https://skillbox.ru/courses/stat-vostrebovannym-specialistom/
+			https://skillbox.ru/courses/stat-vostrebovannym-specialistom/?page=2/
+			https://skillbox.ru/courses/stat-vostrebovannym-specialistom/?page=3/
+			https://skillbox.ru/courses/stat-vostrebovannym-specialistom/?page=4/
 		https://skillbox.ru/courses/storitelling/
 		https://skillbox.ru/courses/strategiya/
 		https://skillbox.ru/courses/stsenariy/
@@ -329,7 +412,9 @@ https://skillbox.ru/
 		https://skillbox.ru/courses/yazyk-r/
 		https://skillbox.ru/courses/yunit-ekonomika/
 		https://skillbox.ru/courses/zabota-o-sebe/
+			https://skillbox.ru/courses/zabota-o-sebe/?page=NaN/
 		https://skillbox.ru/courses/zarabatyvat-na-khobbi/
+			https://skillbox.ru/courses/zarabatyvat-na-khobbi/?page=2/
 		https://skillbox.ru/courses/zvykozapis/
 	https://skillbox.ru/design/
 		https://skillbox.ru/design/?page=2/
@@ -493,22 +578,6 @@ https://skillbox.ru/
 			https://skillbox.ru/media/code/zadacha-slozhit-dvoichnye-chisla-predstavlennye-v-vide-strok/
 			https://skillbox.ru/media/code/zarplaty-i-skilly-1srazrabotchikov-issledovanie-skillbox-media/
 		https://skillbox.ru/media/corptrain/
-			https://skillbox.ru/media/corptrain/5-pravil-sozdaniya-i-upakovki-uchebnogo-kontenta-dlya-raznovozrastnoy-auditorii/
-			https://skillbox.ru/media/corptrain/?page=page-2/
-			https://skillbox.ru/media/corptrain/?page=page-3/
-			https://skillbox.ru/media/corptrain/?page=page-4/
-			https://skillbox.ru/media/corptrain/?page=page-5/
-			https://skillbox.ru/media/corptrain/?page=page-8/
-			https://skillbox.ru/media/corptrain/chemu-dolzhny-nauchitsya-sovremennye-nastavniki-otryvok-iz-knigi-interaktivnoe-voproshanie/
-			https://skillbox.ru/media/corptrain/ekspert-rasskazal-kak-vybrat-podkhod-k-obucheniyu-raznykh-tipov-rukovoditeley/
-			https://skillbox.ru/media/corptrain/kak-govorit-s-zakazchikom-obucheniya-na-odnom-yazyke/
-			https://skillbox.ru/media/corptrain/kak-iskat-razvivat-i-motivirovat-ekspertov-vnutri-kompanii/
-			https://skillbox.ru/media/corptrain/kak-ne-zaigratsya-v-bantiki-razrabatyvaya-korporativnoe-obuchenie/
-			https://skillbox.ru/media/corptrain/kak-razvivat-rukovoditeley-8-sovetov-ot-ekspertov/
-			https://skillbox.ru/media/corptrain/knizhnaya-polka-komanda-a-uitni-dzhonson/
-			https://skillbox.ru/media/corptrain/rynok-kursov-eto-rynok-avtovaza-pochemu-v-korpobuchenii-malo-vneshnego-kontenta/
-			https://skillbox.ru/media/corptrain/skolko-zarabatyvayut-i-kak-rabotayut-razrabotchiki-onlaynkursov/
-			https://skillbox.ru/media/corptrain/smeshannoe-obuchenie-sotrudnikov-kak-sochetat-ochnye-treningi-i-onlaynformaty/
 			https://skillbox.ru/media/corptrain/vy-vozglavili-ldfunktsiyu-na-novom-meste-s-chego-nachat/
 		https://skillbox.ru/media/design/
 			https://skillbox.ru/media/design/7_sekretnykh_priemov_v_photoshop/
@@ -551,50 +620,22 @@ https://skillbox.ru/
 			https://skillbox.ru/media/design/vakansii-dlya-dizaynerov-october-3/
 			https://skillbox.ru/media/design/vypusknitsa-mshsi-pridumala-nastolnuyu-igru-pro-artbiznes/
 		https://skillbox.ru/media/edtech/
-			https://skillbox.ru/media/edtech/?page=page-2/
-			https://skillbox.ru/media/edtech/?page=page-3/
-			https://skillbox.ru/media/edtech/?page=page-4/
-			https://skillbox.ru/media/edtech/?page=page-5/
-			https://skillbox.ru/media/edtech/?page=page-7/
 		https://skillbox.ru/media/education/
-			https://skillbox.ru/media/education/5-vazhnykh-faktov-o-srednem-professionalnom-obrazovanii-v-rossii/
-			https://skillbox.ru/media/education/8-besplatnykh-onlayndosok-dlya-distantsionnykh-zanyatiy-i-sovmestnoy-raboty/
-			https://skillbox.ru/media/education/?page=page-2/
-			https://skillbox.ru/media/education/?page=page-3/
-			https://skillbox.ru/media/education/?page=page-4/
-			https://skillbox.ru/media/education/?page=page-48/
-			https://skillbox.ru/media/education/?page=page-5/
-			https://skillbox.ru/media/education/aleksandr-asmolov-esli-my-prevrashchaem-tsifru-v-idol-my-proigryvaem/
 			https://skillbox.ru/media/education/bolshe-chetverti-roditeley-otmetili-chto-u-nikh-ryadom-net-interesnykh-zanyatiy-dlya-detey/
 			https://skillbox.ru/media/education/edtechresheniya-bolshikh-korporatsiy-mogut-snizit-interes-k-produktam-startapov/
 			https://skillbox.ru/media/education/fotografirovanie-prezentatsii-pomogaet-luchshe-zapomnit-material-lektsiy/
-			https://skillbox.ru/media/education/issledovanie-na-onlaynseminarakh-studenty-malo-govoryat/
 			https://skillbox.ru/media/education/issledovateli-dokazali-polzu-predmetnogo-obucheniya-so-vtorogo-klassa/
 			https://skillbox.ru/media/education/issledovateli-vyyasnili-chto-motiviruet-shkolnikov-uchastvovat-v-olimpiadakh/
 			https://skillbox.ru/media/education/istoriya-o-tom-kak-otkryli-i-zakryli-instituty-krasnoy-professury/
-			https://skillbox.ru/media/education/kak-prikhodit-insayt-chto-emu-pomogaet-i-chto-meshaet/
-			https://skillbox.ru/media/education/knizhnaya-polka-povsednevnaya-zhizn-tsarskoselskogo-litseya-lyudmila-mikhaylova/
-			https://skillbox.ru/media/education/kompetentsiya-i-kompetentnost-v-chyem-raznitsa/
-			https://skillbox.ru/media/education/minobrnauki-schitaet-neproduktivnym-ezhegodnoe-uvelichenie-chisla-byudzhetnykh-mest-v-vuzakh/
 			https://skillbox.ru/media/education/minprosveshcheniya-utverdilo-perechen-olimpiad-dlya-shkolnikov-na-202223-uchebnyy-god/
 			https://skillbox.ru/media/education/mintsifry-i-uchiru-zapuskayut-besplatnye-kursy-po-programmirovaniyu-dlya-podrostkov/
 			https://skillbox.ru/media/education/mintsifry-zamorazhivaet-proekt-tsifrovye-professii-i-programmu-po-podklyucheniyu-shkol-k-wifi/
 			https://skillbox.ru/media/education/nazvany-luchshie-rossiyskie-vuzy-2022-goda-po-karernym-perspektivam-vypusknikov/
-			https://skillbox.ru/media/education/neskolko-vedomstv-vystupili-za-to-chtoby-dat-uchitelyam-otsrochku-ot-chastichnoy-mobilizatsii/
-			https://skillbox.ru/media/education/odin-iz-vuzov-poprosil-mintsifry-vvesti-sertifikatsiyu-dlya-kommercheskikh-itkursov/
-			https://skillbox.ru/media/education/pedagogi-zhdut-ot-tsifrovizatsii-ekonomii-vremeni-a-poluchayut-lishnyuyu-nagruzku-pochemu/
-			https://skillbox.ru/media/education/pochemu-chastnye-shkoly-mogut-stat-drayverami-pedagogicheskoy-praktiki/
 			https://skillbox.ru/media/education/pochti-kazhdyy-shestoy-roditel-ukazyvaet-na-nekompetentnost-pedagogov/
-			https://skillbox.ru/media/education/rossiyskikh-vuzov-v-novom-reytinge-the-ne-ubavilos-a-dazhe-pribavilos/
-			https://skillbox.ru/media/education/skillbox-pomozhet-moskvicham-vybrat-professiyu/
 			https://skillbox.ru/media/education/stalo-izvestno-kak-v-shkolakh-obstoyat-dela-s-proforientatsiey/
-			https://skillbox.ru/media/education/stalo-izvestno-skolko-vypusknikov-kolledzhey-srazu-zhe-postupaet-v-vuzy/
 			https://skillbox.ru/media/education/tsitata-nedeli-fizika-kak-predmet-seychas-stanovitsya-v-shkole-elitarnoy/
-			https://skillbox.ru/media/education/tsitata-nedeli-ni-odin-iz-nashikh-uchiteley-20-let-nazad-ne-skazal-kakim-budet-mir/
-			https://skillbox.ru/media/education/uchitel-pochti-nikogda-ne-yavlyaetsya-klientom-obrazovatelnykh-servisov/
 			https://skillbox.ru/media/education/uchyenye-posovetovali-obuchat-mladsheklassnikov-navykam-samoregulyatsii/
 			https://skillbox.ru/media/education/v-evrope-podgotovili-rukovodstvo-dlya-uchiteley-po-borbe-s-dezinformatsiey/
-			https://skillbox.ru/media/education/v-magistraturu-na-drugoy-profil-za-i-protiv/
 			https://skillbox.ru/media/education/vuzy-budut-provodit-trenirovki-po-otrabotke-terroristicheskikh-ugroz-ne-rezhe-dvukh-raz-v-god/
 		https://skillbox.ru/media/gamedev/
 			https://skillbox.ru/media/gamedev/?page=page-2/
@@ -638,23 +679,6 @@ https://skillbox.ru/
 			https://skillbox.ru/media/gamedev/vsye-chto-nuzhno-znat-ob-uncharted-legacy-of-thieves-collection-dlya-pk/
 		https://skillbox.ru/media/growth/
 			https://skillbox.ru/media/growth/5-nebanalnykh-vdokhnovlyayushchikh-biografiy-kotorye-pomogut-v-slozhnye-vremena/
-			https://skillbox.ru/media/growth/?page=page-10/
-			https://skillbox.ru/media/growth/?page=page-2/
-			https://skillbox.ru/media/growth/?page=page-3/
-			https://skillbox.ru/media/growth/?page=page-4/
-			https://skillbox.ru/media/growth/?page=page-5/
-			https://skillbox.ru/media/growth/chto-takoe-bodipozitiv/
-			https://skillbox.ru/media/growth/chto-takoe-giperopeka-i-chem-ona-opasna/
-			https://skillbox.ru/media/growth/chto-takoe-kiberbulling-i-kak-ot-nego-zashchititsya/
-			https://skillbox.ru/media/growth/chto-takoe-kognitivnye-iskazheniya/
-			https://skillbox.ru/media/growth/chto-takoe-panicheskie-ataki-i-kak-s-nimi-spravlyatsya/
-			https://skillbox.ru/media/growth/chto-takoe-ptsr-simptomy-prichiny-pomoshch/
-			https://skillbox.ru/media/growth/chuvstvo-viny-eto-agressiya-napravlennaya-na-samogo-sebya/
-			https://skillbox.ru/media/growth/kak-pravilno-kritikovat-drugikh-i-sebya-rasskazyvaet-psikholog/
-			https://skillbox.ru/media/growth/kak-prinyat-svoye-telo-i-povysit-samootsenku/
-			https://skillbox.ru/media/growth/kak-vybrat-proforientologa-i-gde-ego-nayti/
-			https://skillbox.ru/media/growth/sdelayu-zavtra-chto-takoe-sindrom-otlozhennoy-zhizni-i-kak-ot-nego-izbavitsya/
-			https://skillbox.ru/media/growth/stoit-li-sovmeshchat-dve-raboty-da-esli-eto-sleshkarera/
 			https://skillbox.ru/media/growth/terapiya-deystviem-chto-takoe-psikhodrama-i-komu-ona-pomozhet/
 		https://skillbox.ru/media/management/
 			https://skillbox.ru/media/management/11-rossiyan-poluchayut-podderzhku-ot-rukovodstva/
@@ -716,12 +740,12 @@ https://skillbox.ru/
 			https://skillbox.ru/media/marketing/kak-v-2021-godu-pisat-kontent-dlya-vechnogo-trafika/
 			https://skillbox.ru/media/marketing/marketing-sedaet-15-oborota-skolko-biznes-tratit-na-prodvizhenie-i-analitiku/
 			https://skillbox.ru/media/marketing/na-ozon-poyavilas-reklama-ot-storonnikh-reklamodateley/
+			https://skillbox.ru/media/marketing/na-wildberries-poyavilsya-garantiynyy-vznos-dlya-prodavtsov-registratsiya-stala-platnoy/
 			https://skillbox.ru/media/marketing/opublikovano-issledovanie-auditorii-telegram-v-rossii-glavnoe-o-polzovatelyakh-messendzhera/
 			https://skillbox.ru/media/marketing/otkaznoe-pismo-dlya-kakikh-tovarov-nuzhno-i-kak-ego-oformit/
 			https://skillbox.ru/media/marketing/ozon-zapustil-servis-obyavleniy-kak-on-rabotaet-i-kak-opublikovat-obyavlenie/
 			https://skillbox.ru/media/marketing/prosto-o-slozhnom-chto-takoe-marketing-kakie-u-nego-zadachi-i-kak-uznat-o-nyem-bolshe/
 			https://skillbox.ru/media/marketing/razbiraem-aida-populyarnuyu-model-silnykh-marketingovykh-soobshcheniy/
-			https://skillbox.ru/media/marketing/roskomnadzor-zapretil-google-reklamirovatsya-v-rossii/
 			https://skillbox.ru/media/marketing/rossiyane-stali-provodit-v-instagram-odnu-minutu-v-den/
 			https://skillbox.ru/media/marketing/telegram-zapustil-platnuyu-podpisku-chto-v-neye-vkhodit-kak-podklyuchit-i-chto-o-ney-govoryat/
 			https://skillbox.ru/media/marketing/tiktok-poteryal-87-russkoyazychnykh-avtorov-a-youtube-bolee-20/
@@ -737,34 +761,10 @@ https://skillbox.ru/
 			https://skillbox.ru/media/marketing/whatsapp-zapustit-soobshchestva-v-messendzhere/
 			https://skillbox.ru/media/marketing/zachem-nuzhna-nakrutka-podpischikov-v-telegram-i-chem-opasna-v-kakikh-servisakh-eye-sdelat/
 			https://skillbox.ru/media/topic/articles/
-				https://skillbox.ru/media/topic/articles/?page=page-178/
-				https://skillbox.ru/media/topic/articles/?page=page-2/
-				https://skillbox.ru/media/topic/articles/?page=page-3/
-				https://skillbox.ru/media/topic/articles/?page=page-4/
-				https://skillbox.ru/media/topic/articles/?page=page-5/
 			https://skillbox.ru/media/topic/collections/
-				https://skillbox.ru/media/topic/collections/?page=page-2/
-				https://skillbox.ru/media/topic/collections/?page=page-3/
-				https://skillbox.ru/media/topic/collections/?page=page-4/
-				https://skillbox.ru/media/topic/collections/?page=page-43/
-				https://skillbox.ru/media/topic/collections/?page=page-5/
 			https://skillbox.ru/media/topic/guides/
-				https://skillbox.ru/media/topic/guides/?page=page-2/
-				https://skillbox.ru/media/topic/guides/?page=page-3/
-				https://skillbox.ru/media/topic/guides/?page=page-30/
-				https://skillbox.ru/media/topic/guides/?page=page-4/
-				https://skillbox.ru/media/topic/guides/?page=page-5/
 			https://skillbox.ru/media/topic/opinions/
-				https://skillbox.ru/media/topic/opinions/?page=page-17/
-				https://skillbox.ru/media/topic/opinions/?page=page-2/
-				https://skillbox.ru/media/topic/opinions/?page=page-3/
-				https://skillbox.ru/media/topic/opinions/?page=page-4/
-				https://skillbox.ru/media/topic/opinions/?page=page-5/
 			https://skillbox.ru/media/topic/tests/
-				https://skillbox.ru/media/topic/tests/?page=page-2/
-				https://skillbox.ru/media/topic/tests/?page=page-3/
-				https://skillbox.ru/media/topic/tests/?page=page-4/
-				https://skillbox.ru/media/topic/tests/?page=page-5/
 	https://skillbox.ru/multimedia/
 		https://skillbox.ru/multimedia/?page=2/
 		https://skillbox.ru/multimedia/?page=3/

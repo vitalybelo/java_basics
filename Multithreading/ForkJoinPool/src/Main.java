@@ -7,10 +7,8 @@ import java.util.concurrent.ForkJoinPool;
 public class Main {
 
     /**
-     * Реплики на английском - чтобы не было проблем с кодировкой.
      * Алгоритм парсинга отдельно лежит в - Main_Process.java (без параллелей, винтажный).
      * Сбор ссылок выполняется в TreeSet, чтобы потом не терять время на сортировку.
-     *
      */
     public static void main(String[] args) {
 
@@ -20,7 +18,8 @@ public class Main {
 
         long start = System.currentTimeMillis();
         RecursiveLinkParser parser = new RecursiveLinkParser(site);
-        TreeSet<String> uniqueURL = new ForkJoinPool(10).invoke(parser);
+        ForkJoinPool commonPool = ForkJoinPool.commonPool();
+        TreeSet<String> uniqueURL = commonPool.invoke(parser);
         long finish1 = System.currentTimeMillis();;
 
         fileWriter(name, uniqueURL, parser);
