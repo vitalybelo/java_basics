@@ -73,8 +73,6 @@ public class RecursiveLinkParser extends RecursiveTask<TreeSet<String>> {
         return false;
     }
 
-    public TreeSet<String> getUniqueURL() { return uniqueURL; }
-
     public int getUrlCounter() {
         return urlCounter.get();
     }

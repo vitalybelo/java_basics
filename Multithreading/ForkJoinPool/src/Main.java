@@ -1,5 +1,4 @@
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
@@ -47,10 +46,7 @@ public class Main {
             writer.flush();
             writer.close();
         }
-
-
     }
-
 
     public static String spaceTab(String s) {
         int count = 0;
