@@ -1,8 +1,8 @@
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
 import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.ForkJoinTask;
 
 public class Main {
 
@@ -20,7 +20,7 @@ public class Main {
         RecursiveLinkParser parser = new RecursiveLinkParser(site);
         ForkJoinPool commonPool = ForkJoinPool.commonPool();
         TreeSet<String> uniqueURL = commonPool.invoke(parser);
-        long finish1 = System.currentTimeMillis();;
+        long finish1 = System.currentTimeMillis();
 
         fileWriter(name, uniqueURL, parser);
 
