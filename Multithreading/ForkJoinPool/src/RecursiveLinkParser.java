@@ -15,7 +15,7 @@ public class RecursiveLinkParser extends RecursiveTask<TreeSet<String>> {
     private final static String USER_AGENT3 = "Mozilla/5.0 (Macintosh; Intel Mac OS X x.y; rv:42.0) Gecko/20100101 Firefox/42.0";
     private final static String REFERRER = "https://www.google.com";
     private final static int TIME_OUT = 60000;
-    private final static int MAX_URLS = 10;
+    private final static int MAX_URLS = 1000;
     public static AtomicInteger urlCounter = new AtomicInteger();
     public static TreeSet<String> uniqueURL = new TreeSet<>();
     private final String site;
@@ -28,7 +28,6 @@ public class RecursiveLinkParser extends RecursiveTask<TreeSet<String>> {
     protected TreeSet<String> compute() {
 
         List<RecursiveLinkParser> parserTasks = new ArrayList<>();
-
         try {
             Thread.sleep(150);
             Connection connection = Jsoup
@@ -62,7 +61,6 @@ public class RecursiveLinkParser extends RecursiveTask<TreeSet<String>> {
         for (RecursiveLinkParser parserTask : parserTasks) {
             parserTask.join();
         }
-
         return uniqueURL;
     }
 
