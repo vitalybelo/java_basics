@@ -1,4 +1,4 @@
-Links parsing results at: 2022-10-21T08:36:36.328Z
+Links parsing results at: 2022-10-21T09:19:20.365Z
 Parsing request performed for: 1000 links
 
 https://skillbox.ru/
@@ -124,7 +124,6 @@ https://skillbox.ru/
 		https://skillbox.ru/courses/digital-agentstva/
 			https://skillbox.ru/courses/digital-agentstva/?page=2/
 		https://skillbox.ru/courses/dizain-sistemy/
-			https://skillbox.ru/courses/dizain-sistemy/?page=NaN/
 		https://skillbox.ru/courses/dizayn-dokument/
 		https://skillbox.ru/courses/dizayn-interera/
 			https://skillbox.ru/courses/dizayn-interera/?page=2/
@@ -170,20 +169,13 @@ https://skillbox.ru/
 		https://skillbox.ru/courses/ios/
 		https://skillbox.ru/courses/iskustvennyy-intellekt/
 		https://skillbox.ru/courses/issledovanie-auditorii/
-			https://skillbox.ru/courses/issledovanie-auditorii/?page=2/
-			https://skillbox.ru/courses/issledovanie-auditorii/?page=3/
-			https://skillbox.ru/courses/issledovanie-auditorii/?page=4/
-			https://skillbox.ru/courses/issledovanie-auditorii/?page=5/
-			https://skillbox.ru/courses/issledovanie-auditorii/?page=6/
 		https://skillbox.ru/courses/istoriy-kino/
 		https://skillbox.ru/courses/istoriya/
-			https://skillbox.ru/courses/istoriya/?page=NaN/
 		https://skillbox.ru/courses/java/
 		https://skillbox.ru/courses/javascript/
 		https://skillbox.ru/courses/khobbi/
 		https://skillbox.ru/courses/kibersport/
 		https://skillbox.ru/courses/kino/
-			https://skillbox.ru/courses/kino/?page=2/
 		https://skillbox.ru/courses/klipy/
 		https://skillbox.ru/courses/komandnaya-stroka-(bash)/
 		https://skillbox.ru/courses/kommynikazia/
@@ -337,9 +329,7 @@ https://skillbox.ru/
 		https://skillbox.ru/courses/yazyk-r/
 		https://skillbox.ru/courses/yunit-ekonomika/
 		https://skillbox.ru/courses/zabota-o-sebe/
-			https://skillbox.ru/courses/zabota-o-sebe/?page=NaN/
 		https://skillbox.ru/courses/zarabatyvat-na-khobbi/
-			https://skillbox.ru/courses/zarabatyvat-na-khobbi/?page=2/
 		https://skillbox.ru/courses/zvykozapis/
 	https://skillbox.ru/design/
 		https://skillbox.ru/design/?page=2/
@@ -472,6 +462,7 @@ https://skillbox.ru/
 			https://skillbox.ru/media/code/alisa-ot-yandeksa-nauchilas-raspoznavat-golos-chlenov-semi/
 			https://skillbox.ru/media/code/alternativnyy-relokeyt-kak-russkomu-aytishniku-v-kambodzhe-zhivyetsya/
 			https://skillbox.ru/media/code/chatboty-v-telegram-na-python-chast-2-sozdayem-i-nastraivaem-menyu/
+			https://skillbox.ru/media/code/chem_razlichayutsya_var_let_i_const_v_javascript/
 			https://skillbox.ru/media/code/evroparlament-odobril-vvedenie-edinogo-razyema-usbc/
 			https://skillbox.ru/media/code/google-nachnyet-uvedomlyat-polzovateley-kogda-ikh-personalnye-dannye-popadut-v-poisk/
 			https://skillbox.ru/media/code/integraly-bez-intrig/
@@ -493,7 +484,6 @@ https://skillbox.ru/
 			https://skillbox.ru/media/code/rossiyskikh-razrabotchikov-zastavyat-pereyti-na-linux/
 			https://skillbox.ru/media/code/shkolnik-vzlomal-uber-no-ego-nikto-ne-vosprinyal-vseryez/
 			https://skillbox.ru/media/code/story-dinar-shayxutdinov/
-			https://skillbox.ru/media/code/strakh-i-nenavist-itrekrutmenta-ugrozy-emigratsiya-i-nayem-v-kofeynyakh/
 			https://skillbox.ru/media/code/tesla-sozdayet-robotovgumanoidov-optimus-dlya-svoikh-zavodov/
 			https://skillbox.ru/media/code/test-dlya-oldskulshchikov-kak-khorosho-vy-pomnite-starye-kompyuternye-tekhnologii/
 			https://skillbox.ru/media/code/v-chrome-i-android-poyavilas-avtorizatsiya-bez-paroley/
@@ -526,7 +516,7 @@ https://skillbox.ru/
 			https://skillbox.ru/media/design/?page=page-3/
 			https://skillbox.ru/media/design/?page=page-4/
 			https://skillbox.ru/media/design/?page=page-5/
-			https://skillbox.ru/media/design/?page=page-74/
+			https://skillbox.ru/media/design/?page=page-75/
 			https://skillbox.ru/media/design/alpinarium/
 			https://skillbox.ru/media/design/apple-vypustila-rukovodstvo-po-dizaynu-live-activity-dlya-dynamic-island/
 			https://skillbox.ru/media/design/behance-october-one/
@@ -539,11 +529,11 @@ https://skillbox.ru/
 			https://skillbox.ru/media/design/festival-novogo-dizayna-sreda-obyavil-chto-sostoitsya-no-tseremonii-nagrazhdeniya-ne-budet/
 			https://skillbox.ru/media/design/figma-anim-grad/
 			https://skillbox.ru/media/design/figma-i-collins-proveli-kampaniyu-o-sile-tvorcheskogo-sotrudnichestva/
+			https://skillbox.ru/media/design/figma-use-mask/
 			https://skillbox.ru/media/design/frightened-nymph/
 			https://skillbox.ru/media/design/google-japan-predstavila-klaviaturu-dlinoy-1-metr-65-santimetrov/
 			https://skillbox.ru/media/design/gosudarstvennyy-muzey-arkhitektury-im-a-v-shchuseva-provyel-rebrending/
 			https://skillbox.ru/media/design/institut-pantone-predstavil-yarkiy-tsvet-na-osnove-drevneyshego-pigmenta/
-			https://skillbox.ru/media/design/istoriya-odnogo-dizayna-logotip-telekompanii-vid/
 			https://skillbox.ru/media/design/kak_dizayneru_opredelit_ca/
 			https://skillbox.ru/media/design/kampaniya-v-podderzhku-comic-sans-prizvana-privlech-vnimanie-k-disleksii/
 			https://skillbox.ru/media/design/kompaniya-benjamin-moore-obyavila-tsvet-goda-2023/
@@ -647,6 +637,7 @@ https://skillbox.ru/
 			https://skillbox.ru/media/gamedev/vsye-chto-nuzhno-znat-ob-overwatch-2-ot-detaley-rannego-dostupa-do-sistemnykh-trebovaniy/
 			https://skillbox.ru/media/gamedev/vsye-chto-nuzhno-znat-ob-uncharted-legacy-of-thieves-collection-dlya-pk/
 		https://skillbox.ru/media/growth/
+			https://skillbox.ru/media/growth/5-nebanalnykh-vdokhnovlyayushchikh-biografiy-kotorye-pomogut-v-slozhnye-vremena/
 			https://skillbox.ru/media/growth/?page=page-10/
 			https://skillbox.ru/media/growth/?page=page-2/
 			https://skillbox.ru/media/growth/?page=page-3/
@@ -658,7 +649,6 @@ https://skillbox.ru/
 			https://skillbox.ru/media/growth/chto-takoe-kognitivnye-iskazheniya/
 			https://skillbox.ru/media/growth/chto-takoe-panicheskie-ataki-i-kak-s-nimi-spravlyatsya/
 			https://skillbox.ru/media/growth/chto-takoe-ptsr-simptomy-prichiny-pomoshch/
-			https://skillbox.ru/media/growth/chto-takoe-wellness-eto-staryy-dobryy-zozh-ne-sovsem/
 			https://skillbox.ru/media/growth/chuvstvo-viny-eto-agressiya-napravlennaya-na-samogo-sebya/
 			https://skillbox.ru/media/growth/kak-pravilno-kritikovat-drugikh-i-sebya-rasskazyvaet-psikholog/
 			https://skillbox.ru/media/growth/kak-prinyat-svoye-telo-i-povysit-samootsenku/
@@ -678,7 +668,6 @@ https://skillbox.ru/
 			https://skillbox.ru/media/management/bolee-50-rossiyan-mechtayut-o-chetyryekhdnevke/
 			https://skillbox.ru/media/management/bolshinstvo-kompaniy-malogo-biznesa-priostanavlivaet-naym-do-avgusta/
 			https://skillbox.ru/media/management/bolshinstvo-rossiyan-schitayut-chto-im-ne-grozit-poterya-raboty/
-			https://skillbox.ru/media/management/bukhgalterskiy-balans-chto-eto-takoe-i-kak-ego-sostavit/
 			https://skillbox.ru/media/management/chto-takoe-intellektualnaya-sobstvennost-i-pochemu-eye-nuzhno-zashchishchat-vsem-kompaniyam/
 			https://skillbox.ru/media/management/chto-takoe-matritsa-ansoffa-i-kak-ona-podskazhet-v-kakuyu-storonu-razvivat-proekt-ili-biznes/
 			https://skillbox.ru/media/management/chto-takoe-metodika-hadi-i-kak-ona-pomogaet-nepreryvno-razvivat-biznes/
@@ -690,6 +679,7 @@ https://skillbox.ru/
 			https://skillbox.ru/media/management/kakuyu-pomoshch-mobilizovannym-okazhut-rabotodateli-rezultaty-oprosa/
 			https://skillbox.ru/media/management/kompanii-poluchat-subsidii-za-nayem-molodyezhi/
 			https://skillbox.ru/media/management/matritsa_eyzenkhauera/
+			https://skillbox.ru/media/management/metody-upravleniya-personalom-kakie-oni-byvayut-i-chto-o-nikh-nuzhno-znat-kazhdomu-rukovoditelyu/
 			https://skillbox.ru/media/management/otchyet-o-dvizhenii-denezhnykh-sredstv-chto-eto-takoe-i-kak-ego-sostavit/
 			https://skillbox.ru/media/management/rabotat-oflayn-chashche-khotyat-rukovoditeli-chem-ostalnye-sotrudniki/
 			https://skillbox.ru/media/management/rabotodateli-stali-rezhe-iskat-kandidatov/
@@ -752,6 +742,12 @@ https://skillbox.ru/
 				https://skillbox.ru/media/topic/articles/?page=page-3/
 				https://skillbox.ru/media/topic/articles/?page=page-4/
 				https://skillbox.ru/media/topic/articles/?page=page-5/
+			https://skillbox.ru/media/topic/collections/
+				https://skillbox.ru/media/topic/collections/?page=page-2/
+				https://skillbox.ru/media/topic/collections/?page=page-3/
+				https://skillbox.ru/media/topic/collections/?page=page-4/
+				https://skillbox.ru/media/topic/collections/?page=page-43/
+				https://skillbox.ru/media/topic/collections/?page=page-5/
 			https://skillbox.ru/media/topic/guides/
 				https://skillbox.ru/media/topic/guides/?page=page-2/
 				https://skillbox.ru/media/topic/guides/?page=page-3/
@@ -765,6 +761,10 @@ https://skillbox.ru/
 				https://skillbox.ru/media/topic/opinions/?page=page-4/
 				https://skillbox.ru/media/topic/opinions/?page=page-5/
 			https://skillbox.ru/media/topic/tests/
+				https://skillbox.ru/media/topic/tests/?page=page-2/
+				https://skillbox.ru/media/topic/tests/?page=page-3/
+				https://skillbox.ru/media/topic/tests/?page=page-4/
+				https://skillbox.ru/media/topic/tests/?page=page-5/
 	https://skillbox.ru/multimedia/
 		https://skillbox.ru/multimedia/?page=2/
 		https://skillbox.ru/multimedia/?page=3/

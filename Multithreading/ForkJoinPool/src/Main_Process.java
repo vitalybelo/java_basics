@@ -29,7 +29,6 @@ public class Main_Process {
         for (String s : uniqueURL) { //.stream().sorted().toList())
             System.out.println(spaceTab(s) + s);
         }
-
         System.out.println("\nСчитано ссылок: " + uniqueURL.size());
     }
 
@@ -69,7 +68,7 @@ public class Main_Process {
         if (!url.startsWith(site)) return true;
         if (url.endsWith(".pdf")) return true;
         if (url.contains("#")) return true;
-        //if (url.contains(" ")) return true;
+        if (url.contains(" ")) return true;
         return false;
     }
 

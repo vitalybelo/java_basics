@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class RecursiveLinkParser extends RecursiveTask<TreeSet<String>> {
 
-    private final static String USER_AGENT1 = "Mozilla/106.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.";
+    private final static String USER_AGENT1 = "Mozilla/6.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.";
     private final static String USER_AGENT2 = "Chrome/106.0.5249.119 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.";
     private final static String USER_AGENT3 = "Mozilla/5.0 (Macintosh; Intel Mac OS X x.y; rv:42.0) Gecko/20100101 Firefox/42.0";
     private final static String REFERRER = "https://www.google.com";
