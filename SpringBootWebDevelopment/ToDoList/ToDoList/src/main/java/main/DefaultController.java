@@ -11,9 +11,9 @@ public class DefaultController {
     @RequestMapping("/")
     public String index() {
 
-        System.out.println(Math.random() + "<br/>");
-        return (new Date()).toInstant().toString();
+        String text = Math.random() + "<br/>";
+        text += new Date().toString();
+        return text;
 
     }
-
 }
