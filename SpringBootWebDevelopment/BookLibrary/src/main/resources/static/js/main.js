@@ -7,13 +7,13 @@ $(function(){
             .append('<div>' + bookCode + '</div>');
     };
 
-    //Loading books on load page
-//    $.get('/books/', function(response)
-//    {
-//        for(i in response) {
-//            appendBook(response[i]);
-//        }
-//    });
+    // Loading books on load page
+   $.get('/books/', function(response)
+   {
+       for(i in response) {
+           appendBook(response[i]);
+       }
+   });
 
     //Show adding book form
     $('#show-add-book-form').click(function(){
