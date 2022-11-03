@@ -2,10 +2,7 @@ package main;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import response.Event;
 
 import java.util.List;
@@ -22,14 +19,29 @@ public class EventController {
     public ResponseEntity get(@PathVariable int id) {
         Event event = StorageEvent.getEvent(id);
         if (event == null) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("null");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("задания с таким id нет");
         }
         return new ResponseEntity(event, HttpStatus.OK);
     }
 
     @PostMapping("/events/")
-    public void add(Event event) {
-        StorageEvent.addEvent(event);
+    public int add(Event event) {
+        return StorageEvent.addEvent(event);
+    }
+
+    @DeleteMapping("/events/{id}")
+    public void delete(@PathVariable int id) {
+        StorageEvent.deleteEvent(id);
+    }
+
+    @DeleteMapping("/events/")
+    public void deleteAll() {
+        StorageEvent.deleteAllEvents();
+    }
+
+    @PutMapping("/events/")
+    public int editEvent(Event event) {
+        return StorageEvent.editEvent(event);
     }
 
 }

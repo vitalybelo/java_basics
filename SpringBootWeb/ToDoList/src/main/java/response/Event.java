@@ -3,8 +3,8 @@ package response;
 public class Event {
 
     private int id;
-    private String evenContent;
-    private boolean eventFinished;
+    private String text;
+    private boolean done;
 
     public int getId() {
         return id;
@@ -14,19 +14,19 @@ public class Event {
         this.id = id;
     }
 
-    public String getEvenContent() {
-        return evenContent;
+    public String getText() {
+        return text;
     }
 
-    public void setEvenContent(String evenContent) {
-        this.evenContent = evenContent;
+    public void setText(String text) {
+        this.text = text;
     }
 
-    public boolean isEventFinished() {
-        return eventFinished;
+    public boolean isDone() {
+        return done;
     }
 
-    public void setEventFinished(boolean eventFinished) {
-        this.eventFinished = eventFinished;
+    public void setDone(boolean done) {
+        this.done = done;
     }
 }
