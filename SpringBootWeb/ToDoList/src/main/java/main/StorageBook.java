@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Storage {
+public class StorageBook {
 
     private static int bookId = 1;
     private static final HashMap<Integer, Book> books = new HashMap<>();
@@ -15,7 +15,6 @@ public class Storage {
     }
 
     public static int addBook(Book book) {
-
         int id = bookId++;
         book.setId(id);
         books.put(id, book);
@@ -23,7 +22,6 @@ public class Storage {
     }
 
     public static Book getBook(int id) {
-
         if (books.containsKey(id))
             return books.get(id);
         return null;
