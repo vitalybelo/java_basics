@@ -35,9 +35,9 @@ public class EventController {
     public ResponseEntity get(@PathVariable int id) {
 
         Optional<Event> optionalEvent = eventRepository.findById(id);
-        if (optionalEvent.isPresent())
+        if (optionalEvent.isPresent()) {
             return new ResponseEntity(optionalEvent.get(), HttpStatus.OK);
-
+        }
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("задания с таким id нет");
     }
 
@@ -52,10 +52,14 @@ public class EventController {
     }
 
     @DeleteMapping("/events/{id}")
-    public void delete(@PathVariable int id) {
+    public int delete(@PathVariable int id) {
+
         Optional<Event> optionalEvent = eventRepository.findById(id);
-        if (optionalEvent.isPresent())
+        if (optionalEvent.isPresent()) {
             eventRepository.delete(optionalEvent.get());
+            return id;
+        }
+        return -1;
     }
 
     @DeleteMapping("/events/")
