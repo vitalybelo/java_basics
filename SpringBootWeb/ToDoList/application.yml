@@ -5,7 +5,7 @@ spring:
     password: Vitalex88
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
 
 someParameter:
   value: 5463
