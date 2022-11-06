@@ -1,6 +1,6 @@
 package main;
 
-import response.Event;
+import main.model.Event;
 
 import java.util.ArrayList;
 import java.util.HashMap;
