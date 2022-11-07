@@ -1,11 +1,11 @@
-package main;
+package main.controlers;
 
-import main.model.EventRepository;
+import main.repository.EventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import main.model.Event;
+import main.repository.Event;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.Optional;
 @RestController
 public class EventController {
 
-    //@Autowired
+    @Autowired
     private final EventRepository eventRepository;
 
     public EventController(EventRepository eventRepository) {
@@ -38,14 +38,14 @@ public class EventController {
         if (optionalEvent.isPresent()) {
             return new ResponseEntity(optionalEvent.get(), HttpStatus.OK);
         }
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("задания с таким id нет");
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("not found");
     }
 
     @PostMapping("/events/")
     public int add(Event event) {
 
         if (event.getText() == null) {
-            event.setText(" ");
+            event.setText("пусто");
         }
         Event e = eventRepository.save(event);
         return e.getId();

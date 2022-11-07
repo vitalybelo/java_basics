@@ -1,19 +1,12 @@
 $(function(){
 
-    const appendBook = function(data){
-        var bookCode = '<a href="#" class="book-link" data-id="' +
-            data.id + '">' + data.name + '</a><br>';
+    const appendEvent = function(data){
+        const eventCode = '<a href="#" class="book-link" data-id="' +
+            data.id + '">' + data.text + '</a><br>';
         $('#book-list')
-            .append('<div>' + bookCode + '</div>');
+            .append('<div>' + eventCode + '</div>');
     };
 
-    // Loading books on load page
-   $.get('/books/', function(response)
-   {
-       for(i in response) {
-           appendBook(response[i]);
-       }
-   });
 
     //Show adding book form
     $('#show-add-book-form').click(function(){
@@ -27,22 +20,22 @@ $(function(){
         }
     });
 
-    //Getting book
+    //Getting status event
     $(document).on('click', '.book-link', function(){
-        var link = $(this);
-        var bookId = link.data('id');
+        const link = $(this);
+        const eventId = link.data('id');
         $.ajax({
             method: "GET",
-            url: '/books/' + bookId,
+            url: '/events/' + eventId,
             success: function(response)
             {
-                var code = '<span>Год выпуска:' + response.year + '</span>';
+                const code = '<span>  cтатус задания: (' + response.done + ')</span>';
                 link.parent().append(code);
             },
             error: function(response)
             {
                 if(response.status === 404) {
-                    alert('Книга не найдена!');
+                    alert('Задание не найдено!');
                 }
             }
         });
@@ -55,18 +48,18 @@ $(function(){
         var data = $('#book-form form').serialize();
         $.ajax({
             method: "POST",
-            url: '/books/',
+            url: '/events/',
             data: data,
             success: function(response)
             {
                 $('#book-form').css('display', 'none');
-                var book = {};
-                book.id = response;
-                var dataArray = $('#book-form form').serializeArray();
-                for(i in dataArray) {
-                    book[dataArray[i]['name']] = dataArray[i]['value'];
-                }
-                appendBook(book);
+                const event = {};
+                event.id = response;
+                const data_arr = $('#book-form form').serializeArray();
+                $.each(data_arr,function (){
+                    event.text = this.value;
+                });
+                appendEvent(event);
             }
         });
         return false;
