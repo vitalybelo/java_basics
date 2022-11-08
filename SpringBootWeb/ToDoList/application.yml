@@ -7,5 +7,5 @@ spring:
     hibernate:
       ddl-auto: none
 
-someParameter:
-  value: 5463
+oneMoreParameter:
+  value: 1_000_000

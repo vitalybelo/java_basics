@@ -25,6 +25,9 @@
             <a href="#" class="book-link" th:attr="data-id=${event.id}" th:text="${event.text}"></a>
         </div>
     </div>
-
+    <div id="someParameter-text">
+        <p th:text="${someParameter}"></p>
+        <p th:text="${oneMoreParameter}"></p>
+    </div>
 </body>
 </html>

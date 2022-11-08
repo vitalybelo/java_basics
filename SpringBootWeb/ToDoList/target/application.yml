@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/eventlist?useSSL=false
+    username: root
+    password: Vitalex88
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+oneMoreParameter:
+  value: 1_000_000

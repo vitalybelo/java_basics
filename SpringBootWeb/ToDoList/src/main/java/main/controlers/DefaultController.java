@@ -3,6 +3,7 @@ package main.controlers;
 import main.repository.Event;
 import main.repository.EventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +15,13 @@ import java.util.List;
 public class DefaultController {
 
     @Autowired
-    EventRepository eventRepository;
+    private EventRepository eventRepository;
+
+    @Value("${someParameter.value}")
+    private String someParameter;
+
+    @Value("${oneMoreParameter.value}")
+    private Integer oneMoreParameter;
 
     @RequestMapping("/")
     public String index(Model model) {
@@ -27,6 +34,8 @@ public class DefaultController {
 
         model.addAttribute("events", events);
         model.addAttribute("eventsCount", events.size());
+        model.addAttribute("someParameter", someParameter);
+        model.addAttribute("oneMoreParameter", oneMoreParameter);
 
         return "index";
     }
