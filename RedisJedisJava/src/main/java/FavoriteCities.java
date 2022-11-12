@@ -12,8 +12,6 @@ public class FavoriteCities {
 
     public void listCities() {
 
-        //jedis.del("Favorite Cities");
-
         jedis.zadd("Favorite Cities",69000, "Bali");
         jedis.zadd("Favorite Cities",89000, "Singapore");
         jedis.zadd("Favorite Cities",29000, "Paris");
