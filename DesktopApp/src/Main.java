@@ -1,20 +1,16 @@
-import javax.swing.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        JFrame frame = new JFrame();
+        DialogForm dialog = new DialogForm();
+        dialog.setSize(500,300);
+        dialog.setLocationRelativeTo(null);
+        dialog.pack();
 
-        frame.setSize(700,500);
-        frame.add(new PanelForm().getPanel());
+        dialog.setVisible(true);
 
-
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setLocationRelativeTo(null);
-
-
-        frame.setVisible(true);
-
+        System.exit(0);
     }
+
 }
