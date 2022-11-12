@@ -48,8 +48,30 @@ public class DialogForm extends JDialog {
     private void onOK() {
         // add your code here
         if (textField1.getText().length() == 0) {
+            JOptionPane.showMessageDialog(
+                    contentPanel,
+                    "Фамилия не указана. Это обязательно поле.",
+                    "Предупреждение",
+                    JOptionPane.ERROR_MESSAGE
+            );
+            return;
+        }
+        if (textField2.getText().length() == 0) {
+            JOptionPane.showMessageDialog(
+                    contentPanel,
+                    "Имя не указано. Это обязательно поле.",
+                    "Предупреждение",
+                    JOptionPane.ERROR_MESSAGE
+            );
+            return;
+        }
+        String button_text = button_ok.getText();
+        if (button_text.equals("Collapse")) {
+            button_ok.setText("Expand");
+        } else {
+            button_ok.setText("Collapse");
+        }
 
-        };
     }
 
     private void onCancel() {
@@ -58,12 +80,14 @@ public class DialogForm extends JDialog {
     }
 
     public static void main(String[] args) {
+
         DialogForm dialog = new DialogForm();
         dialog.setSize(500,300);
         dialog.setLocationRelativeTo(null);
         dialog.pack();
 
         dialog.setVisible(true);
+
         System.exit(0);
     }
 }

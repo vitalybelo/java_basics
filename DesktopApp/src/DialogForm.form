@@ -9,9 +9,9 @@
       <alignmentX value="1.0"/>
       <alignmentY value="1.0"/>
       <autoscrolls value="false"/>
-      <inheritsPopupMenu value="false"/>
+      <inheritsPopupMenu value="true"/>
       <name value="Ввод данных"/>
-      <preferredSize width="400" height="200"/>
+      <preferredSize width="500" height="200"/>
       <toolTipText value="Ввод данных"/>
     </properties>
     <border type="none"/>
