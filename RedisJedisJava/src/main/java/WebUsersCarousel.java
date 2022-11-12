@@ -40,7 +40,7 @@ public class WebUsersCarousel {
                 pause(500);
                 if ((new Random().nextInt(100)) < 20) {
                     int i = new Random().nextInt(19);
-                    System.out.println("\tОплачена платная услуга, пользователь: " + users.get(i).getElement());
+                    System.out.println("\tПлатная услуга, пользователь: " + users.get(i).getElement() + "\n");
                 }
             }
         }

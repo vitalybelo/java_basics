@@ -8,7 +8,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Инициализация сервера (должен быть запущен сервер в powerPoint > redis-server)
         JedisPool jedisPool = new JedisPool(new JedisPoolConfig(), "localhost", 6379);
 
         // Get the pool and use the database (great thanks to Baeldung education platform !)
@@ -22,11 +21,10 @@ public class Main {
             WebUsersCarousel users = new WebUsersCarousel(jedis);
             users.listUsers();
 
-
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            jedisPool.close();
         }
-
-        jedisPool.close();
     }
 }
