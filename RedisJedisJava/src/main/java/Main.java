@@ -2,6 +2,8 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
+import java.util.Date;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -16,6 +18,7 @@ public class Main {
             FavoriteCities cities = new FavoriteCities(jedis);
             cities.listCities();
 
+            System.out.println(new Date().getTime());
 
 
         } catch (Exception e) {
