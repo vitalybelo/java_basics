@@ -18,7 +18,9 @@ public class Main {
             FavoriteCities cities = new FavoriteCities(jedis);
             cities.listCities();
 
-            System.out.println(new Date().getTime());
+            System.out.println("\nЗадание №2");
+            WebUsersCarousel users = new WebUsersCarousel(jedis);
+            users.listUsers();
 
 
         } catch (Exception e) {
