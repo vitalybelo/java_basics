@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         DialogForm dialog = new DialogForm();
-        dialog.setSize(500,300);
+        dialog.setSize(400,300);
         dialog.setLocationRelativeTo(null);
         dialog.pack();
 

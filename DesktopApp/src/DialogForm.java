@@ -57,7 +57,7 @@ public class DialogForm extends JDialog {
                     contentPanel,
                     "Фамилия не указана. Это обязательно поле.",
                     "Предупреждение",
-                    JOptionPane.ERROR_MESSAGE
+                    JOptionPane.PLAIN_MESSAGE
                     );
             return false;
         }
@@ -66,7 +66,7 @@ public class DialogForm extends JDialog {
                     contentPanel,
                     "Имя не указано. Это обязательно поле.",
                     "Предупреждение",
-                    JOptionPane.ERROR_MESSAGE
+                    JOptionPane.PLAIN_MESSAGE
                     );
             return false;
         }
