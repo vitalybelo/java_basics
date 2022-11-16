@@ -4,9 +4,9 @@ public class DBConnection {
 
     private static Connection connection;
 
-    private static String dbName = "learn";
-    private static String dbUser = "root";
-    private static String dbPass = "ya78yrc8n4w3984";
+    private static final String dbName = "learn";
+    private static final String dbUser = "root";
+    private static final String dbPass = "Vitalex88";
 
     public static Connection getConnection() {
         if (connection == null) {
