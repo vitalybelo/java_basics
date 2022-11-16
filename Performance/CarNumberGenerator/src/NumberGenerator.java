@@ -39,7 +39,7 @@ public class NumberGenerator implements Runnable{
                 writer.write(sb.toString().getBytes());
                 sb.setLength(0);
             }
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
