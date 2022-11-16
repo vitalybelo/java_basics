@@ -7,7 +7,8 @@ public class Loader {
 
         FileOutputStream writer = new FileOutputStream("res/numbers.txt");
 
-        char letters[] = {'У', 'К', 'Е', 'Н', 'Х', 'В', 'А', 'Р', 'О', 'С', 'М', 'Т'};
+        char[] letters = {'У', 'К', 'Е', 'Н', 'Х', 'В', 'А', 'Р', 'О', 'С', 'М', 'Т'};
+
         for (int number = 1; number < 1000; number++) {
             int regionCode = 199;
             for (char firstLetter : letters) {

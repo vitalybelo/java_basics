@@ -6,9 +6,9 @@ public class ConcatenationForced {
         long start = System.currentTimeMillis();
 
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 20_000; i++) {
-            sb.append("some text some text some text");
-        }
+        // StringBuilder - ускорят в 300-400 раз по сравнению с String
+        // repeat() метод ускоряет в 2-3 раза по сравнению с циклом for
+        sb.append("some text some text some text".repeat(20_000));
 
         System.out.println((System.currentTimeMillis() - start) + " ms");
     }
