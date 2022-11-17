@@ -3,20 +3,12 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 import java.sql.SQLException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
 
 public class XMLHandlerDB extends DefaultHandler {
 
     private VoterDB voter;
-    private static final SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
-    private static HashMap<VoterDB, Integer> voterCounts = null;
 
-    public XMLHandlerDB() {
-        voterCounts = new HashMap<>();
-    }
+    public XMLHandlerDB(){}
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes){
@@ -43,15 +35,5 @@ public class XMLHandlerDB extends DefaultHandler {
         if (qName.equals("voter")) voter = null;
     }
 
-    public void printRepeatVoters () {
-
-        for (VoterDB voter : voterCounts.keySet()) {
-            int doneVote = voterCounts.get(voter);
-            if (doneVote > 1) {
-                System.out.println("> " + voter.getName() + " :: voted " + doneVote + " times");
-            }
-        }
-
-    }
 
 }

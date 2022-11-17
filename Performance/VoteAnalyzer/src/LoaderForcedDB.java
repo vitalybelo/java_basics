@@ -11,7 +11,9 @@ public class LoaderForcedDB {
 
     public static void main(String[] args) throws Exception {
 
-        String fileName = "res/data-18M.xml";
+        long begin = System.currentTimeMillis();
+
+        String fileName = "res/data-0.2M.xml";
 
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
@@ -19,6 +21,8 @@ public class LoaderForcedDB {
         parser.parse(new File(fileName), handler);
 
         DBConnection.printVoterCounts();
+
+        System.out.println("\ncalculation lasted: " + (System.currentTimeMillis() - begin) + " ms");
 
     }
 

@@ -48,7 +48,7 @@ public class DBConnection {
         String sql = "SELECT name, birthDate, `count` FROM voter_count WHERE `count` > 1";
         ResultSet rs = DBConnection.getConnection().createStatement().executeQuery(sql);
         while (rs.next()) {
-            System.out.println("\t" + rs.getString("name") + " (" +
+            System.out.println(">" + rs.getString("name") + " (" +
                 rs.getString("birthDate") + ") - " + rs.getInt("count"));
         }
     }
