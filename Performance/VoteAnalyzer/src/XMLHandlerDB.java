@@ -11,7 +11,7 @@ public class XMLHandlerDB extends DefaultHandler {
     public XMLHandlerDB(){}
 
     @Override
-    public void startElement(String uri, String localName, String qName, Attributes attributes){
+    public void startElement(String uri, String localName, String qName, Attributes attributes) {
 
         if (qName.equals("voter") && voter == null) {
 
@@ -26,11 +26,10 @@ public class XMLHandlerDB extends DefaultHandler {
                 throw new RuntimeException(e);
             }
         }
-
     }
 
     @Override
-    public void endElement(String uri, String localName, String qName) throws SAXException {
+    public void endElement(String uri, String localName, String qName) {
 
         if (qName.equals("voter")) voter = null;
     }
