@@ -1,59 +1,41 @@
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.PrintWriter;
 
 public class NumberGenerator implements Runnable{
 
-    private static int fileIndex = 1;
+    private int regionCode = 1;
+    private final PrintWriter writer;
+    private final StringBuilder sb;
+    private final char[] letters = {'У', 'К', 'Е', 'Н', 'Х', 'В', 'А', 'Р', 'О', 'С', 'М', 'Т'};
+
+    public NumberGenerator(int regionCode) throws FileNotFoundException {
+        this.regionCode = regionCode;
+        this.sb = new StringBuilder();
+        String fileName = "res/numbers_" + padNumber(regionCode, 2) + ".txt";
+        writer = new PrintWriter(fileName);
+    }
 
     @Override
     public void run() {
 
-        FileOutputStream writer = null;
-        try {
-            writer = new FileOutputStream("res/numbers_" + fileIndex + ".txt");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-        char[] letters = {'У', 'К', 'Е', 'Н', 'Х', 'В', 'А', 'Р', 'О', 'С', 'М', 'Т'};
-        String endl = "\n";
-        StringBuilder sb = new StringBuilder();
-        fileIndex++;
-
-        try {
-            for (int regionCode = 199; regionCode < 200; regionCode++) {
-                for (int number = 1; number < 1000; number++) {
-                    for (char firstLetter : letters) {
-                        for (char secondLetter : letters) {
-                            for (char thirdLetter : letters) {
-                                sb.append(firstLetter);
-                                sb.append(padNumber(number, 3));
-                                sb.append(secondLetter);
-                                sb.append(thirdLetter);
-                                sb.append(padNumber(regionCode, 2));
-                                sb.append(endl);
-                            }
-                        }
+        for (int number = 1; number < 1000; number++) {
+            for (char firstLetter : letters) {
+                for (char secondLetter : letters) {
+                    for (char thirdLetter : letters) {
+                        sb.append(firstLetter);
+                        sb.append(padNumber(number, 3));
+                        sb.append(secondLetter);
+                        sb.append(thirdLetter);
+                        sb.append(padNumber(regionCode, 2));
+                        sb.append("\n");
                     }
                 }
-                writer.write(sb.toString().getBytes());
-                sb.setLength(0);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
-
-        try {
-            writer.flush();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        try {
-            writer.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
+        writer.write(sb.toString());
+        writer.flush();
+        writer.close();
+   }
 
     private static String padNumber(int value, int minLength)
     {

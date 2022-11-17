@@ -4,6 +4,8 @@ import java.io.PrintWriter;
  * Замена операций со строками на StringBuilder ускоряет примерно в 30 раз
  * Замена PrintWriter сложно сказать, скорее нет, большую часть буферизации берет на себя OS
  * Оптимизация метода padNumber() - установить % ускорения сложно, слишком маленькая задача
+ * Генерация номеров с 1-го до 199-го региона включительно занимает = 55-65 секунд (~ минуту)
+ *
  */
 public class LoaderForced {
 
@@ -19,7 +21,7 @@ public class LoaderForced {
         String endl = "\n";
         StringBuilder sb = new StringBuilder();
 
-        for (int regionCode = 199; regionCode < 200; regionCode++)
+        for (int regionCode = 1; regionCode < 200; regionCode++)
         {
             for (int number = 1; number < 1000; number++) {
                 for (char firstLetter : letters) {
