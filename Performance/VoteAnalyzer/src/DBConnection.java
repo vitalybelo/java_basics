@@ -3,7 +3,6 @@ import java.sql.*;
 public class DBConnection {
 
     private static Connection connection;
-
     private static final String dbName = "learn";
     private static final String dbUser = "root";
     private static final String dbPass = "Vitalex88";

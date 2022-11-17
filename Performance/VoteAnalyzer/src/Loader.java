@@ -12,14 +12,14 @@ import java.util.HashMap;
 
 public class Loader {
 
-    private static SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
-    private static SimpleDateFormat visitDateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
+    private static final SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
+    private static final SimpleDateFormat visitDateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
 
-    private static HashMap<Integer, WorkTime> voteStationWorkTimes = new HashMap<>();
-    private static HashMap<Voter, Integer> voterCounts = new HashMap<>();
+    private static final HashMap<Integer, WorkTime> voteStationWorkTimes = new HashMap<>();
+    private static final HashMap<Voter, Integer> voterCounts = new HashMap<>();
 
     public static void main(String[] args) throws Exception {
-        String fileName = "res/data-1M.xml";
+        String fileName = "res/data-18M.xml";
 
         parseFile(fileName);
 
@@ -56,8 +56,7 @@ public class Loader {
             NamedNodeMap attributes = node.getAttributes();
 
             String name = attributes.getNamedItem("name").getNodeValue();
-            Date birthDay = birthDayFormat
-                .parse(attributes.getNamedItem("birthDay").getNodeValue());
+            Date birthDay = birthDayFormat.parse(attributes.getNamedItem("birthDay").getNodeValue());
 
             Voter voter = new Voter(name, birthDay);
             Integer count = voterCounts.get(voter);
