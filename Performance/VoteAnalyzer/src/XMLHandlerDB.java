@@ -1,14 +1,10 @@
 import org.xml.sax.Attributes;
-import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
-
 import java.sql.SQLException;
 
 public class XMLHandlerDB extends DefaultHandler {
 
     private VoterDB voter;
-
-    public XMLHandlerDB(){}
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) {
