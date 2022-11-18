@@ -43,7 +43,7 @@ public class DBConnection {
             sql.executeUpdate(query_builder.toString());
             sql.close();
             System.out.println(" --->> INSERT");
-            // обнуляем строку и флаг первой вставки данных (...) в multi insert
+            // обнуляем строку и флаг первой вставки
             insertNext = false;
             query_builder.setLength(0);
         }
