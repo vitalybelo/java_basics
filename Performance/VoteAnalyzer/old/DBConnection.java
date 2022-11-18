@@ -2,13 +2,10 @@ import java.sql.*;
 
 public class DBConnection {
 
-    private static final int maxQuerySize = 40_000_000; // у меня при больших значениях дает PacketTooBigException
     private static Connection connection;
     private static final String dbName = "learn";
     private static final String dbUser = "root";
     private static final String dbPass = "Vitalex88";
-    private static boolean insertNext = false;
-    private static final StringBuilder query_builder = new StringBuilder();
 
     public static Connection getConnection() {
         if (connection == null) {
@@ -20,11 +17,10 @@ public class DBConnection {
                 connection.createStatement().execute("CREATE TABLE voter_count(" +
                     "id INT NOT NULL AUTO_INCREMENT, " +
                     "name TINYTEXT NOT NULL, " +
-                    "birthDate DATE NOT NULL, " +
+                    "birthDate TINYTEXT NOT NULL, " +
                     "counter INT NOT NULL, " +
                     "PRIMARY KEY(id), " +
-                    "UNIQUE KEY name_date(name(50), birthDate))");
-
+                    "UNIQUE KEY name_date(name(50), birthDate(10)))");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -32,40 +28,26 @@ public class DBConnection {
         return connection;
     }
 
-    public static void executeMultiInsert () throws SQLException {
-
-        System.out.print("buffered: " + query_builder.length());
-        if (query_builder.length() > 0) {
-
-            query_builder.insert(0, "INSERT INTO voter_count(name, birthDate, counter) VALUES");
-            query_builder.append(" ON DUPLICATE KEY UPDATE counter = counter + 1");
-            Statement sql = DBConnection.getConnection().createStatement();
-            sql.executeUpdate(query_builder.toString());
-            sql.close();
-            System.out.println(" --->> INSERT");
-            // обнуляем строку и флаг первой вставки данных (...) в multi insert
-            insertNext = false;
-            query_builder.setLength(0);
-        }
-    }
-
     public static void countVoter(String name, String birthDay) throws SQLException {
 
         birthDay = birthDay.replace('.', '-');
 
-        if (insertNext) {
-            query_builder.append(",");
-        } else insertNext = true;
-        query_builder.append("('").append(name).append("', '").append(birthDay).append("', 1)");
-
-        if (query_builder.length() > maxQuerySize) {
-            executeMultiInsert();
+        String sql = "SELECT id FROM voter_count WHERE birthDate='" + birthDay + "' AND name='" + name + "'";
+        ResultSet rs = DBConnection.getConnection().createStatement().executeQuery(sql);
+        if (!rs.next()) {
+            DBConnection.getConnection().createStatement()
+                .execute("INSERT INTO voter_count(name, birthDate, counter) VALUES('" +
+                    name + "', '" + birthDay + "', 1)");
+        } else {
+            Integer id = rs.getInt("id");
+            DBConnection.getConnection().createStatement()
+                .execute("UPDATE voter_count SET counter = counter + 1 WHERE id=" + id);
         }
+        rs.close();
 
     }
 
     public static void printVoterCounts() throws SQLException {
-
         String sql = "SELECT name, birthDate, counter FROM voter_count WHERE counter > 1";
         ResultSet rs = DBConnection.getConnection().createStatement().executeQuery(sql);
         while (rs.next()) {
@@ -73,5 +55,4 @@ public class DBConnection {
                 rs.getString("birthDate") + ") - " + rs.getInt("counter"));
         }
     }
-
 }

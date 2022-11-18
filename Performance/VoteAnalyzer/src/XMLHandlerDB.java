@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 public class XMLHandlerDB extends DefaultHandler {
 
-    private VoterDB voter;
+    private VoterDB voter = null;
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) {
@@ -26,8 +26,18 @@ public class XMLHandlerDB extends DefaultHandler {
 
     @Override
     public void endElement(String uri, String localName, String qName) {
+        if (qName.equals("voter")) {
+            voter = null;
+        }
+/*
+        if (qName.equals("voters")) {
+            try {
 
-        if (qName.equals("voter")) voter = null;
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+*/
     }
 
 

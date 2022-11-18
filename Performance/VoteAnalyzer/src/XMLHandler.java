@@ -31,7 +31,6 @@ public class XMLHandler extends DefaultHandler {
                 int count = voterCounts.getOrDefault(voter, 0) + 1;
                 voterCounts.put(voter, count);
             }
-
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -39,8 +38,9 @@ public class XMLHandler extends DefaultHandler {
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
-
-        if (qName.equals("voter")) voter = null;
+        if (qName.equals("voter")) {
+            voter = null;
+        }
     }
 
     public void printRepeatVoters () {
@@ -51,7 +51,6 @@ public class XMLHandler extends DefaultHandler {
                 System.out.println("> " + voter.getName() + " :: voted " + doneVote + " times");
             }
         }
-
     }
 
 }

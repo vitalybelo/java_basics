@@ -1,25 +1,20 @@
-import org.w3c.dom.Document;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
 
+/**
+ * В классе реализован пошаговый парсинг через SAX
+ * Накопление данных выполняется в HashMap, за счет чего самая высокая производительность
+ * Недостатки: ограничение оперативной памяти не позволяют обрабатывать большие файлы
+ *
+ */
 public class LoaderForced {
-
-    private static final SimpleDateFormat visitDateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
-    private static final HashMap<Integer, WorkTime> voteStationWorkTimes = new HashMap<>();
 
     public static void main(String[] args) throws Exception {
 
         String fileName = "res/data-18M.xml";
+
+        long begin = System.currentTimeMillis();
 
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
@@ -27,6 +22,7 @@ public class LoaderForced {
         parser.parse(new File(fileName), handler);
 
         handler.printRepeatVoters();
+        System.out.println("\ncalculation lasted: " + (System.currentTimeMillis() - begin) + " ms");
 
     }
 

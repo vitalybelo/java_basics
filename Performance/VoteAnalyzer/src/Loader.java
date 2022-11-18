@@ -6,37 +6,29 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
 
+/**
+ * В этом классе реализована обработка входных данных моделью DOM Document
+ * Данные накапливаются в переменную StringBuilder, размер буфера которой отслеживается
+ * чтобы не получить - PacketTooBigException (определяется значением max_allowed_packet)
+ * в классе DBConnection определена константа задающая длину переменной StringBuilder
+ * Когда размер буфера достигает установленного предела, выполняется multi insert в базу.
+ * Буфер обнуляется, продолжается обработка входного файла до полного окончания данных
+ * В зависимости от установленного размера буфера и входных данных может выполняться
+ * один или несколько запросов Multi Insert.
+ *
+ */
 public class Loader {
-
-    private static final SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
-    private static final SimpleDateFormat visitDateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
-
-    private static final HashMap<Integer, WorkTime> voteStationWorkTimes = new HashMap<>();
-    private static final HashMap<Voter, Integer> voterCounts = new HashMap<>();
 
     public static void main(String[] args) throws Exception {
         String fileName = "res/data-18M.xml";
 
+        long begin = System.currentTimeMillis();
         parseFile(fileName);
 
-        //Printing results
-        System.out.println("Voting station work times: ");
-        for (Integer votingStation : voteStationWorkTimes.keySet()) {
-            WorkTime workTime = voteStationWorkTimes.get(votingStation);
-            System.out.println("\t" + votingStation + " - " + workTime);
-        }
+        DBConnection.printVoterCounts();
 
-        System.out.println("Duplicated voters: ");
-        for (Voter voter : voterCounts.keySet()) {
-            Integer count = voterCounts.get(voter);
-            if (count > 1) {
-                System.out.println("\t" + voter + " - " + count);
-            }
-        }
+        System.out.println("\nPARSE Lasted: " + (System.currentTimeMillis() - begin) + " ms");
     }
 
     private static void parseFile(String fileName) throws Exception {
@@ -45,7 +37,6 @@ public class Loader {
         Document doc = db.parse(new File(fileName));
 
         findEqualVoters(doc);
-        fixWorkTimes(doc);
     }
 
     private static void findEqualVoters(Document doc) throws Exception {
@@ -56,29 +47,11 @@ public class Loader {
             NamedNodeMap attributes = node.getAttributes();
 
             String name = attributes.getNamedItem("name").getNodeValue();
-            Date birthDay = birthDayFormat.parse(attributes.getNamedItem("birthDay").getNodeValue());
+            String birthDay = attributes.getNamedItem("birthDay").getNodeValue();
 
-            Voter voter = new Voter(name, birthDay);
-            Integer count = voterCounts.get(voter);
-            voterCounts.put(voter, count == null ? 1 : count + 1);
+            DBConnection.countVoter(name, birthDay);
         }
+        DBConnection.executeMultiInsert();
     }
 
-    private static void fixWorkTimes(Document doc) throws Exception {
-        NodeList visits = doc.getElementsByTagName("visit");
-        int visitCount = visits.getLength();
-        for (int i = 0; i < visitCount; i++) {
-            Node node = visits.item(i);
-            NamedNodeMap attributes = node.getAttributes();
-
-            Integer station = Integer.parseInt(attributes.getNamedItem("station").getNodeValue());
-            Date time = visitDateFormat.parse(attributes.getNamedItem("time").getNodeValue());
-            WorkTime workTime = voteStationWorkTimes.get(station);
-            if (workTime == null) {
-                workTime = new WorkTime();
-                voteStationWorkTimes.put(station, workTime);
-            }
-            workTime.addVisitTime(time.getTime());
-        }
-    }
 }
