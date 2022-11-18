@@ -2,7 +2,7 @@ import java.sql.*;
 
 public class DBConnection {
 
-    private static final int maxQuerySize = 40_000_000; // у меня при больших значениях дает PacketTooBigException
+    private static final int maxQuerySize = 40_000_000;
     private static Connection connection;
     private static final String dbName = "learn";
     private static final String dbUser = "root";
@@ -43,6 +43,7 @@ public class DBConnection {
             sql.executeUpdate(query_builder.toString());
             sql.close();
             System.out.println(" --->> INSERT");
+
             // обнуляем строку и флаг первой вставки
             insertNext = false;
             query_builder.setLength(0);
