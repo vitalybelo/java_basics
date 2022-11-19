@@ -19,7 +19,7 @@ public class XMLHandlerDB extends DefaultHandler {
             try {
                 DBConnection.countVoter(voter.getName(), voter.getBirthDay());
             } catch (SQLException e) {
-                throw new RuntimeException(e);
+                e.printStackTrace();
             }
         }
     }
@@ -29,16 +29,6 @@ public class XMLHandlerDB extends DefaultHandler {
         if (qName.equals("voter")) {
             voter = null;
         }
-/*
-        // небезопасно, так как элемента может не быть
-        if (qName.equals("voters")) {
-            try {
-
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
-        }
-*/
     }
 
 

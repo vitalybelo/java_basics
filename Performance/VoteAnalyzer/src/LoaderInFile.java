@@ -1,10 +1,7 @@
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 /**
  * В этом классе используется пошаговая обработка xml файла через SAX
@@ -23,7 +20,7 @@ public class LoaderInFile {
 
     public static void main(String[] args) throws Exception {
 
-        String xmlFile = "res/data-1572M.xml";
+        String xmlFile = "res/data-0.2M.xml";
 
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
@@ -59,9 +56,10 @@ public class LoaderInFile {
             Connection connection = DriverManager.getConnection(
                     localhost + dbName + "?user=" + dbUser + "&password=" + dbPass + "&allowLoadLocalInfile=true");
             // удаление старой таблицы
-            connection.createStatement().execute("DROP TABLE IF EXISTS voter_count");
+            Statement sql = connection.createStatement();
+            sql.execute("DROP TABLE IF EXISTS voter_count");
             // создание новой таблицы
-            connection.createStatement().execute("CREATE TABLE voter_count(" +
+            sql.execute("CREATE TABLE voter_count(" +
                     "id INT NOT NULL AUTO_INCREMENT, " +
                     "name TINYTEXT NOT NULL, " +
                     "birthDate DATE NOT NULL, " +
@@ -69,21 +67,22 @@ public class LoaderInFile {
                     "PRIMARY KEY(id), " +
                     "UNIQUE KEY name_date(name(50), birthDate))");
             // загрузка данных из файла
-            connection.createStatement().execute("LOAD DATA " +
+            sql.execute("LOAD DATA " +
                     "LOCAL INFILE '" + datafile +"' INTO TABLE voter_count " +
                     "FIELDS TERMINATED BY ',' " +
                     "ENCLOSED BY '\"' " +
                     "LINES TERMINATED BY '\\r\\n' " +
                     "(name, birthDate, counter)");
+            sql.close();
 
             // отображаем проголосовавших больше одного раза
-            String sql = "SELECT name, birthDate, counter FROM voter_count WHERE counter > 1";
-            ResultSet rs = connection.createStatement().executeQuery(sql);
+            ResultSet rs = sql.executeQuery("SELECT name, birthDate, counter FROM voter_count WHERE counter > 1");
 
             while (rs.next()) {
                 System.out.println(":: > " + rs.getString("name") + " (" +
                         rs.getString("birthDate") + ") - " + rs.getInt("counter"));
             }
+            rs.close();
 
         } catch (SQLException e) {
             e.printStackTrace();
