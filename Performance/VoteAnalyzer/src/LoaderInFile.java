@@ -32,9 +32,8 @@ public class LoaderInFile {
 
         long step3 = System.currentTimeMillis();
         generateConnection(handler.getDatafile());
-        System.out.println("LOADED TABLE INFILE: " + (System.currentTimeMillis() - step3) + " ms");
-
-        System.out.println("\nCOMPLETE: " + (System.currentTimeMillis() - step1) + " ms");
+        System.out.println("\nLOADED TABLE INFILE: " + (System.currentTimeMillis() - step3) + " ms");
+        System.out.println("COMPLETE: " + (System.currentTimeMillis() - step1) + " ms");
 
     }
 
