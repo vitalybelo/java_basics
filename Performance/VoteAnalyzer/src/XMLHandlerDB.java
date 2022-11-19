@@ -30,6 +30,7 @@ public class XMLHandlerDB extends DefaultHandler {
             voter = null;
         }
 /*
+        // небезопасно, так как элемента может не быть
         if (qName.equals("voters")) {
             try {
 

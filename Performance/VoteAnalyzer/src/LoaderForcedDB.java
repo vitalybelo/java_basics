@@ -19,7 +19,7 @@ public class LoaderForcedDB {
 
         long begin = System.currentTimeMillis();
 
-        String fileName = "res/data-1572M.xml";
+        String fileName = "res/data-18M.xml";
 
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();

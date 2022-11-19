@@ -2,12 +2,13 @@ import java.sql.*;
 
 public class DBConnection {
 
-    private static final int maxQuerySize = 40_000_000;
+    private static final int maxQuerySize = 10_000_000;
     private static Connection connection;
     private static final String dbName = "learn";
     private static final String dbUser = "root";
     private static final String dbPass = "Vitalex88";
     private static boolean insertNext = false;
+    private static int insertCount = 0;
     private static final StringBuilder query_builder = new StringBuilder();
 
     public static Connection getConnection() {
@@ -34,15 +35,15 @@ public class DBConnection {
 
     public static void executeMultiInsert () throws SQLException {
 
-        System.out.print("buffered: " + query_builder.length());
         if (query_builder.length() > 0) {
+            System.out.print("buffered: " + query_builder.length());
 
             query_builder.insert(0, "INSERT INTO voter_count(name, birthDate, counter) VALUES");
             query_builder.append(" ON DUPLICATE KEY UPDATE counter = counter + 1");
             Statement sql = DBConnection.getConnection().createStatement();
             sql.executeUpdate(query_builder.toString());
             sql.close();
-            System.out.println(" --->> INSERT");
+            System.out.println(" -->> INSERT INTO #" + (++insertCount));
 
             // обнуляем строку и флаг первой вставки
             insertNext = false;
