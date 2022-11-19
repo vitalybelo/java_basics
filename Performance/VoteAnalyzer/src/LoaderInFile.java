@@ -13,7 +13,7 @@ public class LoaderInFile {
 
     public static void main(String[] args) throws Exception {
 
-        String xmlFile = "res/data-18M.xml";
+        String xmlFile = "res/data-1572M.xml";
 
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
