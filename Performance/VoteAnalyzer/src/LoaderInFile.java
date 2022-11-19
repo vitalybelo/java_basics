@@ -68,7 +68,7 @@ public class LoaderInFile {
                     "PRIMARY KEY(id), " +
                     "UNIQUE KEY name_date(name(50), birthDate))");
             connection.createStatement().execute("LOAD DATA " +
-                    "LOCAL INFILE '" + datafile +"' INTO TABLE learn.voter_count " +
+                    "LOCAL INFILE '" + datafile +"' INTO TABLE voter_count " +
                     "FIELDS TERMINATED BY ',' " +
                     "ENCLOSED BY '\"' " +
                     "LINES TERMINATED BY '\\r\\n' " +
