@@ -23,7 +23,7 @@ public class LoaderForcedThread {
         service.shutdown();
         while (!service.isTerminated()){}
 
-        System.out.println((System.currentTimeMillis() - begin) + " ms");
+        System.out.println("\nLASTED: " + (System.currentTimeMillis() - begin) + " ms");
     }
 
 }

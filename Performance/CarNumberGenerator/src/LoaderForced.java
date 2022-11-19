@@ -23,6 +23,7 @@ public class LoaderForced {
 
         for (int regionCode = 1; regionCode < 200; regionCode++)
         {
+            String regionLine = padNumber(regionCode, 2);
             for (int number = 1; number < 1000; number++) {
                 for (char firstLetter : letters) {
                     for (char secondLetter : letters) {
@@ -31,7 +32,7 @@ public class LoaderForced {
                             sb.append(padNumber(number, 3));
                             sb.append(secondLetter);
                             sb.append(thirdLetter);
-                            sb.append(padNumber(regionCode, 2));
+                            sb.append(regionLine);
                             sb.append(endl);
                         }
                     }
@@ -40,11 +41,10 @@ public class LoaderForced {
             writer.write(sb.toString());
             sb.setLength(0);
         }
-
         writer.flush();
         writer.close();
 
-        System.out.println((System.currentTimeMillis() - begin) + " ms");
+        System.out.println("\nLASTED: " + (System.currentTimeMillis() - begin) + " ms");
     }
 
     private static String padNumber(int value, int minLength)

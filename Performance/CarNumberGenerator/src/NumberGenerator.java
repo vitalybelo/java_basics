@@ -3,35 +3,34 @@ import java.io.PrintWriter;
 
 public class NumberGenerator implements Runnable{
 
-    private int regionCode = 1;
+    private final String regionLine;
     private final PrintWriter writer;
     private final StringBuilder sb;
     private final char[] letters = {'У', 'К', 'Е', 'Н', 'Х', 'В', 'А', 'Р', 'О', 'С', 'М', 'Т'};
 
     public NumberGenerator(int regionCode) throws FileNotFoundException {
-        this.regionCode = regionCode;
+
         this.sb = new StringBuilder();
-        String fileName = "res/numbers_" + padNumber(regionCode, 2) + ".txt";
+        this.regionLine = padNumber(regionCode, 2);
+        String fileName = "res/numbers_" + regionLine + ".txt";
         writer = new PrintWriter(fileName);
     }
 
     @Override
     public void run() {
 
-        for (int number = 1; number < 1000; number++) {
-            for (char firstLetter : letters) {
-                for (char secondLetter : letters) {
+        for (int number = 1; number < 1000; number++)
+            for (char firstLetter : letters)
+                for (char secondLetter : letters)
                     for (char thirdLetter : letters) {
                         sb.append(firstLetter);
                         sb.append(padNumber(number, 3));
                         sb.append(secondLetter);
                         sb.append(thirdLetter);
-                        sb.append(padNumber(regionCode, 2));
+                        sb.append(regionLine);
                         sb.append("\n");
                     }
-                }
-            }
-        }
+
         writer.write(sb.toString());
         writer.flush();
         writer.close();
