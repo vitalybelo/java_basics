@@ -13,7 +13,7 @@ public class LoaderInFile {
 
     public static void main(String[] args) throws Exception {
 
-        String xmlFile = "res/data-1572M.xml";
+        String xmlFile = "res/data-1M.xml";
 
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
@@ -38,7 +38,7 @@ public class LoaderInFile {
     public static void countVoters (String name, String birthDay)
     {
         birthDay = birthDay.replace('.', '-');
-        builder.append("\"").append(name).append("\",\"").append(birthDay).append("\"\r\n");
+        builder.append("\"").append(name).append("\",\"").append(birthDay).append("\",").append(1).append("\r\n");
     }
 
     public static void storageVoters () {
