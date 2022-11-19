@@ -13,22 +13,25 @@ public class LoaderInFile {
 
     public static void main(String[] args) throws Exception {
 
-        long begin = System.currentTimeMillis();
-
         String xmlFile = "res/data-1572M.xml";
 
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
         XMLHandlerInFile handler = new XMLHandlerInFile();
 
+        long step1 = System.currentTimeMillis();
         parser.parse(new File(xmlFile), handler);
-        System.out.println("PARSED IN MEM: " + (System.currentTimeMillis() - begin) + " ms");
+        System.out.println("PARSED IN MEM: " + (System.currentTimeMillis() - step1) + " ms");
 
+        long step2 = System.currentTimeMillis();
         storageVoters();
-        System.out.println("STORED IN FILE: " + (System.currentTimeMillis() - begin) + " ms");
+        System.out.println("STORED IN FILE: " + (System.currentTimeMillis() - step2) + " ms");
 
+        long step3 = System.currentTimeMillis();
         generateConnection();
-        System.out.println("LOADED TABLE INFILE: " + (System.currentTimeMillis() - begin) + " ms");
+        System.out.println("LOADED TABLE INFILE: " + (System.currentTimeMillis() - step3) + " ms");
+
+        System.out.println("COMPLETE: " + (System.currentTimeMillis() - step1) + " ms");
 
     }
 
