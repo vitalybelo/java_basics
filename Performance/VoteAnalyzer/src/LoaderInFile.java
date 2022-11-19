@@ -15,17 +15,20 @@ public class LoaderInFile {
 
         long begin = System.currentTimeMillis();
 
-        String xmlFile = "res/data-18M.xml";
+        String xmlFile = "res/data-1572M.xml";
 
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
         XMLHandlerInFile handler = new XMLHandlerInFile();
+
         parser.parse(new File(xmlFile), handler);
+        System.out.println("PARSED IN MEM: " + (System.currentTimeMillis() - begin) + " ms");
 
         storageVoters();
-        generateConnection();
+        System.out.println("STORED IN FILE: " + (System.currentTimeMillis() - begin) + " ms");
 
-        System.out.println("\nParse Lasted: " + (System.currentTimeMillis() - begin) + " ms");
+        generateConnection();
+        System.out.println("LOADED TABLE INFILE: " + (System.currentTimeMillis() - begin) + " ms");
 
     }
 
@@ -40,7 +43,6 @@ public class LoaderInFile {
         try {
             writer = new PrintWriter(datafile);
             writer.write(builder.toString());
-
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
