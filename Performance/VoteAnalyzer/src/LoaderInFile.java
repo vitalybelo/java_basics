@@ -7,7 +7,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * В этом классе
+ * В этом классе используется пошаговая обработка xml файла через SAX
+ * Данные накапливаются в HashMap в памяти (вместо StringBuilder) в XMLHandlerInFile
+ * Потом, обработанные данные сбрасываются на локальный диск в файл .csv
+ * Загрузка данных из файла выполняется sql запросом LOAD DATA LOCAL INFILE
+ * После того как закончился парсинг и запись данных на диск - скорость
+ * зависит только от настроек сервера (в основном памяти)
+ * Длительность обработки xml файла 1572М до полной готовности загрузки данных
+ * в базу составляет примерно 25-30 секунд. Скорость работы mysql у каждого своя
  *
  */
 public class LoaderInFile {
@@ -16,7 +23,7 @@ public class LoaderInFile {
 
     public static void main(String[] args) throws Exception {
 
-        String xmlFile = "res/data-18M.xml";
+        String xmlFile = "res/data-1572M.xml";
 
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
