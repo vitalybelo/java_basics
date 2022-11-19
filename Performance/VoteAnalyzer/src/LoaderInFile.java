@@ -13,7 +13,7 @@ public class LoaderInFile {
 
     public static void main(String[] args) throws Exception {
 
-        String xmlFile = "res/data-1572M.xml";
+        String xmlFile = "res/data-18M.xml";
 
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
@@ -57,12 +57,15 @@ public class LoaderInFile {
 
     public static void generateConnection () {
 
+        //server command mysql> SET GLOBAL local_infile=true;
+
         String dbName = "learn";
         String dbUser = "root";
         String dbPass = "Vitalex88";
+        String localhost = "127.0.0.1";
         try {
             Connection connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/" + dbName +
+                    "jdbc:mysql://" + localhost + ":3306/" + dbName +
                             "?user=" + dbUser + "&password=" + dbPass + "&allowLoadLocalInfile=true");
             connection.createStatement().execute("DROP TABLE IF EXISTS voter_count");
             connection.createStatement().execute("CREATE TABLE voter_count(" +
