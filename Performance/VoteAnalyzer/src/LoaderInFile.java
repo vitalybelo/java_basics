@@ -6,6 +6,10 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * В этом классе
+ *
+ */
 public class LoaderInFile {
 
     private static final StringBuilder builder = new StringBuilder();
@@ -36,12 +40,14 @@ public class LoaderInFile {
 
     public static void generateConnection (String datafile) {
 
-        //server command mysql> SET GLOBAL local_infile=true;
+        // Для установки привилегий серверу используйте команду
+        // server command mysql> SET GLOBAL local_infile=true;
 
         String dbName = "learn";
         String dbUser = "root";
         String dbPass = "Vitalex88";
         String localhost = "jdbc:mysql://localhost:3306/";
+
         try {
             // подключение к базе
             Connection connection = DriverManager.getConnection(
@@ -67,12 +73,11 @@ public class LoaderInFile {
             // отображаем проголосовавших больше одного раза
             String sql = "SELECT name, birthDate, counter FROM voter_count WHERE counter > 1";
             ResultSet rs = connection.createStatement().executeQuery(sql);
-            System.out.println();
+
             while (rs.next()) {
                 System.out.println(":: > " + rs.getString("name") + " (" +
                         rs.getString("birthDate") + ") - " + rs.getInt("counter"));
             }
-            System.out.println();
 
         } catch (SQLException e) {
             e.printStackTrace();
