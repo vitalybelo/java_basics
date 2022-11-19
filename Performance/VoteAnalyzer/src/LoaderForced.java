@@ -20,9 +20,10 @@ public class LoaderForced {
         SAXParser parser = factory.newSAXParser();
         XMLHandler handler = new XMLHandler();
         parser.parse(new File(fileName), handler);
+        System.out.println("PARSED IN MEM: " + (System.currentTimeMillis() - begin) + " ms");
 
         handler.printRepeatVoters();
-        System.out.println("\ncalculation lasted: " + (System.currentTimeMillis() - begin) + " ms");
+        System.out.println("\nTOTAL LASTED: " + (System.currentTimeMillis() - begin) + " ms");
 
     }
 
