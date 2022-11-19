@@ -16,11 +16,9 @@ import java.sql.*;
  */
 public class LoaderInFile {
 
-    private static final StringBuilder builder = new StringBuilder();
-
     public static void main(String[] args) throws Exception {
 
-        String xmlFile = "res/data-0.2M.xml";
+        String xmlFile = "res/data-18M.xml";
 
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
@@ -44,7 +42,7 @@ public class LoaderInFile {
     public static void generateConnection (String datafile) {
 
         // Для установки привилегий серверу используйте команду
-        // server command mysql> SET GLOBAL local_infile=true;
+        // server command mysql> SET GLOBAL local_infile = true;
 
         String dbName = "learn";
         String dbUser = "root";
@@ -73,7 +71,6 @@ public class LoaderInFile {
                     "ENCLOSED BY '\"' " +
                     "LINES TERMINATED BY '\\r\\n' " +
                     "(name, birthDate, counter)");
-            sql.close();
 
             // отображаем проголосовавших больше одного раза
             ResultSet rs = sql.executeQuery("SELECT name, birthDate, counter FROM voter_count WHERE counter > 1");
@@ -83,6 +80,7 @@ public class LoaderInFile {
                         rs.getString("birthDate") + ") - " + rs.getInt("counter"));
             }
             rs.close();
+            sql.close();
 
         } catch (SQLException e) {
             e.printStackTrace();
