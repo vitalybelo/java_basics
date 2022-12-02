@@ -21,7 +21,7 @@ public class Main {
         TreeSet<String> uniqueURL = commonPool.invoke(parser);
         long finish1 = System.currentTimeMillis();
 
-        fileWriter(name, uniqueURL, parser);
+        fileWriter(name, uniqueURL, parser.getUrlCounter());
 
         long finish2 = System.currentTimeMillis();
         System.out.println("\nLinks was read (program limit): " + uniqueURL.size() + " (" + parser.getUrlCounter() + ")");
@@ -29,18 +29,20 @@ public class Main {
         System.out.println("Total progress time (sec): " + ((finish2 - start) / 1_000));
     }
 
-    public static void fileWriter (String name, TreeSet<String> uniqueURL, RecursiveLinkParser parser) {
+    public static void fileWriter (String name, TreeSet<String> uniqueURL, int linkSize) {
 
         PrintWriter writer = null;
         try {
             writer = new PrintWriter("src/data/" + name + ".txt");
             writer.write("Links parsing results at: " + new Date().toInstant() + "\n");
-            writer.write("Parsing request performed for: " + parser.getUrlCounter() + " links\n\n");
+            writer.write("Parsing request performed for: " + linkSize + " links\n\n");
+
+            StringBuilder sb = new StringBuilder();
             for (String s : uniqueURL) {
-                String sb = spaceTab(s);
-                //System.out.println(sb);
-                writer.write(sb + "\n");
+                sb.append(spaceTab(s)).append("\n");
             }
+            writer.write(sb.toString());
+
         } catch (FileNotFoundException e) {
             System.err.println("Error writing output file: " + name);
         } finally {

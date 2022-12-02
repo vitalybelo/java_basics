@@ -32,7 +32,7 @@ public class RecursiveLinkParser extends RecursiveTask<TreeSet<String>> {
             Thread.sleep(150);
             Connection connection = Jsoup
                     .connect(site)
-                    .userAgent(USER_AGENT1)
+                    .userAgent(USER_AGENT3)
                     .referrer(REFERRER)
                     .ignoreContentType(true)
                     .ignoreHttpErrors(true)
