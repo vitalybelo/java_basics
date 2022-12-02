@@ -12,7 +12,7 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        String name =  "skillbox"; //"mebelvia";
+        String name =  "skillbox";
         String site = "https://" + name + ".ru";
         System.out.println("Scanning for: " + site);
 

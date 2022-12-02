@@ -13,7 +13,7 @@ public class Main_Process {
     public static String USER_AGENT3 = "Mozilla/5.0 (Macintosh; Intel Mac OS X x.y; rv:42.0) Gecko/20100101 Firefox/42.0";
     public static String REFERRER = "https://www.google.com";
     public static int TIME_OUT = 60000;
-    public static int MAX_URLS = 50;
+    public static int MAX_URLS = 500;
     public static int STEP_OUT = MAX_URLS / 10;
     public static int urlCounter = 0;
     public static String site;
@@ -38,7 +38,7 @@ public class Main_Process {
             Thread.sleep(100);
             Connection connection = Jsoup
                     .connect(site)
-                    .userAgent(USER_AGENT1)
+                    .userAgent(USER_AGENT2)
                     .referrer(REFERRER)
                     .ignoreContentType(true)
                     .ignoreHttpErrors(true)
@@ -53,8 +53,7 @@ public class Main_Process {
                 if (ignoreLink(url)) continue;
                 if (urls.add(url)) {
                     urlCounter++;
-                    if (urlCounter % STEP_OUT == 0)
-                        System.out.print('.');
+                    if (urlCounter % STEP_OUT == 0) System.out.print('.');
                     getLinks(url, urls);
                 }
             }
